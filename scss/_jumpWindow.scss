@@ -182,7 +182,7 @@
                 button {
                     width: 322px;
                     height: 42px;
-                    @include buttonStyle_3;
+                    @include mainBtn;
                 }
             }
         }
@@ -343,7 +343,7 @@
                     button {
                         width: 322px;
                         height: 42px;
-                        @include buttonStyle_3;
+                        @include mainBtn;
                     }
                 }
             }
@@ -445,7 +445,7 @@
                 button {
                     width: 322px;
                     height: 42px;
-                    @include buttonStyle_3;
+                    @include mainBtn;
                 }
             }
         }

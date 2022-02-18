@@ -16,7 +16,7 @@
         align-items: center;
         justify-content: space-evenly;
         cursor: pointer;
-        @include buttonStyle_2;
+        @include sideBar;
 
         i {
             width: 30px;
@@ -33,7 +33,7 @@
         height: auto;
         border-radius: 35px;
         padding: 20px 0;
-        @include buttonStyle_2;
+        @include sideBar;
 
         li {
             width: 100%;

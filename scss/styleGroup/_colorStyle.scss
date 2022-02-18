@@ -1,3 +1,96 @@
+//主色系
+$mainBG_1: #3d4cce;
+$mainBG_2:#ffffff;
+$mainBG_3: #f8f8fa;
+
+
+//主要boder
+$main_Border: #4c4c4c;
+$main_Border_2: #dbdef4;
+
+//主要文字色
+$main_Color:#333333;
+$main_Color2:#ffffff;
+$main_Color3:#666666;
+
+//header上
+$headerTop_Btn: #ffffff;
+$headerTop_Border: #4a59ed;
+$headerTop_Remind:#0df;
+$headerTop_Hover:#0068ff;
+$headerTop_before:#ffff00;
+@mixin headerTopInput {
+    border: solid 1px #e6e6e6;
+    background: #ffffff;
+    color: #333333;
+    border-radius: 3px;
+    padding: 0 5px 0 30px;
+    font-size: 14px;
+}
+
+//transferInfo(top上的下拉bar)
+$transferInfo_bg:#666;
+$transferInfo_Border:#737373;
+$transferInfo_Coler:#ffffff;
+
+//語言列
+@mixin langStyle {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+
+    option {
+        background: #ffffff;
+        color: #333333;
+    }
+}
+
+//header下
+$headerBottom_Color: #333333;
+$headerBottom_Border: #4a59ed;
+$headerBottom_trianGle:#4a59ed;
+
+//footer
+$footer_bg:#333333;
+$footer_bg2:#e6e6e6;
+
+//常見金色漸層Btn
+@mixin mainBtn {
+    background: linear-gradient(#f1d7b7,#cca172 50%,#f1c999);
+    border:1px solid #d2a269;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 16px;
+
+    &:active,&.active {
+        background: linear-gradient(0deg,#f1d7b7 0,#cca172 50%,#f1c999);
+    }
+}
+
+//sideBar
+@mixin sideBar {
+    background:linear-gradient(#3179ff,#784dff);
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $backgroundColor_1: #3d4cce;
 $backgroundColor_2: #0068ff;
 $backgroundColor_3: #f8f8fa;
@@ -392,20 +485,6 @@ input:read-only {
 
 
 ///////select
-
-
-@mixin langStyle {
-    background: none;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 14px;
-
-    option {
-        background: #ffffff;
-        color: #333333;
-    }
-}
 @mixin selectStyle_1 {
     border-radius: 3px;
     border: solid 1px #e6e6e6;
