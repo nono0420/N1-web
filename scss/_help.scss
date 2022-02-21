@@ -12,7 +12,7 @@
         justify-content: space-between;
         
         .nav {
-            background: $backgroundColor_8;
+            background: $mainBG_2;
             width: 390px;
             height: auto;
             box-shadow: 0 5px 10px -5px $boxShadow_3;
@@ -42,7 +42,7 @@
                     p {
                         display: flex;
                         align-items: center;
-                        color: $fontColor_2;
+                        color: $main_Color;
                         font-size: 22px;
                         font-weight: bold;
     
@@ -92,11 +92,11 @@
                             align-items: center;
                             font-size: 18px;
                             font-weight: bold;
-                            color: $fontColor_8;
+                            color: $main_Color3;
     
                             &:hover,&:active,&.active {
-                                background: $backgroundColor_11;
-                                color: $fontColor_5;
+                                background: $mainBG_4;
+                                color: $main_Color;
                             }
                         }
                     }
@@ -107,7 +107,7 @@
         .helpWrap {
             width: 980px;
             height: auto;
-            background: $backgroundColor_3;
+            background: $mainBG_2;
             box-shadow: 0px 5px 10px -5px $boxShadow_3;
             border-radius: 5px;
             margin-bottom: 40px;
@@ -123,7 +123,7 @@
 
                 h2 {
                     margin: 49px 0;
-                    color: $fontColor_3;
+                    color:$main_Color4;
                     font-size: 22px;
                     font-weight: bold;
 
@@ -133,7 +133,7 @@
                 }
                 
                 h3 {
-                    color: $fontColor_3;
+                    color: $main_Color;
                     font-size: 15px;
                     font-weight: bold;
                     margin-bottom: 13px;
@@ -141,13 +141,13 @@
 
                 p {
                     margin-bottom: 23px;
-                    color: $fontColor_10;
+                    color:$main_Color;
                     font-size: 16px;
                     line-height: 24px;
                 }
 
                 a {
-                    color: $fontColor_7;
+                    color:$main_Color5;
                     text-decoration: none;
                     font-weight: bold;
                 }
@@ -185,10 +185,10 @@
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
-                            background: $backgroundColor_4;
+                            background: $mainBG_1;
 
                             p {
-                                color: $fontColor_3;
+                                color: $main_Color4;
                                 font-size: 16px;
                                 margin: 0;
                             }
@@ -204,7 +204,7 @@
                         .content {
                             width: 100%;
                             height: auto;
-                            background: $backgroundColor_4;
+                            background: $mainBG_1;
                         }
                     }
                 }

@@ -2,16 +2,80 @@
 $mainBG_1: #3d4cce;
 $mainBG_2:#ffffff;
 $mainBG_3: #f8f8fa;
-
-
+$mainBG_4: #f0f5ff;
+$mainBG_5: #0068ff;
 //主要boder
 $main_Border: #4c4c4c;
 $main_Border_2: #dbdef4;
-
+$main_Border_3: #b3b3b3;
+$main_Border_4: #3d4cce;
 //主要文字色
 $main_Color:#333333;
 $main_Color2:#ffffff;
 $main_Color3:#666666;
+$main_Color4:#3d4cce;
+$main_Color5:#e11515;
+$main_Color6: #4d4d4d;
+$main_Color7: #4a59ed;
+//主要陰影
+$boxShadow_1:  #dee1f5;
+$boxShadow_2: #c0c0c0;
+$boxShadow_3: #00000033;
+
+//remind
+$Remindcolor:#999999;
+
+//等級
+$level_low:#3d4cce;
+$level_middle:#ff8d68;
+$level_high:#0df;
+
+//個人資料內頁資料順序圓框
+$bAse:#c7c7c7;
+$bAseactive:#05b900;
+
+
+//jumpWindow
+$jumpWindow_Fli:#000000a3;
+$jumpWindow_bg:#f8f8fa;
+$jumpWindow_color:#333333;
+$jumpWindow_color2:#ffffff;
+$jumpWindow_color3:#666666;
+$jumpWindow_border:#b3b3b3;
+$jumpWindow_borderActive:#4a59ed;
+$jumpWindow_title:linear-gradient(135deg,#7c4dff,#887aff);
+
+//投注金額按鈕
+@mixin buttonStyle_put {
+    font-size: 15px;
+    font-weight: bold;
+    color: #999999;
+    background: linear-gradient(to bottom,#ffffff 40%,#f4f4f4 100%);
+    border: solid 1px #e8e8e8;
+    border-radius: 3px;
+    letter-spacing: 1px;
+
+    &:hover,&:active,&.active {
+        background: #4a59ed;
+        color: #ffffff;
+    }
+}
+
+//input
+@mixin inputStyle {
+    border: solid 1px #dedede;
+    background: transparent;
+    text-align: left;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@mixin inputStyle_1 {
+    border: none;
+    background: transparent;
+    color: #000;
+}
 
 //header上
 $headerTop_Btn: #ffffff;
@@ -19,6 +83,7 @@ $headerTop_Border: #4a59ed;
 $headerTop_Remind:#0df;
 $headerTop_Hover:#0068ff;
 $headerTop_before:#ffff00;
+
 @mixin headerTopInput {
     border: solid 1px #e6e6e6;
     background: #ffffff;
@@ -52,6 +117,88 @@ $headerBottom_Color: #333333;
 $headerBottom_Border: #4a59ed;
 $headerBottom_trianGle:#4a59ed;
 
+//跑馬燈 
+$marqueeArea_BG:#f8f8fa;
+$marqueeArea_Color:#333333;
+$marqueeArea_Shadow:#dee1f5;
+
+//solt遊戲框
+$gamebg:#f8f8fa;
+$gameboder:#b3b3b3;
+$game_shadow:#00000033;
+$game_color:#333333;
+$game_hoverBG:#0000006e;
+@mixin game_btn {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    background: linear-gradient(to bottom,#ffffff 40%,#f4f4f4 100%);
+    border: solid 1px #e8e8e8;
+    border-radius: 3px;
+    letter-spacing: 1px;
+
+    &:hover,&:active,&.active {
+        background: #4a59ed;
+        color: #ffffff;
+    }
+}
+@mixin game_Lastbtn {
+    background: linear-gradient(to bottom,#9ddbec 0%,#0282cc 50%,#82aeeb 100%);
+    border: solid 1px #0282cc;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 14px;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#9ddbec 0%,#0282cc 50%,#82aeeb 100%);
+    }
+}
+
+//存提頁
+//lv
+$LV_Bg:#cfb53d;
+$LV_Color:#ffffff;
+//轉存提小按鈕
+@mixin inout_Btn {
+    background: #e6ebff;
+    border: 1px solid #85b5fe;
+    color: #4a59ed;
+    border-radius: 50%;
+    font-size: 21px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+
+    &:hover,&:active,&.active {
+        background: #4a59ed;
+        color: #ffffff;
+    }
+}
+
+//金色border&字
+@mixin smallBtn {
+    border: solid 1px #cca172;
+    color: #cca172;
+}
+
+//tabs
+@mixin tabs_btn {
+    background: #999;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(135deg,#2e7bff,#734af6);
+    }
+}
+
+
 //footer
 $footer_bg:#333333;
 $footer_bg2:#e6e6e6;
@@ -66,9 +213,15 @@ $footer_bg2:#e6e6e6;
     font-weight: bold;
     padding: 0 16px;
 
-    &:active,&.active {
-        background: linear-gradient(0deg,#f1d7b7 0,#cca172 50%,#f1c999);
+    &:hover,&:active,&.active {
+        background: linear-gradient(to top,#f1d7b7 0,#cca172 50%,#f1c999);
     }
+}
+
+//disable
+@mixin disable {
+    background:#c7c7c7;
+    color: #ffffff;
 }
 
 //sideBar
@@ -76,6 +229,17 @@ $footer_bg2:#e6e6e6;
     background:linear-gradient(#3179ff,#784dff);
     color: #ffffff;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

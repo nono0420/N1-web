@@ -1,5 +1,5 @@
 .eventWrap {
-    background: $backgroundColor_7;
+    background: $mainBG_3;
 
     .eventTitle {
         width: 100%;
@@ -10,7 +10,7 @@
     
         p {
             font-size: 61px;
-            color: $fontColor_1;
+            color:$main_Color2;
             font-weight: bold;
         }
     }
@@ -27,7 +27,7 @@
             width: 357px;
             margin-right: 13px;
             height: auto;
-            background: $backgroundColor_8;
+            background: $mainBG_2;
             box-shadow: 0 5px 10px -5px $boxShadow_3;
 
             ul {
@@ -39,12 +39,12 @@
                     height: 60px;
                     display: flex;
                     align-items: center;
-                    border-bottom: solid 1px $borderColor_3;
+                    border-bottom: solid 1px $main_Border_2;
                     position: relative;
                     cursor: pointer;
 
                     &:hover,&:active,&.active {
-                        background: $backgroundColor_11;
+                        background: $mainBG_4;
 
                         &::before {
                             content: "";
@@ -53,7 +53,7 @@
                             height: 100%;
                             left: 0px;
                             top: 0px;
-                            background: $backgroundColor_2;
+                            background: $mainBG_5;
                         }
                     }
 
@@ -67,7 +67,7 @@
                     span {
                         font-weight: bold;
                         font-size: 22px;
-                        color: $fontColor_2;
+                        color: $main_Color;
                     }
                 }
             }
@@ -82,7 +82,7 @@
             }
 
             .eventBox {
-                background: $backgroundColor_8;
+                background: $mainBG_2;
                 box-shadow: 0 5px 10px -5px $boxShadow_3;
                 display: flex;
                 margin-bottom: 20px;
@@ -121,14 +121,13 @@
                             width: 117px;
                             height: 37px;
                             border-radius: 3px;
-                            color: $fontColor_1;
                             font-size: 14px;
                             font-weight: bold;
                             padding: 0 16px;
                             text-align: center;
                             line-height: 37px;
-                            background: $backgroundColor_12;
                             cursor: no-drop;
+                            @include disable;
                         }
                     }
                 }
@@ -138,7 +137,7 @@
         .eventDetail {
             display: none;
             width: 1028px;
-            background: $backgroundColor_3;
+            background: $mainBG_2;
             box-shadow: 0px 5px 10px -5px $boxShadow_3;
 
             &.display {
@@ -151,14 +150,14 @@
                 p {
                     font-size: 34px;
                     font-weight: bold;
-                    color: $fontColor_3;
+                    color: $main_Color;
                 }
 
                 button {
                     width: 135px;
                     height: 36px;
                     margin-top: 18px;
-                    @include buttonStyle_1;
+                    @include mainBtn;
 
                     i {
                         display: inline-block;
@@ -174,16 +173,17 @@
                 padding: 28px 0 30px;
                 display: flex;
                 flex-direction: column;
-                border-bottom: solid 1px $borderColor_2;
+                border-bottom: solid 1px $main_Border_3;
 
                 span {
-                    color: $fontColor_10;
+                    color:  $main_Color;
                     font-size: 20px;
 
                     &.dateTitle {
                         font-size: 26px;
                         font-weight: bold;
                         margin-bottom: 28px;
+                        color: $main_Color4;
                     }
                 }
             }
@@ -193,12 +193,13 @@
                 
                 p {
                     font-size: 16px;
-                    color: $fontColor_10;
+                    color: $main_Color;
 
                     &.infoTitle {
                         font-size: 26px;
                         font-weight: bold;
                         margin-bottom: 30px;
+                        color: $main_Color4;
                     }
                 }
             }

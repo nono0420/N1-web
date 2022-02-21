@@ -4,8 +4,9 @@ main {
         width: 1400px;
         margin: auto;
         height: 35px;
-        background: $backgroundColor_3;
-        box-shadow: 0 0 13px 3px $boxShadow_1;
+        background: $marqueeArea_BG;
+        box-shadow: 0 0 13px 3px $marqueeArea_Shadow;
+        color: $marqueeArea_Color;
         border-radius: 35px;
         margin-bottom: 20px;
 

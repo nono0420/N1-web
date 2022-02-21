@@ -4,7 +4,7 @@
     width: 100%;
     height: 100%;
     z-index: 10;
-    background: $backgroundColor_9;
+    background: $jumpWindow_Fli;
     top: 0px;
     left: 0px;
     align-items: center;
@@ -17,7 +17,7 @@
     .jumpWindow {
         width: 480px;
         height: auto;
-        background: $backgroundColor_3;
+        background: $jumpWindow_bg;
         border-radius: 5px;
         overflow: hidden;
 
@@ -38,20 +38,20 @@
                     width: 322px;
                     height: 42px;
                     margin-top: 20px;
-                    @include inputStyle_2;
+                    @include inputStyle;
                 }
     
                 button {
                     width: 322px;
                     height: 42px;
                     margin-top: 15px;
-                    @include buttonStyle_3;
+                    @include mainBtn;
                 }
     
                 p {
                     font-size: 14px;
                     margin: 30px 0;
-                    color: $fontColor_7;
+                    color: $main_Color5;
                 }
             }
         }
@@ -80,7 +80,7 @@
 
             .nav {
                 margin: 30px 15px 8px;
-                border-bottom: solid 1px $borderColor_2;
+                border-bottom: solid 1px $jumpWindow_border;
                 display: flex;
 
                 li {
@@ -92,13 +92,12 @@
                     padding: 0 40px;
                     cursor: pointer;
                     border-bottom: solid 3px transparent;
-                    color: $fontColor_2;
+                    color: $jumpWindow_color;
                     display: flex;
                     align-items: center;
 
                     &:hover,&:active,&.active {
-                        color: $fontColor_2;
-                        border-color: $borderColor_1;
+                        border-color: $jumpWindow_borderActive;
                     }
 
                     &::before {
@@ -109,7 +108,7 @@
                         top: 50%;
                         transform: translateY(-50%);
                         right: -1px;
-                        background: $backgroundColor_1;
+                        background: $jumpWindow_borderActive;
                     }
                 }
             }
@@ -128,7 +127,7 @@
                     padding: 0 5px;
                     display: flex;
                     align-items: center;
-                    border-bottom: solid 1px $borderColor_2;
+                    border-bottom: solid 1px $jumpWindow_border;
 
                     div {
                         width: 100%;
@@ -145,12 +144,12 @@
                                 text-overflow: ellipsis;
                                 overflow: hidden;
                                 max-width: 670px;
-                                color: $fontColor_2;
+                                color: $jumpWindow_color;
                                 font-size: 16px;
                             }
 
                             &.date {
-                                color: $fontColor_5;
+                                color: $jumpWindow_color3;
                                 font-size: 14px;
                             }
                         }
@@ -167,7 +166,7 @@
             }
 
             .content {
-                color: $fontColor_3;
+                color: $jumpWindow_color;
                 font-size: 16px;
                 padding: 24px 80px;
                 letter-spacing: 1px;
@@ -202,12 +201,12 @@
                 justify-content: center;
                 align-items: center;
                 padding: 15px 0;
-                border-bottom: solid 1px $borderColor_2;
+                border-bottom: solid 1px $jumpWindow_border;
                 font-size: 16px;
-                color: $fontColor_2;
+                color: $jumpWindow_color;
 
                 p {
-                    color: $fontColor_4;
+                    color: $jumpWindow_color3;
                     font-size: 26px;
                     font-weight: bold;
                     margin-top: 8px;
@@ -224,7 +223,7 @@
                     justify-content: flex-start;
                     width: 100%;
                     height: 48px;
-                    border-bottom: solid 1px $borderColor_2;
+                    border-bottom: solid 1px $jumpWindow_border;
 
                     &:last-child {
 
@@ -248,11 +247,11 @@
                     
                     div {
                         font-size: 14px;
-                        color: $fontColor_2;
+                        color: $jumpWindow_color;
 
                         &.name {
                             width: 152px;
-                            border-right: solid 1px $borderColor_2;
+                            border-right: solid 1px$jumpWindow_border;
                             padding-left: 30px;
                         }
 
@@ -283,12 +282,12 @@
                                 p {
                                     width: 100%;
                                     height: 100%;
-                                    background: $backgroundColor_13;
+                                    background: $jumpWindow_bg;
                                     border-radius: 3px;
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
-                                    color: $fontColor_1;
+                                    color: $jumpWindow_color;
 
                                     i {
                                         display: block;
@@ -299,7 +298,7 @@
                                         height: 0px;
                                         border-style: solid;
                                         border-width: 0px 6px 8px;
-                                        border-color: $borderColor_9 transparent;
+                                        border-color: $jumpWindow_border transparent;
                                     }
                                 }
                             }
@@ -332,7 +331,7 @@
                     input {
                         width: 100%;
                         height: 42px;
-                        @include inputStyle_3;
+                        @include inputStyle;
                     }
                 }
 
@@ -361,7 +360,7 @@
                 p {
                     font-size: 24px;
                     text-align: left;
-                    color: $fontColor_2;
+                    color:$jumpWindow_color;
                 }
 
                 i {
@@ -377,7 +376,7 @@
                 .num {
                     font-size: 20px;
                     letter-spacing: 2px;
-                    color: $fontColor_2;
+                    color: $jumpWindow_color;
                 }
 
                 table {
@@ -390,9 +389,9 @@
                             width: 25%;
                             vertical-align: middle;
                             height: 35px;
-                            border-bottom: solid 2px $borderColor_5;
+                            border-bottom: solid 2px $jumpWindow_border;
                             font-size: 12px;
-                            color: $fontColor_2;
+                            color: $jumpWindow_color;
                         }
                     }
                 }
@@ -405,7 +404,7 @@
                     justify-content: center;
                     letter-spacing: 1px;
                     font-weight: bold;
-                    color: $fontColor_7;
+                    color:$main_Color5;
                 }
             }
         }
@@ -431,7 +430,7 @@
                 p {
                     font-size: 16px;
                     letter-spacing: 1px;
-                    color: $fontColor_3;
+                    color: $jumpWindow_color3;
                     margin-top: 10px;
                 }
             }
@@ -502,13 +501,13 @@
                         width: 120px;
                         font-size: 16px;
                         font-weight: bold;
-                        color: $fontColor_2;
+                        color: $jumpWindow_color;
                     }
 
                     input {
                         width: 267px;
                         height: 42px;
-                        @include inputStyle_3;
+                        @include inputStyle;
                     }
 
                     .trans_arrow {
@@ -526,7 +525,7 @@
                         button {
                             width: 85px;
                             height: 32px;
-                            @include buttonStyle_4;
+                            @include  buttonStyle_put;
                             margin: 0 2px 6px 0;
 
                             &:nth-of-type(3n) {
@@ -539,7 +538,7 @@
                     .check {
                         width: 267px;
                         height: 42px;
-                        @include buttonStyle_3;
+                        @include mainBtn;
                         margin-bottom: 20px;
                     }
                 }
@@ -550,12 +549,12 @@
                 height: auto;
                 text-align: center;
                 padding: 20px 0;
-                border-top: solid 1px $borderColor_2;
+                border-top: solid 1px $jumpWindow_border;
 
                 button {
                     width: 351px;
                     height: 42px;
-                    @include buttonStyle_3;
+                    @include  mainBtn;
                 }
             }
         }
@@ -565,11 +564,11 @@
             height: 50px;
             display: flex;
             align-items: center;
-            background: $linear_1;
+            background: $jumpWindow_title;
             position: relative;
 
             p {
-                color: $fontColor_1;
+                color: $jumpWindow_color2;
                 font-size: 18px;
                 font-weight: bold;
                 text-align: center;

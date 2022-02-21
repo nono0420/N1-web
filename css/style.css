@@ -893,9 +893,9 @@ html body header .top .user li:not(.platform) .loginForm button {
   font-weight: bold;
   padding: 0 16px;
 }
-html body header .top .user li:not(.platform) .loginForm button:active, html body header .top .user li:not(.platform) .loginForm button.active {
+html body header .top .user li:not(.platform) .loginForm button:hover, html body header .top .user li:not(.platform) .loginForm button:active, html body header .top .user li:not(.platform) .loginForm button.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(0deg, #f1d7b7 0, #cca172 50%, #f1c999);
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body header .top .user li:not(.platform) .lv {
   color: #0df;
@@ -1210,6 +1210,7 @@ html body main .marqueeArea {
   background: #f8f8fa;
   -webkit-box-shadow: 0 0 13px 3px #dee1f5;
           box-shadow: 0 0 13px 3px #dee1f5;
+  color: #333333;
   border-radius: 35px;
   margin-bottom: 20px;
 }
@@ -1406,59 +1407,6 @@ html body .mainWrap .center .typeList li .wordBox {
   right: 0px;
   width: 46%;
 }
-html body .mainWrap .center .typeList li .wordBox p {
-  text-align: center;
-  padding-top: 8px;
-  font-weight: bold;
-}
-html body .mainWrap .center .typeList li .wordBox p.game {
-  font-size: 42px;
-  color: #4a59ed;
-}
-html body .mainWrap .center .typeList li .wordBox p.type {
-  font-size: 23px;
-  color: #0df;
-}
-html body .mainWrap .center .downBar {
-  width: 100%;
-  height: 120px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #7c4dff, #887aff);
-  -webkit-box-shadow: 0px 5px 10px 0px #c0c0c0;
-          box-shadow: 0px 5px 10px 0px #c0c0c0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-html body .mainWrap .center .downBar li {
-  width: 25%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: bold;
-  color: #333333;
-  border-right: solid 1px #4c4c4c;
-  cursor: pointer;
-}
-html body .mainWrap .center .downBar li:last-child {
-  border: none;
-}
-html body .mainWrap .center .downBar li i {
-  width: 46px;
-  height: 46px;
-  margin-bottom: 14px;
-}
 html body footer {
   width: 100%;
   height: auto;
@@ -1524,7 +1472,7 @@ html body .filter {
   width: 100%;
   height: 100%;
   z-index: 10;
-  background: #0000005c;
+  background: #000000a3;
   top: 0px;
   left: 0px;
   -webkit-box-align: center;
@@ -1568,29 +1516,29 @@ html body .filter .jumpWindow.forgetPassword form input {
   width: 322px;
   height: 42px;
   margin-top: 20px;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
   background: transparent;
-  text-align: center;
+  text-align: left;
   border-radius: 3px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
 }
 html body .filter .jumpWindow.forgetPassword form button {
   width: 322px;
   height: 42px;
   margin-top: 15px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .filter .jumpWindow.forgetPassword form button:hover, html body .filter .jumpWindow.forgetPassword form button:active, html body .filter .jumpWindow.forgetPassword form button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .filter .jumpWindow.forgetPassword form p {
   font-size: 14px;
@@ -1615,7 +1563,7 @@ html body .filter .jumpWindow.news .title i {
 }
 html body .filter .jumpWindow.news .nav {
   margin: 30px 15px 8px;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #b3b3b3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1638,7 +1586,6 @@ html body .filter .jumpWindow.news .nav li {
           align-items: center;
 }
 html body .filter .jumpWindow.news .nav li:hover, html body .filter .jumpWindow.news .nav li:active, html body .filter .jumpWindow.news .nav li.active {
-  color: #333333;
   border-color: #4a59ed;
 }
 html body .filter .jumpWindow.news .nav li::before {
@@ -1650,7 +1597,7 @@ html body .filter .jumpWindow.news .nav li::before {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: -1px;
-  background: #3d4cce;
+  background: #4a59ed;
 }
 html body .filter .jumpWindow.news .content {
   display: none;
@@ -1669,7 +1616,7 @@ html body .filter .jumpWindow.news .content li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #b3b3b3;
 }
 html body .filter .jumpWindow.news .content li div {
   width: 100%;
@@ -1706,7 +1653,7 @@ html body .filter .jumpWindow.plsGo.display {
   display: block;
 }
 html body .filter .jumpWindow.plsGo .content {
-  color: #4a59ed;
+  color: #333333;
   font-size: 16px;
   padding: 24px 80px;
   letter-spacing: 1px;
@@ -1729,9 +1676,9 @@ html body .filter .jumpWindow.plsGo .btnBox button {
   font-weight: bold;
   padding: 0 16px;
 }
-html body .filter .jumpWindow.plsGo .btnBox button:active, html body .filter .jumpWindow.plsGo .btnBox button.active {
+html body .filter .jumpWindow.plsGo .btnBox button:hover, html body .filter .jumpWindow.plsGo .btnBox button:active, html body .filter .jumpWindow.plsGo .btnBox button.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(0deg, #f1d7b7 0, #cca172 50%, #f1c999);
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .filter .jumpWindow.score {
   display: none;
@@ -1756,12 +1703,12 @@ html body .filter .jumpWindow.score .total {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px 0;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #b3b3b3;
   font-size: 16px;
   color: #333333;
 }
 html body .filter .jumpWindow.score .total p {
-  color: #0df;
+  color: #666666;
   font-size: 26px;
   font-weight: bold;
   margin-top: 8px;
@@ -1782,7 +1729,7 @@ html body .filter .jumpWindow.score ul li {
           justify-content: flex-start;
   width: 100%;
   height: 48px;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #b3b3b3;
 }
 html body .filter .jumpWindow.score ul li:last-child .point .notice {
   top: -40px;
@@ -1799,7 +1746,7 @@ html body .filter .jumpWindow.score ul li div {
 }
 html body .filter .jumpWindow.score ul li div.name {
   width: 152px;
-  border-right: solid 1px #4c4c4c;
+  border-right: solid 1px #b3b3b3;
   padding-left: 30px;
 }
 html body .filter .jumpWindow.score ul li div.point {
@@ -1829,7 +1776,7 @@ html body .filter .jumpWindow.score ul li div.point .notice {
 html body .filter .jumpWindow.score ul li div.point .notice p {
   width: 100%;
   height: 100%;
-  background: #cfb53d;
+  background: #f8f8fa;
   border-radius: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1840,7 +1787,7 @@ html body .filter .jumpWindow.score ul li div.point .notice p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #ffffff;
+  color: #333333;
 }
 html body .filter .jumpWindow.score ul li div.point .notice p i {
   display: block;
@@ -1851,7 +1798,7 @@ html body .filter .jumpWindow.score ul li div.point .notice p i {
   height: 0px;
   border-style: solid;
   border-width: 0px 6px 8px;
-  border-color: #cca172 transparent;
+  border-color: #b3b3b3 transparent;
 }
 html body .filter .jumpWindow.passwordWindow form .content {
   width: 100%;
@@ -1871,15 +1818,12 @@ html body .filter .jumpWindow.passwordWindow form .content li:last-child {
 html body .filter .jumpWindow.passwordWindow form .content input {
   width: 100%;
   height: 42px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
 }
 html body .filter .jumpWindow.passwordWindow form .btnBox {
   padding-bottom: 43px;
@@ -1897,9 +1841,9 @@ html body .filter .jumpWindow.passwordWindow form .btnBox button {
   font-weight: bold;
   padding: 0 16px;
 }
-html body .filter .jumpWindow.passwordWindow form .btnBox button:active, html body .filter .jumpWindow.passwordWindow form .btnBox button.active {
+html body .filter .jumpWindow.passwordWindow form .btnBox button:hover, html body .filter .jumpWindow.passwordWindow form .btnBox button:active, html body .filter .jumpWindow.passwordWindow form .btnBox button.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(0deg, #f1d7b7 0, #cca172 50%, #f1c999);
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .filter .jumpWindow.walletRecord {
   width: 976px;
@@ -1937,7 +1881,7 @@ html body .filter .jumpWindow.walletRecord .content table tr th {
   width: 25%;
   vertical-align: middle;
   height: 35px;
-  border-bottom: solid 2px #f08a8a;
+  border-bottom: solid 2px #b3b3b3;
   font-size: 12px;
   color: #333333;
 }
@@ -1977,7 +1921,7 @@ html body .filter .jumpWindow.checkEvent .content .imgBox {
 html body .filter .jumpWindow.checkEvent .content p {
   font-size: 16px;
   letter-spacing: 1px;
-  color: #4a59ed;
+  color: #666666;
   margin-top: 10px;
 }
 html body .filter .jumpWindow.checkEvent .btnBox {
@@ -1998,9 +1942,9 @@ html body .filter .jumpWindow.checkEvent .btnBox button {
   font-weight: bold;
   padding: 0 16px;
 }
-html body .filter .jumpWindow.checkEvent .btnBox button:active, html body .filter .jumpWindow.checkEvent .btnBox button.active {
+html body .filter .jumpWindow.checkEvent .btnBox button:hover, html body .filter .jumpWindow.checkEvent .btnBox button:active, html body .filter .jumpWindow.checkEvent .btnBox button.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(0deg, #f1d7b7 0, #cca172 50%, #f1c999);
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .filter .jumpWindow.betWindow {
   display: none;
@@ -2070,15 +2014,12 @@ html body .filter .jumpWindow.betWindow form .row p {
 html body .filter .jumpWindow.betWindow form .row input {
   width: 267px;
   height: 42px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
 }
 html body .filter .jumpWindow.betWindow form .row .trans_arrow {
   display: block;
@@ -2116,41 +2057,41 @@ html body .filter .jumpWindow.betWindow form .row .check {
   width: 267px;
   height: 42px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
   margin-bottom: 20px;
 }
 html body .filter .jumpWindow.betWindow form .row .check:hover, html body .filter .jumpWindow.betWindow form .row .check:active, html body .filter .jumpWindow.betWindow form .row .check.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .filter .jumpWindow.betWindow .enterGame {
   width: 100%;
   height: auto;
   text-align: center;
   padding: 20px 0;
-  border-top: solid 1px #4c4c4c;
+  border-top: solid 1px #b3b3b3;
 }
 html body .filter .jumpWindow.betWindow .enterGame button {
   width: 351px;
   height: 42px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .filter .jumpWindow.betWindow .enterGame button:hover, html body .filter .jumpWindow.betWindow .enterGame button:active, html body .filter .jumpWindow.betWindow .enterGame button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .filter .jumpWindow .title {
   width: 100%;
@@ -2267,17 +2208,6 @@ html body .gameWrap .content .btnBox .innBox ul li p {
   color: #333333;
   padding-top: 10px;
 }
-html body .gameWrap .content .btnBox .innBox ul li .imgBox {
-  border: solid 1px #4c4c4c;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 5px 10px 0 #c0c0c0;
-          box-shadow: 0 5px 10px 0 #c0c0c0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e6e6e6));
-  background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  cursor: pointer;
-}
 html body .gameWrap .content.livePage .btnBox .innBox ul li {
   margin: 0 15px 5px 0;
 }
@@ -2337,7 +2267,7 @@ html body .gameWrap .slotCenter .slotBody .nav ul li {
 }
 html body .gameWrap .slotCenter .slotBody .nav ul li:hover, html body .gameWrap .slotCenter .slotBody .nav ul li:active, html body .gameWrap .slotCenter .slotBody .nav ul li.active {
   color: #3d4cce;
-  border-color: #4a59ed;
+  border-color: #3d4cce;
 }
 html body .gameWrap .slotCenter .slotBody .nav ul li:hover::before, html body .gameWrap .slotCenter .slotBody .nav ul li:active::before, html body .gameWrap .slotCenter .slotBody .nav ul li.active::before {
   content: "";
@@ -2350,7 +2280,7 @@ html body .gameWrap .slotCenter .slotBody .nav ul li:hover::before, html body .g
   bottom: 0;
   border-style: solid;
   border-width: 0 6px 6px;
-  border-color: #4a59ed transparent;
+  border-color: #3d4cce transparent;
 }
 html body .gameWrap .slotCenter .slotBody .nav .search {
   position: relative;
@@ -2423,20 +2353,20 @@ html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfNa
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all {
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
   width: 137px;
   height: 40px;
   font-size: 18px;
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all:hover, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all:active, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all i {
   display: inline-block;
@@ -2514,7 +2444,7 @@ html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .game
   position: absolute;
   width: 100%;
   height: 165px;
-  background: #f4f4f4;
+  background: #0000006e;
   top: 0px;
   left: 0px;
   display: -webkit-box;
@@ -2541,7 +2471,7 @@ html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .game
   height: 40px;
   font-size: 15px;
   font-weight: bold;
-  color: #999999;
+  color: #333333;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#f4f4f4));
   background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
   border: solid 1px #e8e8e8;
@@ -2606,7 +2536,7 @@ html body .gameWrap .downBar li i {
   margin-bottom: 14px;
 }
 html body .eventWrap {
-  background: #f4f4f4;
+  background: #f8f8fa;
 }
 html body .eventWrap .eventTitle {
   width: 100%;
@@ -2662,7 +2592,7 @@ html body .eventWrap .eventBody .side ul li {
   cursor: pointer;
 }
 html body .eventWrap .eventBody .side ul li:hover, html body .eventWrap .eventBody .side ul li:active, html body .eventWrap .eventBody .side ul li.active {
-  background: #fff9f8;
+  background: #f0f5ff;
 }
 html body .eventWrap .eventBody .side ul li:hover::before, html body .eventWrap .eventBody .side ul li:active::before, html body .eventWrap .eventBody .side ul li.active::before {
   content: "";
@@ -2742,27 +2672,27 @@ html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button {
   font-weight: bold;
   padding: 0 16px;
 }
-html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button:active, html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button.active {
+html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button:hover, html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button:active, html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(0deg, #f1d7b7 0, #cca172 50%, #f1c999);
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .eventWrap .eventBody .eventList .eventBox ul .btnBox .disable {
   width: 117px;
   height: 37px;
   border-radius: 3px;
-  color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   padding: 0 16px;
   text-align: center;
   line-height: 37px;
-  background: #c7c7c7;
   cursor: no-drop;
+  background: #c7c7c7;
+  color: #ffffff;
 }
 html body .eventWrap .eventBody .eventDetail {
   display: none;
   width: 1028px;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0px 5px 10px -5px #00000033;
           box-shadow: 0px 5px 10px -5px #00000033;
 }
@@ -2775,7 +2705,7 @@ html body .eventWrap .eventBody .eventDetail .title {
 html body .eventWrap .eventBody .eventDetail .title p {
   font-size: 34px;
   font-weight: bold;
-  color: #4a59ed;
+  color: #333333;
 }
 html body .eventWrap .eventBody .eventDetail .title button {
   width: 135px;
@@ -2790,9 +2720,9 @@ html body .eventWrap .eventBody .eventDetail .title button {
   font-weight: bold;
   padding: 0 16px;
 }
-html body .eventWrap .eventBody .eventDetail .title button:active, html body .eventWrap .eventBody .eventDetail .title button.active {
+html body .eventWrap .eventBody .eventDetail .title button:hover, html body .eventWrap .eventBody .eventDetail .title button:active, html body .eventWrap .eventBody .eventDetail .title button.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(0deg, #f1d7b7 0, #cca172 50%, #f1c999);
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .eventWrap .eventBody .eventDetail .title button i {
   display: inline-block;
@@ -2810,28 +2740,30 @@ html body .eventWrap .eventBody .eventDetail .date {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #b3b3b3;
 }
 html body .eventWrap .eventBody .eventDetail .date span {
-  color: #cfa678;
+  color: #333333;
   font-size: 20px;
 }
 html body .eventWrap .eventBody .eventDetail .date span.dateTitle {
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 28px;
+  color: #3d4cce;
 }
 html body .eventWrap .eventBody .eventDetail .info {
   padding: 25px 40px;
 }
 html body .eventWrap .eventBody .eventDetail .info p {
   font-size: 16px;
-  color: #cfa678;
+  color: #333333;
 }
 html body .eventWrap .eventBody .eventDetail .info p.infoTitle {
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 30px;
+  color: #3d4cce;
 }
 html body .eventWrap .eventBody .eventDetail .detailFooter {
   width: 100%;
@@ -2839,7 +2771,7 @@ html body .eventWrap .eventBody .eventDetail .detailFooter {
   padding-bottom: 60px;
 }
 html body .innerPage {
-  background: #f4f4f4;
+  background: #f8f8fa;
   padding: 20px 0 40px;
 }
 html body .innerPage .center {
@@ -2862,7 +2794,7 @@ html body .innerPage .center hr {
   margin: 0;
 }
 html body .innerPage .center .innerSide {
-  background: #f8f8fa;
+  background: #ffffff;
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
@@ -3049,7 +2981,7 @@ html body .innerPage .center .memberWrap {
 html body .innerPage .center .memberWrap .top {
   width: 100%;
   height: auto;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
   border-radius: 5px;
@@ -3069,8 +3001,8 @@ html body .innerPage .center .memberWrap .top h1 {
   padding: 0 20px;
   font-size: 20px;
   letter-spacing: 2px;
-  color: #4a59ed;
-  border-bottom: solid 1px #4c4c4c;
+  color: #333333;
+  border-bottom: solid 1px #dbdef4;
   font-weight: bold;
 }
 html body .innerPage .center .memberWrap .top .content {
@@ -3086,16 +3018,16 @@ html body .innerPage .center .memberWrap .top .content p {
 }
 html body .innerPage .center .memberWrap .top .content p.remind {
   margin-top: 6px;
-  color: #e11515;
+  color: #999999;
 }
 html body .innerPage .center .memberWrap .top .content p em.low {
-  color: #0df;
+  color: #3d4cce;
 }
 html body .innerPage .center .memberWrap .top .content p em.middle {
-  color: #00a99d;
+  color: #ff8d68;
 }
 html body .innerPage .center .memberWrap .top .content p em.high {
-  color: #00a99d;
+  color: level_high;
 }
 html body .innerPage .center .memberWrap .top .content .level {
   margin-top: 14px;
@@ -3117,7 +3049,7 @@ html body .innerPage .center .memberWrap .top .content .level li {
   font-weight: bold;
 }
 html body .innerPage .center .memberWrap .top .content .level li.active i {
-  background-color: #0000005c;
+  background-color: #05b900;
 }
 html body .innerPage .center .memberWrap .top .content .level li i {
   display: block;
@@ -3141,31 +3073,26 @@ html body .innerPage .center .memberWrap .bottom .tabs li {
   min-width: 105px;
   height: 35px;
   margin-right: 7px;
-  background: #999999;
+  text-align: center;
+  line-height: 35px;
   border-radius: 5px 5px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #ffffff;
   font-size: 14px;
-  letter-spacing: 1px;
+  background: #999;
+  color: #ffffff;
   font-weight: bold;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
   cursor: pointer;
+  font-size: 14px;
 }
 html body .innerPage .center .memberWrap .bottom .tabs li:hover, html body .innerPage .center .memberWrap .bottom .tabs li:active, html body .innerPage .center .memberWrap .bottom .tabs li.active {
-  background: #ce1515;
+  background: linear-gradient(135deg, #2e7bff, #734af6);
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap {
   display: none;
   width: 100%;
   height: auto;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0px 5px 10px -5px #00000033;
           box-shadow: 0px 5px 10px -5px #00000033;
   border-radius: 5px;
@@ -3175,12 +3102,12 @@ html body .innerPage .center .memberWrap .bottom .dataWrap.display {
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content {
   padding: 20px 24px;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #b3b3b3;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content h1 {
   font-size: 17px;
   letter-spacing: 2px;
-  color: #4a59ed;
+  color: #333333;
   font-weight: bold;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable {
@@ -3205,7 +3132,7 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li em::before {
   content: "※ ";
-  color: #0df;
+  color: #e11515;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li input {
   width: 257px;
@@ -3213,15 +3140,12 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .remind {
   font-size: 12px;
   padding-left: 110px;
-  color: #e11515;
+  color: #999999;
   font-weight: bold;
   margin-top: 6px;
 }
-html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .remind.np {
-  padding: 0;
-}
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .remind.np span {
-  color: #55aaff;
+  color: #4a59ed;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button {
   width: 257px;
@@ -3229,17 +3153,17 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
   position: relative;
   left: 110px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button:hover, html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button:active, html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.right ul {
   width: 100%;
@@ -3265,35 +3189,6 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
   color: #333333;
   font-weight: bold;
 }
-html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.right ul li .copy {
-  width: auto;
-  height: 30px;
-  position: absolute;
-  right: 0px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  padding: 0 10px;
-  background: none;
-  border: solid 1px #cca172;
-  border-radius: 3px;
-  color: #cca172;
-  letter-spacing: 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  white-space: nowrap;
-}
-html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.right ul li .copy:hover, html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.right ul li .copy:active, html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.right ul li .copy.active {
-  opacity: 0.8;
-}
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li label {
   display: inline-block;
   width: 80px;
@@ -3308,15 +3203,13 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li input {
   width: 200px;
   height: 41px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
-  border-radius: 3px;
   font-size: 14px;
-  background: #ffffff;
-  color: #000000;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
+  border-radius: 3px;
   font-weight: bold;
+  font-size: 14px;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword {
   padding: 20px 24px;
@@ -3325,7 +3218,7 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword h1 {
   font-size: 17px;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #4a59ed;
+  color: #333333;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul {
   margin: 25px 0;
@@ -3344,37 +3237,34 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li
 html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li input {
   width: 190px;
   height: 41px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border: solid 1px #e6e6e6;
-  border-radius: 3px;
-  font-size: 14px;
   background: #ffffff;
-  color: #000000;
-  font-weight: bold;
+  color: #333333;
+  border-radius: 3px;
+  padding: 0 5px 0 30px;
+  font-size: 14px;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li button {
   width: 70px;
   height: 32px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li button:hover, html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li button:active, html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .memberWrap .bottom .platformWrap {
   display: none;
   width: 100%;
   height: auto;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0px 5px 10px -5px #00000033;
           box-shadow: 0px 5px 10px -5px #00000033;
   border-radius: 5px;
@@ -3391,6 +3281,49 @@ html body .innerPage .center .memberWrap .bottom .platformWrap h1 {
   letter-spacing: 2px;
   color: #4a59ed;
   font-weight: bold;
+}
+html body .innerPage .center .memberWrap .bottom .platformWrap table {
+  width: 100%;
+  height: auto;
+  margin: 20px 0 7px;
+}
+html body .innerPage .center .memberWrap .bottom .platformWrap table tr {
+  border-bottom: 1px solid #dbdef4;
+}
+html body .innerPage .center .memberWrap .bottom .platformWrap table tr th, html body .innerPage .center .memberWrap .bottom .platformWrap table tr td {
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #333333;
+  position: relative;
+  border-bottom: solid 2px #e11515;
+}
+html body .innerPage .center .memberWrap .bottom .platformWrap table tr th:last-child::before, html body .innerPage .center .memberWrap .bottom .platformWrap table tr td:last-child::before {
+  display: none;
+}
+html body .innerPage .center .memberWrap .bottom .platformWrap table tr th::before, html body .innerPage .center .memberWrap .bottom .platformWrap table tr td::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  right: 0px;
+  background: #dbdef4;
+}
+html body .innerPage .center .memberWrap .bottom .platformWrap table tr td {
+  width: 17%;
+  border-bottom: none;
+}
+html body .innerPage .center .memberWrap .bottom .platformWrap table tr td:nth-of-type(3) {
+  color: #3d4cce;
+}
+html body .innerPage .center .memberWrap .bottom .platformWrap table tr td:nth-of-type(5) {
+  color: #05b900;
 }
 html body .innerPage .center .memberWrap .bottom .platformWrap .noData {
   display: none;
@@ -3934,7 +3867,7 @@ html body .innerPage .center .walletWrap .walletMiddle .top {
   width: 100%;
   height: auto;
   margin-bottom: 56px;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0px 5px 10px -5px #00000033;
           box-shadow: 0px 5px 10px -5px #00000033;
   border-radius: 5px;
@@ -3953,7 +3886,7 @@ html body .innerPage .center .walletWrap .walletMiddle .top .title {
   padding-left: 22px;
   font-size: 20px;
   letter-spacing: 2px;
-  color: #4a59ed;
+  color: #333333;
   font-weight: bold;
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content {
@@ -3967,7 +3900,10 @@ html body .innerPage .center .walletWrap .walletMiddle .top .content .total {
           box-sizing: border-box;
   padding: 14px 0 0 24px;
   height: 203px;
-  border-right: solid 1px #4c4c4c;
+  border-right: solid 1px #dbdef4;
+}
+html body .innerPage .center .walletWrap .walletMiddle .top .content .total:nth-of-type(2) {
+  border: none;
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle {
   display: -webkit-box;
@@ -3982,7 +3918,7 @@ html body .innerPage .center .walletWrap .walletMiddle .top .content .total .tot
   margin-bottom: 11px;
   font-size: 17px;
   letter-spacing: 2px;
-  color: #00a99d;
+  color: #333333;
   font-weight: bold;
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle .icon {
@@ -4017,7 +3953,7 @@ html body .innerPage .center .walletWrap .walletMiddle .top .content .total .tot
   width: 100%;
   font-size: 14px;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #333333;
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle .icon .jumpRemind p i {
   position: absolute;
@@ -4030,6 +3966,24 @@ html body .innerPage .center .walletWrap .walletMiddle .top .content .total .tot
   border-width: 6px 8px 6px 0px;
   border-color: transparent #cca172;
 }
+html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle button {
+  width: auto;
+  height: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 16px;
+  padding: 1px 6px;
+  margin-left: 220px;
+}
+html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle button:hover, html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle button:active, html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle button.active {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
+}
 html body .innerPage .center .walletWrap .walletMiddle .top .content .total .amount {
   width: 100%;
   height: auto;
@@ -4037,7 +3991,7 @@ html body .innerPage .center .walletWrap .walletMiddle .top .content .total .amo
           box-sizing: border-box;
   padding-left: 11px;
   font-size: 43px;
-  color: #4a59ed;
+  color: #333333;
   font-weight: bold;
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .able {
@@ -4046,7 +4000,6 @@ html body .innerPage .center .walletWrap .walletMiddle .top .content .able {
           box-sizing: border-box;
   padding: 14px 0 0 24px;
   height: 203px;
-  border-right: solid 1px #4c4c4c;
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .able .ableTitle {
   display: -webkit-box;
@@ -4061,7 +4014,7 @@ html body .innerPage .center .walletWrap .walletMiddle .top .content .able .able
   margin-bottom: 11px;
   font-size: 17px;
   letter-spacing: 2px;
-  color: #4a59ed;
+  color: #333333;
   font-weight: bold;
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .able .ableTitle .icon {
@@ -4117,7 +4070,7 @@ html body .innerPage .center .walletWrap .walletMiddle .top .content .able .amou
   padding-left: 11px;
   margin-bottom: 27px;
   font-size: 43px;
-  color: #4a59ed;
+  color: #333333;
   font-weight: bold;
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .able .lock {
@@ -4130,12 +4083,12 @@ html body .innerPage .center .walletWrap .walletMiddle .top .content .able .lock
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .able .lock p {
   margin-right: 23px;
-  color: #cfa678;
+  color: #333333;
 }
 html body .innerPage .center .walletWrap .walletMiddle .bottom {
   width: 100%;
   height: auto;
-  background: #f8f8fa;
+  background: #ffffff;
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
@@ -4154,26 +4107,18 @@ html body .innerPage .center .walletWrap .walletMiddle .bottom .tabs {
 html body .innerPage .center .walletWrap .walletMiddle .bottom .tabs li {
   min-width: 105px;
   height: 35px;
+  line-height: 35px;
   margin-right: 7px;
-  background: #999999;
-  border-radius: 5px 5px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  background: #999;
   color: #ffffff;
-  font-size: 14px;
-  letter-spacing: 1px;
   font-weight: bold;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
   cursor: pointer;
+  font-size: 14px;
 }
 html body .innerPage .center .walletWrap .walletMiddle .bottom .tabs li:hover, html body .innerPage .center .walletWrap .walletMiddle .bottom .tabs li:active, html body .innerPage .center .walletWrap .walletMiddle .bottom .tabs li.active {
-  background: #ce1515;
+  background: linear-gradient(135deg, #2e7bff, #734af6);
 }
 html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet {
   display: none;
@@ -4192,160 +4137,6 @@ html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .ti
   color: #4a59ed;
   letter-spacing: 2px;
 }
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail {
-  height: 390px;
-  overflow: hidden;
-  margin-top: 10px;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li {
-  border-bottom: solid 2px #4c4c4c;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 50px;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li.detailTitle, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li.detailTitle {
-  border-bottom: solid 2px #f08a8a;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div {
-  height: 17px;
-  font-size: 13px;
-  color: #333333;
-  border-right: solid 1px #4c4c4c;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div:nth-of-type(1), html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div:nth-of-type(1) {
-  width: 104px;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div:nth-of-type(2), html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div:nth-of-type(2) {
-  width: 143px;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div:nth-of-type(3), html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div:nth-of-type(3) {
-  width: 102px;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div:nth-of-type(4), html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div:nth-of-type(4) {
-  position: relative;
-  width: 278px;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div:nth-of-type(4) .percent, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div:nth-of-type(4) .percent {
-  display: block;
-  width: 250px;
-  position: absolute;
-  border: none;
-  top: -10px;
-  left: 12px;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div:nth-of-type(4) .percent .num, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div:nth-of-type(4) .percent .num {
-  width: 100%;
-  border: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div:nth-of-type(4) .percent .bar, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div:nth-of-type(4) .percent .bar {
-  border: none;
-  width: 100%;
-  height: 5px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  border-radius: 10px;
-  background: #c7c7c7;
-  overflow: hidden;
-  position: relative;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div:nth-of-type(4) .percent .bar .cnt, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div:nth-of-type(4) .percent .bar .cnt {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 1%;
-  height: 100%;
-  border-radius: 10px;
-  background: #cfb53d;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div:nth-of-type(4) .percent .remind, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div:nth-of-type(4) .percent .remind {
-  font-size: 12px;
-  text-align: center;
-  width: 100%;
-  letter-spacing: 1px;
-  font-weight: bold;
-  margin-top: 3px;
-  color: #e11515;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div:nth-of-type(5), html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div:nth-of-type(5) {
-  width: 212px;
-  border: none;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div:nth-of-type(5) .record, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div:nth-of-type(5) .record {
-  width: 71px;
-  height: 31px;
-  margin-right: 10px;
-  padding: 0 10px;
-  background: none;
-  border: solid 1px #cca172;
-  border-radius: 3px;
-  color: #cca172;
-  letter-spacing: 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  white-space: nowrap;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div:nth-of-type(5) .record:hover, html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div:nth-of-type(5) .record:active, html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div:nth-of-type(5) .record.active, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div:nth-of-type(5) .record:hover, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div:nth-of-type(5) .record:active, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div:nth-of-type(5) .record.active {
-  opacity: 0.8;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail li div:nth-of-type(5) .trans, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail li div:nth-of-type(5) .trans {
-  width: 97px;
-  height: 31px;
-  background: #ffffff;
-  border: solid 1px #e11515;
-  border-radius: 3px;
-  color: #e11515;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail .noData, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail .noData {
-  display: none;
-  width: 100%;
-  height: 307px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  letter-spacing: 1px;
-  font-size: 17px;
-  font-weight: bold;
-  color: #666666;
-}
-html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .walletDetail .noData.display, html body .innerPage .center .walletWrap .walletMiddle .bottom .historyWallet .walletDetail .noData.display {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 html body .innerPage .center .walletWrap .walletMiddle .bottom .platformWallet {
   display: none;
   padding: 21px 23px 0;
@@ -4357,7 +4148,7 @@ html body .innerPage .center .walletWrap .walletMiddle .bottom .platformWallet .
   font-size: 17px;
   letter-spacing: 2px;
   margin-bottom: 20px;
-  color: #4a59ed;
+  color: #333333;
   font-weight: bold;
 }
 html body .innerPage .center .walletWrap .walletMiddle .bottom .platformWallet ul {
@@ -4375,10 +4166,10 @@ html body .innerPage .center .walletWrap .walletMiddle .bottom .platformWallet u
   width: 158px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: auto;
+  height: 100px;
   margin: 0 9px 9px 0;
   border-radius: 5px;
-  border: solid 1px #4c4c4c;
+  border: solid 1px #dbdef4;
   padding: 18px;
 }
 html body .innerPage .center .walletWrap .walletMiddle .bottom .platformWallet ul li:nth-of-type(5n) {
@@ -4387,7 +4178,7 @@ html body .innerPage .center .walletWrap .walletMiddle .bottom .platformWallet u
 html body .innerPage .center .walletWrap .walletMiddle .bottom .platformWallet ul li div {
   font-size: 16px;
   margin-bottom: 8px;
-  color: #cfa678;
+  color: #333333;
   font-weight: bold;
 }
 html body .innerPage .center .walletWrap .walletMiddle .bottom .platformWallet ul li p {
@@ -4407,7 +4198,7 @@ html body .innerPage .center .cardWrap .cardMiddle {
 html body .innerPage .center .cardWrap .cardMiddle .top {
   width: 100%;
   height: auto;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
   border-radius: 5px;
@@ -4418,13 +4209,13 @@ html body .innerPage .center .cardWrap .cardMiddle .top .header {
   padding: 10px 0 15px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #dbdef4;
 }
 html body .innerPage .center .cardWrap .cardMiddle .top .header span {
   font-size: 20px;
   letter-spacing: 2px;
   font-weight: bold;
-  color: #4a59ed;
+  color: #333333;
 }
 html body .innerPage .center .cardWrap .cardMiddle .top .content {
   width: 100%;
@@ -4447,15 +4238,15 @@ html body .innerPage .center .cardWrap .cardMiddle .top .content .title span {
   font-size: 17px;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #4a59ed;
+  color: #333333;
 }
 html body .innerPage .center .cardWrap .cardMiddle .top .content .title span:nth-of-type(2) {
   font-size: 15px;
-  color: #e11515;
+  color: #4d4d4d;
 }
 html body .innerPage .center .cardWrap .cardMiddle .top .content .title span:nth-of-type(2) span {
   font-size: 15px;
-  color: #e11515;
+  color: #4d4d4d;
 }
 html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox {
   width: 100%;
@@ -4558,7 +4349,7 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap {
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom {
   width: 100%;
   height: auto;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
   border-radius: 5px;
@@ -4629,7 +4420,7 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .form
   font-size: 13px;
   margin-right: 5px;
   letter-spacing: 1px;
-  color: #0df;
+  color: #e11515;
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox {
   position: relative;
@@ -4639,21 +4430,18 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .form
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox input {
   width: 258px;
   height: 42px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox .err {
   display: none;
   font-size: 12px;
   padding-top: 3px;
-  color: #0df;
+  color: #e11515;
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox .err.display {
   display: block;
@@ -4664,24 +4452,40 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .form
   position: absolute;
   left: 0;
   bottom: -16px;
-  color: #e11515;
+  color: #999999;
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox button {
   width: 255px;
   height: 42px;
   margin-left: 8px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox button:hover, html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox button:active, html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
+}
+html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox .upload-btn {
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border: solid 1px #cca172;
+  color: #cca172;
+}
+html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox .notice {
+  font-size: 12px;
+  padding-top: 12px;
+  color: #4a59ed;
 }
 html body .innerPage .center .rightSide {
   width: 245px;
@@ -4690,7 +4494,7 @@ html body .innerPage .center .rightSide {
 html body .innerPage .center .rightSide .smallBoard {
   width: 100%;
   height: auto;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
   border-radius: 5px;
@@ -4714,10 +4518,10 @@ html body .innerPage .center .rightSide .smallBoard .title {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 20px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #b3b3b3;
   font-size: 16px;
   letter-spacing: 2px;
-  color: #4d4d4d;
+  color: #333333;
   font-weight: bold;
 }
 html body .innerPage .center .rightSide .smallBoard .title .more {
@@ -4729,7 +4533,7 @@ html body .innerPage .center .rightSide .smallBoard .title .more {
       -ms-flex-align: center;
           align-items: center;
   letter-spacing: 1px;
-  color: #4a59ed;
+  color: #333333;
   cursor: pointer;
 }
 html body .innerPage .center .rightSide .smallBoard .title .more .arrow {
@@ -4752,7 +4556,7 @@ html body .innerPage .center .rightSide .smallBoard .list.trans {
 }
 html body .innerPage .center .rightSide .smallBoard .list.trans .transList {
   height: 53px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #b3b3b3;
   margin-bottom: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4776,7 +4580,7 @@ html body .innerPage .center .rightSide .smallBoard .list.trans .transList .tran
   height: 19px;
   font-size: 14px;
   letter-spacing: 1px;
-  color: #a5a5a5;
+  color: #333333;
 }
 html body .innerPage .center .rightSide .smallBoard .list.trans .transList .transTitle p {
   color: #333333;
@@ -4810,7 +4614,7 @@ html body .innerPage .center .rightSide .smallBoard .list.trans .transList .text
 html body .innerPage .center .rightSide .smallBoard .list .smallList {
   height: 84px;
   padding: 8px 18px 12px;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #b3b3b3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -4819,7 +4623,7 @@ html body .innerPage .center .rightSide .smallBoard .list .smallList .smallTitle
   letter-spacing: 1px;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #0df;
+  color: #4a59ed;
 }
 html body .innerPage .center .rightSide .smallBoard .list .smallList ul {
   width: 100%;
@@ -4837,12 +4641,14 @@ html body .innerPage .center .rightSide .smallBoard .list .smallList ul li p {
 }
 html body .innerPage .center .rightSide .smallBoard .list .smallList ul li p:nth-of-type(1) {
   font-size: 12px;
-  color: #e11515;
+  font-weight: bold;
+  color: #666666;
 }
 html body .innerPage .center .rightSide .smallBoard .list .smallList ul li p:last-child {
   font-size: 14px;
   margin-top: 6px;
-  color: #4a59ed;
+  font-weight: bold;
+  color: #333333;
 }
 html body .innerPage .center .rightSide .smallBoard .list .noData {
   display: none;
@@ -5873,9 +5679,9 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form
   font-weight: bold;
   padding: 0 16px;
 }
-html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .btnBox button:active, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .btnBox button.active {
+html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .btnBox button:hover, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .btnBox button:active, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .btnBox button.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(0deg, #f1d7b7 0, #cca172 50%, #f1c999);
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .checkBtn {
   width: auto;
@@ -6086,9 +5892,9 @@ html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button {
   font-weight: bold;
   padding: 0 16px;
 }
-html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button:active, html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button.active {
+html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button:hover, html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button:active, html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(0deg, #f1d7b7 0, #cca172 50%, #f1c999);
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button:last-child {
   margin-right: 15px;
@@ -6283,7 +6089,7 @@ html body .innerPage .center .depositWrap .depositMiddle .top {
   width: 100%;
   height: 108px;
   margin-bottom: 15px;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
   border-radius: 5px;
@@ -6312,12 +6118,6 @@ html body .innerPage .center .depositWrap .depositMiddle .top .title {
 html body .innerPage .center .depositWrap .depositMiddle .top .title button {
   width: 105px;
   height: 31px;
-  padding: 0 10px;
-  background: none;
-  border: solid 1px #cca172;
-  border-radius: 3px;
-  color: #cca172;
-  letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6329,9 +6129,9 @@ html body .innerPage .center .depositWrap .depositMiddle .top .title button {
       -ms-flex-pack: center;
           justify-content: center;
   white-space: nowrap;
-}
-html body .innerPage .center .depositWrap .depositMiddle .top .title button:hover, html body .innerPage .center .depositWrap .depositMiddle .top .title button:active, html body .innerPage .center .depositWrap .depositMiddle .top .title button.active {
-  opacity: 0.8;
+  background: none;
+  border: solid 1px #cca172;
+  color: #cca172;
 }
 html body .innerPage .center .depositWrap .depositMiddle .top .title button i {
   display: block;
@@ -7497,16 +7297,16 @@ html body .helpPage .center .nav li.box ul li {
           align-items: center;
   font-size: 18px;
   font-weight: bold;
-  color: #a5a5a5;
+  color: #666666;
 }
 html body .helpPage .center .nav li.box ul li:hover, html body .helpPage .center .nav li.box ul li:active, html body .helpPage .center .nav li.box ul li.active {
-  background: #fff9f8;
-  color: #666666;
+  background: #f0f5ff;
+  color: #333333;
 }
 html body .helpPage .center .helpWrap {
   width: 980px;
   height: auto;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0px 5px 10px -5px #00000033;
           box-shadow: 0px 5px 10px -5px #00000033;
   border-radius: 5px;
@@ -7523,7 +7323,7 @@ html body .helpPage .center .helpWrap div.display {
 }
 html body .helpPage .center .helpWrap div h2 {
   margin: 49px 0;
-  color: #4a59ed;
+  color: #3d4cce;
   font-size: 22px;
   font-weight: bold;
 }
@@ -7531,14 +7331,14 @@ html body .helpPage .center .helpWrap div h2:nth-of-type(1) {
   margin-top: 0;
 }
 html body .helpPage .center .helpWrap div h3 {
-  color: #4a59ed;
+  color: #333333;
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 13px;
 }
 html body .helpPage .center .helpWrap div p {
   margin-bottom: 23px;
-  color: #cfa678;
+  color: #333333;
   font-size: 16px;
   line-height: 24px;
 }
@@ -7580,10 +7380,10 @@ html body .helpPage .center .helpWrap div .teachList li .title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #4a59ed;
+  background: #3d4cce;
 }
 html body .helpPage .center .helpWrap div .teachList li .title p {
-  color: #4a59ed;
+  color: #3d4cce;
   font-size: 16px;
   margin: 0;
 }
@@ -7598,7 +7398,7 @@ html body .helpPage .center .helpWrap div .teachList li .title .arrow_ic {
 html body .helpPage .center .helpWrap div .teachList li .content {
   width: 100%;
   height: auto;
-  background: #4a59ed;
+  background: #3d4cce;
 }
 html body .helpPage .center .helpWrap div .img {
   display: block;
