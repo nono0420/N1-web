@@ -67,6 +67,8 @@ footer {
         width: 100%;
         height: auto;
         background: $footer_bg2;
+        bottom: 0;
+        position: inherit;
 
         .center {
             width: 100%;

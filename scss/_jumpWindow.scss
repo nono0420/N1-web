@@ -51,7 +51,7 @@
                 p {
                     font-size: 14px;
                     margin: 30px 0;
-                    color: $main_Color5;
+                    color: $remindColor_Main;
                 }
             }
         }
@@ -92,7 +92,7 @@
                     padding: 0 40px;
                     cursor: pointer;
                     border-bottom: solid 3px transparent;
-                    color: $jumpWindow_color;
+                    color: $jumpWindow_Text;
                     display: flex;
                     align-items: center;
 
@@ -144,12 +144,12 @@
                                 text-overflow: ellipsis;
                                 overflow: hidden;
                                 max-width: 670px;
-                                color: $jumpWindow_color;
+                                color: $jumpWindow_Text;
                                 font-size: 16px;
                             }
 
                             &.date {
-                                color: $jumpWindow_color3;
+                                color: $jumpWindow_Date;
                                 font-size: 14px;
                             }
                         }
@@ -166,7 +166,7 @@
             }
 
             .content {
-                color: $jumpWindow_color;
+                color: $jumpWindow_Text;
                 font-size: 16px;
                 padding: 24px 80px;
                 letter-spacing: 1px;
@@ -203,10 +203,10 @@
                 padding: 15px 0;
                 border-bottom: solid 1px $jumpWindow_border;
                 font-size: 16px;
-                color: $jumpWindow_color;
+                color: $jumpWindow_Text;
 
                 p {
-                    color: $jumpWindow_color3;
+                    color: $jumpWindow_Date;
                     font-size: 26px;
                     font-weight: bold;
                     margin-top: 8px;
@@ -247,7 +247,7 @@
                     
                     div {
                         font-size: 14px;
-                        color: $jumpWindow_color;
+                        color: $jumpWindow_Text;
 
                         &.name {
                             width: 152px;
@@ -287,7 +287,7 @@
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
-                                    color: $jumpWindow_color;
+                                    color: $jumpWindow_Text;
 
                                     i {
                                         display: block;
@@ -360,7 +360,7 @@
                 p {
                     font-size: 24px;
                     text-align: left;
-                    color:$jumpWindow_color;
+                    color:$jumpWindow_Text;
                 }
 
                 i {
@@ -376,7 +376,7 @@
                 .num {
                     font-size: 20px;
                     letter-spacing: 2px;
-                    color: $jumpWindow_color;
+                    color: $jumpWindow_Text;
                 }
 
                 table {
@@ -391,7 +391,7 @@
                             height: 35px;
                             border-bottom: solid 2px $jumpWindow_border;
                             font-size: 12px;
-                            color: $jumpWindow_color;
+                            color: $jumpWindow_Text;
                         }
                     }
                 }
@@ -404,7 +404,7 @@
                     justify-content: center;
                     letter-spacing: 1px;
                     font-weight: bold;
-                    color:$main_Color5;
+                    color:$remindColor_Main;
                 }
             }
         }
@@ -430,7 +430,7 @@
                 p {
                     font-size: 16px;
                     letter-spacing: 1px;
-                    color: $jumpWindow_color3;
+                    color: $jumpWindow_Date;
                     margin-top: 10px;
                 }
             }
@@ -501,7 +501,7 @@
                         width: 120px;
                         font-size: 16px;
                         font-weight: bold;
-                        color: $jumpWindow_color;
+                        color: $jumpWindow_Text;
                     }
 
                     input {
@@ -564,11 +564,11 @@
             height: 50px;
             display: flex;
             align-items: center;
-            background: $jumpWindow_title;
+            background: $jumpWindow_titleBg;
             position: relative;
 
             p {
-                color: $jumpWindow_color2;
+                color: $jumpWindow_Titlecolor;
                 font-size: 18px;
                 font-weight: bold;
                 text-align: center;

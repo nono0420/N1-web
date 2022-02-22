@@ -132,7 +132,7 @@
             .nav {
                 margin: 0 26px;
                 height: 70px;
-                border-bottom: solid 1px $main_Border_3;
+                border-bottom: solid 1px $main_Border_2;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -159,7 +159,7 @@
     
                         &:hover,&:active,&.active {
                             color: $main_Color4;
-                            border-color: $main_Border_4;
+                            border-color: $specailBorder;
 
                             &::before {
                                 content: "";
@@ -171,7 +171,7 @@
                                 bottom: 0;
                                 border-style: solid;
                                 border-width: 0 6px 6px;
-                                border-color: $main_Border_4 transparent;
+                                border-color: $specailBorder transparent;
                             }
                         }
                     }

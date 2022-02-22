@@ -1416,6 +1416,8 @@ html body footer .footerList {
   width: 100%;
   height: auto;
   background: #e6e6e6;
+  bottom: 0;
+  position: inherit;
 }
 html body footer .footerList .center {
   width: 100%;
@@ -2226,7 +2228,7 @@ html body .gameWrap .slotCenter .slotBody {
 html body .gameWrap .slotCenter .slotBody .nav {
   margin: 0 26px;
   height: 70px;
-  border-bottom: solid 1px #b3b3b3;
+  border-bottom: solid 1px #dbdef4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2581,18 +2583,26 @@ html body .eventWrap .eventBody .side ul {
 html body .eventWrap .eventBody .side ul li {
   width: 100%;
   height: 60px;
+  border-bottom: solid 1px #dbdef4;
+  color: #666666;
+  font-size: 14px;
+  padding-left: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: solid 1px #dbdef4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
+  font-weight: bold;
   cursor: pointer;
+  padding: 0;
 }
 html body .eventWrap .eventBody .side ul li:hover, html body .eventWrap .eventBody .side ul li:active, html body .eventWrap .eventBody .side ul li.active {
   background: #f0f5ff;
+  color: #333333;
 }
 html body .eventWrap .eventBody .side ul li:hover::before, html body .eventWrap .eventBody .side ul li:active::before, html body .eventWrap .eventBody .side ul li.active::before {
   content: "";
@@ -2740,7 +2750,7 @@ html body .eventWrap .eventBody .eventDetail .date {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-bottom: solid 1px #b3b3b3;
+  border-bottom: solid 1px #dbdef4;
 }
 html body .eventWrap .eventBody .eventDetail .date span {
   color: #333333;
@@ -2904,6 +2914,9 @@ html body .innerPage .center .innerSide .innerNav {
 html body .innerPage .center .innerSide .innerNav li {
   width: 100%;
   height: 50px;
+  color: #666666;
+  font-size: 14px;
+  padding-left: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2912,15 +2925,13 @@ html body .innerPage .center .innerSide .innerNav li {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 64px;
   position: relative;
-  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-  color: #4d4d4d;
 }
 html body .innerPage .center .innerSide .innerNav li:hover, html body .innerPage .center .innerSide .innerNav li:active, html body .innerPage .center .innerSide .innerNav li.active {
   background: #f0f5ff;
+  color: #333333;
 }
 html body .innerPage .center .innerSide .innerNav li:hover::before, html body .innerPage .center .innerSide .innerNav li:active::before, html body .innerPage .center .innerSide .innerNav li.active::before {
   content: "";
@@ -3102,7 +3113,7 @@ html body .innerPage .center .memberWrap .bottom .dataWrap.display {
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content {
   padding: 20px 24px;
-  border-bottom: solid 1px #b3b3b3;
+  border-bottom: solid 1px #dbdef4;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content h1 {
   font-size: 17px;
@@ -4457,7 +4468,7 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .form
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox button {
   width: 255px;
   height: 42px;
-  margin-left: 8px;
+  margin: 20px 0 0 8px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
   background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
   border: 1px solid #d2a269;
@@ -4518,7 +4529,7 @@ html body .innerPage .center .rightSide .smallBoard .title {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 20px;
-  border-bottom: solid 1px #b3b3b3;
+  border-bottom: solid 1px #dbdef4;
   font-size: 16px;
   letter-spacing: 2px;
   color: #333333;
@@ -4556,7 +4567,7 @@ html body .innerPage .center .rightSide .smallBoard .list.trans {
 }
 html body .innerPage .center .rightSide .smallBoard .list.trans .transList {
   height: 53px;
-  border-bottom: solid 1px #b3b3b3;
+  border-bottom: solid 1px #dbdef4;
   margin-bottom: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4614,7 +4625,7 @@ html body .innerPage .center .rightSide .smallBoard .list.trans .transList .text
 html body .innerPage .center .rightSide .smallBoard .list .smallList {
   height: 84px;
   padding: 8px 18px 12px;
-  border-bottom: solid 1px #b3b3b3;
+  border-bottom: solid 1px #dbdef4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -5282,6 +5293,137 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li p.cur {
   color: #00a99d;
 }
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 {
+  display: none;
+  width: 100%;
+  min-height: 430px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 18px 22px;
+  background: #f8f8fa;
+  -webkit-box-shadow: 0 5px 10px -5px #00000033;
+          box-shadow: 0 5px 10px -5px #00000033;
+  display: none;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2.display {
+  display: block;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li {
+  width: 100%;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  border: solid 1px #f08a8a;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header {
+  width: 100%;
+  height: 47px;
+  border-bottom: solid 1px #4c4c4c;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div p {
+  margin-right: 18px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div p.first {
+  color: #cfa678;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div p span {
+  color: #cfa678;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div p span.now {
+  color: #00a99d;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div p span.split {
+  margin: 0 10px;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div button {
+  width: 75px;
+  height: 27px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #fc4d14;
+  border: solid 1px #fc4d14;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div button.apply {
+  margin-right: 8px;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div button.check {
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #557bff;
+  border: solid 1px #557bff;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .content {
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .content ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33.3%;
+  padding-bottom: 30px;
+  border: none;
+  margin: 0;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .content ul li p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .content ul li p.smallTitle {
+  margin-right: 25px;
+  color: #cfa678;
+}
+html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .content ul li p.cur {
+  color: #00a99d;
+}
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord {
   display: none;
   width: 100%;
@@ -5499,10 +5641,10 @@ html body .innerPage .center .dealWrap {
 html body .innerPage .center .dealWrap .top {
   width: 100%;
   height: 50px;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
-  color: #4a59ed;
+  color: #333333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5539,30 +5681,22 @@ html body .innerPage .center .dealWrap .bottom .header .tabs {
 html body .innerPage .center .dealWrap .bottom .header .tabs li {
   min-width: 105px;
   height: 35px;
-  background: #999999;
-  border-radius: 5px 5px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  line-height: 35px;
+  background: #999;
   color: #ffffff;
-  font-size: 14px;
-  letter-spacing: 1px;
   font-weight: bold;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
   cursor: pointer;
+  font-size: 14px;
 }
 html body .innerPage .center .dealWrap .bottom .header .tabs li:hover, html body .innerPage .center .dealWrap .bottom .header .tabs li:active, html body .innerPage .center .dealWrap .bottom .header .tabs li.active {
-  background: #ce1515;
+  background: linear-gradient(135deg, #2e7bff, #734af6);
 }
 html body .innerPage .center .dealWrap .bottom .dealBox {
   width: 100%;
   height: auto;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
   border-radius: 5px;
@@ -5577,7 +5711,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 24px 18px 24px 24px;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #dbdef4;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form {
   width: 100%;
@@ -5625,9 +5759,12 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .bigBox .innerBox .row .inputBox select {
   width: 258px;
   height: 42px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  border: solid 1px #e6e6e6;
-  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
   padding-left: 16px;
   background-image: linear-gradient(45deg, transparent 50%, #3278ff 0), linear-gradient(135deg, #3278ff 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
@@ -5636,8 +5773,6 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-size: 16px;
-  font-weight: bold;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .bigBox .innerBox .row .inputBox select option {
   background: #ffffff;
@@ -5646,15 +5781,15 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .bigBox .innerBox .row .inputBox input {
   width: 258px;
   height: 42px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
   padding: 0 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: solid 1px #e6e6e6;
-  border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
-  font-weight: bold;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .btnBox {
   width: auto;
@@ -5670,18 +5805,16 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form
   width: 72px;
   height: 43px;
   margin-right: 8px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
-  border: 1px solid #d2a269;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff), to(#f4f4f4));
+  background: linear-gradient(#fff 40%, #f4f4f4);
+  border: 1px solid #e8e8e8;
   border-radius: 3px;
-  color: #ffffff;
-  font-size: 14px;
+  text-align: center;
   font-weight: bold;
-  padding: 0 16px;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .btnBox button:hover, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .btnBox button:active, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .btnBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
+  background: #0068ff;
+  color: #ffffff;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .checkBtn {
   width: auto;
@@ -5694,17 +5827,17 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form
   width: 152px;
   height: 41px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .checkBtn button:hover, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .checkBtn button:active, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .checkBtn button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable {
   width: 100%;
@@ -5764,13 +5897,13 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable t
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable table tr td {
   width: 25%;
-  border-bottom: none;
+  border-bottom: 1px solid #dbdef4;
 }
 html body .innerPage .center .betWrap {
   width: 1140px;
   height: auto;
   padding: 15px 0 28px;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
   border-radius: 5px;
@@ -5784,7 +5917,7 @@ html body .innerPage .center .betWrap form .title {
   margin-bottom: 28px;
   font-size: 20px;
   letter-spacing: 2px;
-  color: #4a59ed;
+  color: #333333;
   font-weight: bold;
 }
 html body .innerPage .center .betWrap form .inputGroup {
@@ -5812,9 +5945,12 @@ html body .innerPage .center .betWrap form .inputGroup select {
   width: 287px;
   height: 43px;
   margin-right: 30px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  border: solid 1px #e6e6e6;
-  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
   padding-left: 16px;
   background-image: linear-gradient(45deg, transparent 50%, #3278ff 0), linear-gradient(135deg, #3278ff 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
@@ -5823,8 +5959,6 @@ html body .innerPage .center .betWrap form .inputGroup select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-size: 16px;
-  font-weight: bold;
 }
 html body .innerPage .center .betWrap form .inputGroup select option {
   background: #ffffff;
@@ -5863,26 +5997,41 @@ html body .innerPage .center .betWrap form .timeGroup .timeBox p {
   font-weight: bold;
 }
 html body .innerPage .center .betWrap form .timeGroup .timeBox p.remind {
-  color: #0df;
+  color: #e11515;
 }
 html body .innerPage .center .betWrap form .timeGroup .timeBox input {
   width: 287px;
   height: 43px;
   margin-right: 30px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
+  padding: 0 15px;
 }
 html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button {
   width: 72px;
   height: 43px;
   margin-right: 8px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff), to(#f4f4f4));
+  background: linear-gradient(#fff 40%, #f4f4f4);
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: bold;
+}
+html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button:hover, html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button:active, html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button.active {
+  background: #0068ff;
+  color: #ffffff;
+}
+html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button:last-child {
+  margin-right: 15px;
+}
+html body .innerPage .center .betWrap form .timeGroup .checkBtn {
+  width: 152px;
+  height: 43px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
   background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
   border: 1px solid #d2a269;
@@ -5892,28 +6041,9 @@ html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button {
   font-weight: bold;
   padding: 0 16px;
 }
-html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button:hover, html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button:active, html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button.active {
+html body .innerPage .center .betWrap form .timeGroup .checkBtn:hover, html body .innerPage .center .betWrap form .timeGroup .checkBtn:active, html body .innerPage .center .betWrap form .timeGroup .checkBtn.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
   background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
-}
-html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button:last-child {
-  margin-right: 15px;
-}
-html body .innerPage .center .betWrap form .timeGroup .checkBtn {
-  width: 152px;
-  height: 43px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
-  border-radius: 3px;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-html body .innerPage .center .betWrap form .timeGroup .checkBtn:hover, html body .innerPage .center .betWrap form .timeGroup .checkBtn:active, html body .innerPage .center .betWrap form .timeGroup .checkBtn.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
 }
 html body .innerPage .center .betWrap .fakeTable {
   width: 100%;
@@ -5927,20 +6057,21 @@ html body .innerPage .center .betWrap .fakeTable ul {
 html body .innerPage .center .betWrap .fakeTable ul li {
   width: 100%;
   height: 40px;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #dbdef4;
 }
 html body .innerPage .center .betWrap .fakeTable ul li.title {
-  border-bottom: solid 1px #e11515;
+  border-bottom: solid 1px #3d4cce;
 }
 html body .innerPage .center .betWrap .fakeTable ul li.title p::before {
   display: none;
 }
 html body .innerPage .center .betWrap .fakeTable ul li.active {
   height: auto;
+  background: #f8f8fa;
 }
 html body .innerPage .center .betWrap .fakeTable ul li.active .wordWrap {
   height: 40px;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #dbdef4;
 }
 html body .innerPage .center .betWrap .fakeTable ul li.active .wordWrap .arrow_ic {
   -webkit-transform: rotate(90deg);
@@ -5993,14 +6124,14 @@ html body .innerPage .center .betWrap .fakeTable ul li .wordWrap p::before {
   position: absolute;
   right: 0px;
   width: 1px;
-  height: 19px;
+  height: 40px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: #ffffff;
+  background: #dbdef4;
 }
 html body .innerPage .center .betWrap .fakeTable ul li .wordWrap p.result {
-  color: #0df;
+  color: #3d4cce;
 }
 html body .innerPage .center .betWrap .fakeTable ul li .wordWrap p .arrow_ic {
   display: block;
@@ -6014,7 +6145,7 @@ html body .innerPage .center .betWrap .fakeTable ul li table {
   width: 97%;
   margin: 15px auto;
   overflow: hidden;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
   border-radius: 5px;
@@ -6023,22 +6154,23 @@ html body .innerPage .center .betWrap .fakeTable ul li table tr:last-child td {
   border: none;
 }
 html body .innerPage .center .betWrap .fakeTable ul li table tr th {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
-  background: #0068ff;
-  color: #ffffff;
+  background: #ffffff;
+  color: #333333;
   text-align: center;
   height: 40px;
   vertical-align: middle;
+  border-bottom: 1px solid #3d4cce;
 }
 html body .innerPage .center .betWrap .fakeTable ul li table tr td {
   font-weight: bold;
   font-size: 14px;
-  color: #cfa678;
+  color: #333333;
   text-align: center;
   height: 40px;
   vertical-align: middle;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #dbdef4;
 }
 html body .innerPage .center .betWrap .fakeTable ul li table tr td:nth-of-type(1), html body .innerPage .center .betWrap .fakeTable ul li table tr td:nth-of-type(7) {
   width: 15%;
@@ -7285,23 +7417,34 @@ html body .helpPage .center .nav li.box ul {
 html body .helpPage .center .nav li.box ul li {
   width: 100%;
   height: 45px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-left: 72px;
-  cursor: pointer;
+  color: #666666;
+  font-size: 14px;
+  padding-left: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
   font-weight: bold;
-  color: #666666;
+  cursor: pointer;
+  font-size: 17px;
 }
 html body .helpPage .center .nav li.box ul li:hover, html body .helpPage .center .nav li.box ul li:active, html body .helpPage .center .nav li.box ul li.active {
   background: #f0f5ff;
   color: #333333;
+}
+html body .helpPage .center .nav li.box ul li:hover::before, html body .helpPage .center .nav li.box ul li:active::before, html body .helpPage .center .nav li.box ul li.active::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: #0068ff;
 }
 html body .helpPage .center .helpWrap {
   width: 980px;
