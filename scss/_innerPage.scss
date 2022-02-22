@@ -1894,7 +1894,7 @@
                 padding: 32px 27px;
                 box-sizing: border-box;
                 border-radius: 5px;
-                background: $backgroundColor_3;
+                background: $mainBG_2;
                 box-shadow: 0 5px 10px -5px $boxShadow_3;
 
                 .title {
@@ -1903,7 +1903,7 @@
                         background: none;
                         font-size: 20px;
                         font-weight: bold;
-                        color: $fontColor_2;
+                        color: $main_Color;
                         display: flex;
                         align-items: center;
 
@@ -1928,7 +1928,7 @@
                         display: inline-block;
                         width: 800px;
                         font-size: 18px;
-                        color: $fontColor_2;
+                        color: $main_Color;
                     }
 
                     button {
@@ -1944,7 +1944,7 @@
                 .date {
                     width: 100%;
                     font-size: 15px;
-                    color: $fontColor_7;
+                    color: $main_Color3;
                     padding-bottom: 18px;
                 }
 
@@ -1952,7 +1952,7 @@
                     width: 100%;
                     height: auto;
                     padding: 22px 0;
-                    color: $fontColor_10;
+                    color: $main_Color;
                     font-size: 15px;
                     font-weight: bold;
                 }
@@ -1963,7 +1963,7 @@
                 height: auto;
                 border-radius: 5px;
                 box-shadow: 0 5px 10px -5px $boxShadow_3;
-                background: $backgroundColor_3;
+                background:$mainBG_2;
 
                 p {
                     height: 50px;
@@ -1974,8 +1974,8 @@
                     padding-left: 22px;
                     font-size: 20px;
                     font-weight: bold;
-                    color: $fontColor_3;
-                    border-bottom: solid 1px $borderColor_2;
+                    color: $main_Color;
+                    border-bottom: solid 1px $main_Border_2;
                 }
 
                 div {
@@ -1990,7 +1990,8 @@
                         width: 125px;
                         height: 35px;
                         margin-right: 10px;
-                        @include buttonStyle_12;
+                        @include dateBtn;
+                        border-radius: 5px;
                     }
                 }
             }
@@ -2014,12 +2015,13 @@
                         min-width: 105px;
                         height: 35px;
                         margin-right: 7px;
-                        @include buttonStyle_9;
+                        line-height: 35px;
+                        @include tabs_btn;
                     }
                 }
 
                 .list {
-                    background: $backgroundColor_3;
+                    background: $mainBG_2;
                     box-shadow: 0px 5px 10px -5px $boxShadow_3;
                     width: 100%;
                     min-height: 638px;
@@ -2030,7 +2032,7 @@
                         width: 100%;
                         height: auto;
                         padding-bottom: 16px;
-                        border-bottom: solid 1px $borderColor_2;
+                        border-bottom: solid 1px $main_Border_2;
 
                         &.nor {
                             justify-content: flex-end;
@@ -2148,11 +2150,11 @@
                             height: 46px;
                             display: flex;
                             align-items: center;
-                            border-bottom: solid 1px $borderColor_2;
+                            border-bottom: solid 1px $main_Border_2;
                             cursor: pointer;
 
                             &:hover,&:active,&.active {
-                                background: $backgroundColor_4;
+                                background:$mainBG_3;
                             }
 
                             .title {
@@ -2160,7 +2162,7 @@
                                 position: relative;
                                 box-sizing: border-box;
                                 padding: 0 33px 0 28px;
-                                color: $fontColor_2;
+                                color: $main_Color;
                                 font-weight: bold;
 
                                 &::before {
@@ -2171,14 +2173,14 @@
                                     right: 0;
                                     width: 1px;
                                     height: 15px;
-                                    background: $borderColor_7;
+                                    background: $main_Border_2;
                                 }
                             }
 
                             .date {
                                 width: 30%;
                                 text-align: center;
-                                color: $fontColor_7;
+                                color: $main_Color6;
                             }
                         }
                     }
@@ -2195,7 +2197,7 @@
             .title {
                 width: 100%;
                 height: auto;
-                background: $backgroundColor_3;
+                background:$mainBG_2;
                 box-shadow: 0 5px 10px -5px $boxShadow_3;
                 border-radius: 5px;
                 margin-bottom: 20px;
@@ -2210,7 +2212,7 @@
                     letter-spacing: 2px;
                     font-size: 20px;
                     font-weight: bold;
-                    color: $fontColor_3;
+                    color: $main_Color;
                 }
             }
 
@@ -2227,7 +2229,8 @@
                         min-width: 105px;
                         height: 35px;
                         margin-right: 7px;
-                        @include buttonStyle_9;
+                        line-height: 35px;
+                        @include tabs_btn;
                     }
                 }
                 
@@ -2237,7 +2240,7 @@
                     min-height: 430px;
                     box-sizing: border-box;
                     padding: 18px 22px;
-                    background: $backgroundColor_3;
+                    background: $main_Color2;
                     box-shadow: 0 5px 10px -5px $boxShadow_3;
                     
                     &.display {
@@ -2252,12 +2255,12 @@
                             width: 100%;
                             margin-bottom: 8px;
                             border-radius: 3px;
-                            border: solid 1px $borderColor_5;
+                            border: solid 1px $saleBorder;
 
                             .header {
                                 width: 100%;
                                 height: 47px;
-                                border-bottom: solid 1px $borderColor_2;
+                                border-bottom: solid 1px $main_Border_2;
                                 box-sizing: border-box;
                                 padding: 0 15px;
                                 display: flex;
@@ -2269,7 +2272,7 @@
 
                                     p {
                                         margin-right: 18px;
-                                        color: $fontColor_2;
+                                        color: $main_Color;
                                         font-size: 16px;
                                         font-weight: bold;
                                         white-space: nowrap;
@@ -2277,14 +2280,14 @@
                                         align-items: center;
 
                                         &.first {
-                                            color: $fontColor_10;
+                                            color: $main_Color3;
                                         }
 
                                         span {
-                                            color: $fontColor_10;
+                                            color: $main_Color3;
 
                                             &.now {
-                                                color: $fontColor_13;
+                                                color: $bAseactive;
                                             }
 
                                             &.split {
@@ -2296,14 +2299,15 @@
                                     button {
                                         width: 75px;
                                         height: 27px;
-                                        @include buttonStyle_13;
+                                        border-radius: 5px;
+                                        @include smallBtn;
 
                                         &.apply {
                                             margin-right: 8px;
                                         }
 
                                         &.check {
-                                            @include buttonStyle_13_2;
+                                            @include smallBtn2;
                                         }
                                     }
                                 }
@@ -2330,15 +2334,15 @@
                                         p {
                                             font-size: 14px;
                                             font-weight: bold;
-                                            color: $fontColor_2;
+                                            color: $main_Color;
     
                                             &.smallTitle {
                                                 margin-right: 25px;
-                                                color: $fontColor_10;
+                                                color: $main_Color3;
                                             }
     
                                             &.cur {
-                                                color: $fontColor_12;
+                                                color: $bAseactive;
                                             }
                                         }
                                     }
@@ -2353,7 +2357,7 @@
                     min-height: 430px;
                     box-sizing: border-box;
                     padding: 18px 22px;
-                    background: $backgroundColor_3;
+                    background: $mainBG_2;
                     box-shadow: 0 5px 10px -5px $boxShadow_3;
                     display: none;
                     
@@ -2369,12 +2373,12 @@
                             width: 100%;
                             margin-bottom: 8px;
                             border-radius: 3px;
-                            border: solid 1px $borderColor_5;
+                            border: solid 1px $saleBorder;
 
                             .header {
                                 width: 100%;
                                 height: 47px;
-                                border-bottom: solid 1px $borderColor_2;
+                                border-bottom: solid 1px $main_Border_2;
                                 box-sizing: border-box;
                                 padding: 0 15px;
                                 display: flex;
@@ -2386,7 +2390,7 @@
 
                                     p {
                                         margin-right: 18px;
-                                        color: $fontColor_2;
+                                        color: $main_Color;
                                         font-size: 16px;
                                         font-weight: bold;
                                         white-space: nowrap;
@@ -2394,14 +2398,14 @@
                                         align-items: center;
 
                                         &.first {
-                                            color: $fontColor_10;
+                                            color: $main_Color3;
                                         }
 
                                         span {
-                                            color: $fontColor_10;
+                                            color: $main_Color3;
 
                                             &.now {
-                                                color: $fontColor_13;
+                                                color: $bAseactive;
                                             }
 
                                             &.split {
@@ -2413,14 +2417,15 @@
                                     button {
                                         width: 75px;
                                         height: 27px;
-                                        @include buttonStyle_13;
+                                        @include smallBtn;
+                                        border-radius: 5px;
 
                                         &.apply {
                                             margin-right: 8px;
                                         }
 
                                         &.check {
-                                            @include buttonStyle_13_2;
+                                            @include smallBtn2;
                                         }
                                     }
                                 }
@@ -2447,15 +2452,15 @@
                                         p {
                                             font-size: 14px;
                                             font-weight: bold;
-                                            color: $fontColor_2;
+                                            color:$main_Color;
     
                                             &.smallTitle {
                                                 margin-right: 25px;
-                                                color: $fontColor_10;
+                                                color:$main_Color3;
                                             }
     
                                             &.cur {
-                                                color: $fontColor_12;
+                                                color: $bAseactive;
                                             }
                                         }
                                     }
@@ -2470,7 +2475,7 @@
                     width: 100%;
                     min-height: 430px;
                     box-sizing: border-box;
-                    background: $backgroundColor_3;
+                    background: $mainBG_2;
                     box-shadow: 0 5px 10px -5px $boxShadow_3;
                     border-radius: 5px;
 
@@ -2487,7 +2492,7 @@
                             height: auto;
                             box-sizing: border-box;
                             padding: 24px 18px 24px 24px;
-                            border-bottom: solid 1px $borderColor_2;
+                            border-bottom: solid 1px $main_Border_2;
 
                             form {
                                 width: 100%;
@@ -2522,7 +2527,7 @@
                                                 max-width: 48px;
                                                 margin-right: 25px;
                                                 letter-spacing: 1px;
-                                                color: $fontColor_2;
+                                                color: $main_Color;
                                                 font-weight: bold;
                                                 text-align: right;
                                             }
@@ -2534,13 +2539,14 @@
                                                 select {
                                                     width: 258px;
                                                     height: 42px;
-                                                    @include selectStyle_1;
+                                                    @include select_Style;
                                                 }
 
                                                 input {
                                                     width: 258px;
                                                     height: 42px;
-                                                    @include inputStyle_3;
+                                                    @include inputStyle;
+                                                    padding: 15px;
                                                 }
                                             }
                                         }
@@ -2557,7 +2563,7 @@
                                         width: 72px;
                                         height: 43px;
                                         margin-right: 8px;
-                                        @include buttonStyle_11;
+                                        @include dateBtn;
                                     }
                                 }
 
@@ -2569,7 +2575,7 @@
                                     button {
                                         width: 152px;
                                         height: 41px;
-                                        @include buttonStyle_3;
+                                        @include mainBtn;
                                     }
                                 }
                             }
@@ -2585,7 +2591,7 @@
                                 font-size: 17px;
                                 font-weight: bold;
                                 letter-spacing: 2px;
-                                color: $fontColor_3;
+                                color: $main_Color7;
                             }
 
                             table {
@@ -2597,8 +2603,8 @@
                                         height: 50px;
                                         vertical-align: middle;
                                         letter-spacing: 1px;
-                                        color: $fontColor_2;
-                                        border-bottom: solid 2px $borderColor_5;
+                                        color:$main_Color;
+                                        border-bottom: solid 2px $specailBorder;
                                         font-size: 13px;
                                         font-weight: bold;
                                     }
@@ -2607,9 +2613,9 @@
                                         height: 50px;
                                         vertical-align: middle;
                                         font-size: 13px;
-                                        color: $fontColor_2;
+                                        color: $main_Color;
                                         text-align: center;
-                                        border-bottom: solid 2px $borderColor_2;
+                                        border-bottom: solid 2px $table_Td_Border;
                                     }
                                 }
                             }
@@ -2622,7 +2628,7 @@
                                 justify-content: center;
                                 font-weight: bold;
                                 letter-spacing: 1px;
-                                color: $fontColor_5;
+                                color: $main_Color6;
 
                                 &.display {
                                     display: flex;
@@ -2739,18 +2745,7 @@
                                                 select {
                                                     width: 258px;
                                                     height: 42px;
-                                                    @include inputStyle;
-                                                    padding-left: 16px;
-                                                    background-image: linear-gradient(45deg,transparent 50%,#3278ff 0),linear-gradient(135deg,#3278ff 50%,transparent 0);
-                                                    background-position: calc(100% - 20px) calc(1em + 2px),calc(100% - 15px) calc(1em + 2px);
-                                                    background-size: 5px 5px,5px 5px;
-                                                    background-repeat: no-repeat;
-                                                    appearance: none;
-                                                
-                                                    option {
-                                                        background: #ffffff;
-                                                        color: #000000;
-                                                    }
+                                                    @include select_Style;
                                                 }
 
                                                 input {
@@ -2832,7 +2827,7 @@
                                         font-weight: bold;
                                         color: $fontColor_2;
                                         position: relative;
-                                        border-bottom: solid 2px $borderColor_8;
+                                        border-bottom: solid 2px $specailBorder;
 
                                         &:last-child {
 
@@ -2908,18 +2903,7 @@
                         width: 287px;
                         height: 43px;
                         margin-right: 30px;
-                        @include inputStyle;
-                        padding-left: 16px;
-                        background-image: linear-gradient(45deg,transparent 50%,#3278ff 0),linear-gradient(135deg,#3278ff 50%,transparent 0);
-                        background-position: calc(100% - 20px) calc(1em + 2px),calc(100% - 15px) calc(1em + 2px);
-                        background-size: 5px 5px,5px 5px;
-                        background-repeat: no-repeat;
-                        appearance: none;
-                    
-                        option {
-                            background: #ffffff;
-                            color: #000000;
-                        }
+                        @include select_Style;
                     }
                 }
 
@@ -2958,6 +2942,7 @@
                         }
 
                         .btnBox {
+                            display: flex;
 
                             button {
                                 width: 72px;
@@ -2995,7 +2980,7 @@
                         border-bottom: solid 1px $main_Border_2;
 
                         &.title {
-                            border-bottom: solid 1px $specailBorder; 
+                            border-bottom: solid 2px $specailBorder; 
 
                             p {
                                 

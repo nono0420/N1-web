@@ -1465,7 +1465,7 @@ html body footer .footerList .footer-site .center-wrap {
   margin: 20px auto;
   font-size: 12px;
   line-height: 1.8;
-  color: #666666;
+  color: #747474;
   font-weight: bold;
 }
 html body .filter {
@@ -2247,7 +2247,7 @@ html body .gameWrap .slotCenter .slotBody .nav ul {
   display: flex;
 }
 html body .gameWrap .slotCenter .slotBody .nav ul li {
-  color: #666666;
+  color: #747474;
   width: auto;
   height: calc(100% - 3px);
   padding: 0 50px;
@@ -2846,7 +2846,7 @@ html body .innerPage .center .innerSide .userInfo div .account .lv {
   border-radius: 5px;
 }
 html body .innerPage .center .innerSide .userInfo div .days {
-  color: #666666;
+  color: #747474;
   font-size: 14px;
   margin-top: 10px;
   font-weight: bold;
@@ -4492,6 +4492,7 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .form
   cursor: pointer;
   border: solid 1px #cca172;
   color: #cca172;
+  background: none;
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox .notice {
   font-size: 12px;
@@ -4653,7 +4654,7 @@ html body .innerPage .center .rightSide .smallBoard .list .smallList ul li p {
 html body .innerPage .center .rightSide .smallBoard .list .smallList ul li p:nth-of-type(1) {
   font-size: 12px;
   font-weight: bold;
-  color: #666666;
+  color: #747474;
 }
 html body .innerPage .center .rightSide .smallBoard .list .smallList ul li p:last-child {
   font-size: 14px;
@@ -4693,7 +4694,7 @@ html body .innerPage .center .mailWrap.innerMode {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
 }
@@ -4746,14 +4747,14 @@ html body .innerPage .center .mailWrap.innerMode .msgTitle button.next {
 html body .innerPage .center .mailWrap.innerMode .date {
   width: 100%;
   font-size: 15px;
-  color: #e11515;
+  color: #747474;
   padding-bottom: 18px;
 }
 html body .innerPage .center .mailWrap.innerMode .msg {
   width: 100%;
   height: auto;
   padding: 22px 0;
-  color: #cfa678;
+  color: #333333;
   font-size: 15px;
   font-weight: bold;
 }
@@ -4763,7 +4764,7 @@ html body .innerPage .center .mailWrap .top {
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
-  background: #f8f8fa;
+  background: #ffffff;
 }
 html body .innerPage .center .mailWrap .top p {
   height: 50px;
@@ -4779,8 +4780,8 @@ html body .innerPage .center .mailWrap .top p {
   padding-left: 22px;
   font-size: 20px;
   font-weight: bold;
-  color: #4a59ed;
-  border-bottom: solid 1px #4c4c4c;
+  color: #333333;
+  border-bottom: solid 1px #dbdef4;
 }
 html body .innerPage .center .mailWrap .top div {
   width: 100%;
@@ -4799,6 +4800,12 @@ html body .innerPage .center .mailWrap .top div a {
   width: 125px;
   height: 35px;
   margin-right: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff), to(#f4f4f4));
+  background: linear-gradient(#fff 40%, #f4f4f4);
+  border: 1px solid #e8e8e8;
+  color: #333333;
+  border-radius: 3px;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4808,15 +4815,12 @@ html body .innerPage .center .mailWrap .top div a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 13px;
-  color: #333333;
-  border: solid 1px #e6e6e6;
-  border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
+  border-radius: 5px;
 }
 html body .innerPage .center .mailWrap .top div a:hover, html body .innerPage .center .mailWrap .top div a:active, html body .innerPage .center .mailWrap .top div a.active {
-  background: #e11515;
+  background: #0068ff;
   color: #ffffff;
 }
 html body .innerPage .center .mailWrap .bottom {
@@ -4840,28 +4844,20 @@ html body .innerPage .center .mailWrap .bottom .tabs li {
   min-width: 105px;
   height: 35px;
   margin-right: 7px;
-  background: #999999;
-  border-radius: 5px 5px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  line-height: 35px;
+  background: #999;
   color: #ffffff;
-  font-size: 14px;
-  letter-spacing: 1px;
   font-weight: bold;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
   cursor: pointer;
+  font-size: 14px;
 }
 html body .innerPage .center .mailWrap .bottom .tabs li:hover, html body .innerPage .center .mailWrap .bottom .tabs li:active, html body .innerPage .center .mailWrap .bottom .tabs li.active {
-  background: #ce1515;
+  background: linear-gradient(135deg, #2e7bff, #734af6);
 }
 html body .innerPage .center .mailWrap .bottom .list {
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0px 5px 10px -5px #00000033;
           box-shadow: 0px 5px 10px -5px #00000033;
   width: 100%;
@@ -4873,7 +4869,7 @@ html body .innerPage .center .mailWrap .bottom .list .btnBox {
   width: 100%;
   height: auto;
   padding-bottom: 16px;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #dbdef4;
 }
 html body .innerPage .center .mailWrap .bottom .list .btnBox.nor {
   -webkit-box-pack: end;
@@ -5067,11 +5063,11 @@ html body .innerPage .center .mailWrap .bottom .list ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #dbdef4;
   cursor: pointer;
 }
 html body .innerPage .center .mailWrap .bottom .list ul li:hover, html body .innerPage .center .mailWrap .bottom .list ul li:active, html body .innerPage .center .mailWrap .bottom .list ul li.active {
-  background: #4a59ed;
+  background: #f8f8fa;
 }
 html body .innerPage .center .mailWrap .bottom .list ul li .title {
   width: 70%;
@@ -5091,12 +5087,12 @@ html body .innerPage .center .mailWrap .bottom .list ul li .title::before {
   right: 0;
   width: 1px;
   height: 15px;
-  background: #b3b3b3;
+  background: #dbdef4;
 }
 html body .innerPage .center .mailWrap .bottom .list ul li .date {
   width: 30%;
   text-align: center;
-  color: #e11515;
+  color: #4d4d4d;
 }
 html body .innerPage .center .eventWrap {
   width: 1140px;
@@ -5104,7 +5100,7 @@ html body .innerPage .center .eventWrap {
 html body .innerPage .center .eventWrap .title {
   width: 100%;
   height: auto;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
   border-radius: 5px;
@@ -5125,7 +5121,7 @@ html body .innerPage .center .eventWrap .title h1 {
   letter-spacing: 2px;
   font-size: 20px;
   font-weight: bold;
-  color: #4a59ed;
+  color: #333333;
 }
 html body .innerPage .center .eventWrap .eventMiddle .tabs {
   width: 100%;
@@ -5141,25 +5137,17 @@ html body .innerPage .center .eventWrap .eventMiddle .tabs li {
   min-width: 105px;
   height: 35px;
   margin-right: 7px;
-  background: #999999;
-  border-radius: 5px 5px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  line-height: 35px;
+  background: #999;
   color: #ffffff;
-  font-size: 14px;
-  letter-spacing: 1px;
   font-weight: bold;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
   cursor: pointer;
+  font-size: 14px;
 }
 html body .innerPage .center .eventWrap .eventMiddle .tabs li:hover, html body .innerPage .center .eventWrap .eventMiddle .tabs li:active, html body .innerPage .center .eventWrap .eventMiddle .tabs li.active {
-  background: #ce1515;
+  background: linear-gradient(135deg, #2e7bff, #734af6);
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox {
   display: none;
@@ -5168,7 +5156,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 18px 22px;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
 }
@@ -5185,12 +5173,12 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li {
   width: 100%;
   margin-bottom: 8px;
   border-radius: 3px;
-  border: solid 1px #f08a8a;
+  border: solid 1px #86b6fe;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header {
   width: 100%;
   height: 47px;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #dbdef4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 15px;
@@ -5223,13 +5211,13 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div
           align-items: center;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p.first {
-  color: #cfa678;
+  color: #747474;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p span {
-  color: #cfa678;
+  color: #747474;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p span.now {
-  color: #00a99d;
+  color: #05b900;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p span.split {
   margin: 0 10px;
@@ -5237,23 +5225,18 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div button {
   width: 75px;
   height: 27px;
-  font-size: 13px;
-  font-weight: bold;
   border-radius: 5px;
-  background: #ffffff;
-  color: #fc4d14;
-  border: solid 1px #fc4d14;
+  border: solid 1px #cca172;
+  color: #cca172;
+  background: none;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div button.apply {
   margin-right: 8px;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div button.check {
-  font-size: 13px;
-  font-weight: bold;
-  border-radius: 5px;
-  background: #ffffff;
   color: #557bff;
   border: solid 1px #557bff;
+  background: none;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content {
   width: 100%;
@@ -5288,10 +5271,10 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li p.smallTitle {
   margin-right: 25px;
-  color: #cfa678;
+  color: #747474;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li p.cur {
-  color: #00a99d;
+  color: #05b900;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 {
   display: none;
@@ -5300,7 +5283,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 18px 22px;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
   display: none;
@@ -5316,12 +5299,12 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li {
   width: 100%;
   margin-bottom: 8px;
   border-radius: 3px;
-  border: solid 1px #f08a8a;
+  border: solid 1px #86b6fe;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header {
   width: 100%;
   height: 47px;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #dbdef4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 15px;
@@ -5354,13 +5337,13 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header di
           align-items: center;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div p.first {
-  color: #cfa678;
+  color: #747474;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div p span {
-  color: #cfa678;
+  color: #747474;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div p span.now {
-  color: #00a99d;
+  color: #05b900;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div p span.split {
   margin: 0 10px;
@@ -5368,23 +5351,18 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header di
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div button {
   width: 75px;
   height: 27px;
-  font-size: 13px;
-  font-weight: bold;
+  border: solid 1px #cca172;
+  color: #cca172;
+  background: none;
   border-radius: 5px;
-  background: #ffffff;
-  color: #fc4d14;
-  border: solid 1px #fc4d14;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div button.apply {
   margin-right: 8px;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div button.check {
-  font-size: 13px;
-  font-weight: bold;
-  border-radius: 5px;
-  background: #ffffff;
   color: #557bff;
   border: solid 1px #557bff;
+  background: none;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .content {
   width: 100%;
@@ -5419,10 +5397,10 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .content u
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .content ul li p.smallTitle {
   margin-right: 25px;
-  color: #cfa678;
+  color: #747474;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .content ul li p.cur {
-  color: #00a99d;
+  color: #05b900;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord {
   display: none;
@@ -5430,7 +5408,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord {
   min-height: 430px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
   border-radius: 5px;
@@ -5448,7 +5426,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .s
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 24px 18px 24px 24px;
-  border-bottom: solid 1px #4c4c4c;
+  border-bottom: solid 1px #dbdef4;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form {
   width: 100%;
@@ -5504,9 +5482,12 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .s
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .bigBox .inputBox .row .fakeInput select {
   width: 258px;
   height: 42px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  border: solid 1px #e6e6e6;
-  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
   padding-left: 16px;
   background-image: linear-gradient(45deg, transparent 50%, #3278ff 0), linear-gradient(135deg, #3278ff 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
@@ -5515,8 +5496,6 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .s
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-size: 16px;
-  font-weight: bold;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .bigBox .inputBox .row .fakeInput select option {
   background: #ffffff;
@@ -5525,15 +5504,13 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .s
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .bigBox .inputBox .row .fakeInput input {
   width: 258px;
   height: 42px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
+  padding: 15px;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .dateBtnBox {
   display: -webkit-box;
@@ -5549,17 +5526,26 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .s
   width: 72px;
   height: 43px;
   margin-right: 8px;
-  font-size: 15px;
-  font-weight: bold;
-  color: #000000;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#f4f4f4));
-  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
-  border: solid 1px #e8e8e8;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff), to(#f4f4f4));
+  background: linear-gradient(#fff 40%, #f4f4f4);
+  border: 1px solid #e8e8e8;
+  color: #333333;
   border-radius: 3px;
-  letter-spacing: 1px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  text-decoration: none;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .dateBtnBox button:hover, html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .dateBtnBox button:active, html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .dateBtnBox button.active {
-  background: #e11515;
+  background: #0068ff;
   color: #ffffff;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .checkBtn {
@@ -5571,17 +5557,17 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .s
   width: 152px;
   height: 41px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .checkBtn button:hover, html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .checkBtn button:active, html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .checkBtn button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .tableWrap {
   width: 100%;
@@ -5604,7 +5590,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .t
   vertical-align: middle;
   letter-spacing: 1px;
   color: #333333;
-  border-bottom: solid 2px #f08a8a;
+  border-bottom: solid 2px #3d4cce;
   font-size: 13px;
   font-weight: bold;
 }
@@ -5614,7 +5600,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .t
   font-size: 13px;
   color: #333333;
   text-align: center;
-  border-bottom: solid 2px #4c4c4c;
+  border-bottom: solid 2px #dbdef4;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .tableWrap .noData {
   display: none;
@@ -5628,7 +5614,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .t
           justify-content: center;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #666666;
+  color: #4d4d4d;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .tableWrap .noData.display {
   display: -webkit-box;
@@ -5808,9 +5794,20 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff), to(#f4f4f4));
   background: linear-gradient(#fff 40%, #f4f4f4);
   border: 1px solid #e8e8e8;
+  color: #333333;
   border-radius: 3px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: bold;
+  text-decoration: none;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .btnBox button:hover, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .btnBox button:active, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .btnBox button.active {
   background: #0068ff;
@@ -5879,7 +5876,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable t
   font-weight: bold;
   color: #333333;
   position: relative;
-  border-bottom: solid 2px #e11515;
+  border-bottom: solid 2px #3d4cce;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable table tr th:last-child::before, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable table tr td:last-child::before {
   display: none;
@@ -6011,6 +6008,11 @@ html body .innerPage .center .betWrap form .timeGroup .timeBox input {
   font-size: 14px;
   padding: 0 15px;
 }
+html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button {
   width: 72px;
   height: 43px;
@@ -6018,9 +6020,20 @@ html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff), to(#f4f4f4));
   background: linear-gradient(#fff 40%, #f4f4f4);
   border: 1px solid #e8e8e8;
+  color: #333333;
   border-radius: 3px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: bold;
+  text-decoration: none;
 }
 html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button:hover, html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button:active, html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button.active {
   background: #0068ff;
@@ -6060,7 +6073,7 @@ html body .innerPage .center .betWrap .fakeTable ul li {
   border-bottom: solid 1px #dbdef4;
 }
 html body .innerPage .center .betWrap .fakeTable ul li.title {
-  border-bottom: solid 1px #3d4cce;
+  border-bottom: solid 2px #3d4cce;
 }
 html body .innerPage .center .betWrap .fakeTable ul li.title p::before {
   display: none;
@@ -6199,7 +6212,7 @@ html body .innerPage .center .betWrap .noData {
       -ms-flex-pack: center;
           justify-content: center;
   letter-spacing: 1px;
-  color: #666666;
+  color: #747474;
   font-weight: bold;
 }
 html body .innerPage .center .betWrap .noData.display {
@@ -6264,6 +6277,7 @@ html body .innerPage .center .depositWrap .depositMiddle .top .title button {
   background: none;
   border: solid 1px #cca172;
   color: #cca172;
+  background: none;
 }
 html body .innerPage .center .depositWrap .depositMiddle .top .title button i {
   display: block;
