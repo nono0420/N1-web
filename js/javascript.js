@@ -240,10 +240,11 @@ $(function(){
         $('.filter,.passwordWindow').addClass('display');
     })
 
-    $('.walletDetail .record').click(function(){
+    $('.wBethistory .b-btn').click(function(){
         $('.jumpWindow').removeClass('display');
         $('.filter,.walletRecord').addClass('display');
     })
+
 
     $('.eventBox .check').click(function(){
         $('.jumpWindow').removeClass('display');

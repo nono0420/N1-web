@@ -214,7 +214,7 @@ header .logout_ic {
 }
 
 .jumpWindow .close_ic_gray {
-  background: url("../images/icon/svg/close_gray.svg") no-repeat;
+  background: url("../images/icon/svg/close_w.svg") no-repeat;
   background-size: 100%;
 }
 
@@ -1498,7 +1498,7 @@ html body .filter.display {
 html body .filter .jumpWindow {
   width: 480px;
   height: auto;
-  background: #f8f8fa;
+  background: #ffffff;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -1861,43 +1861,69 @@ html body .filter .jumpWindow.passwordWindow form .btnBox button:hover, html bod
 }
 html body .filter .jumpWindow.walletRecord {
   width: 976px;
+  display: none;
+}
+html body .filter .jumpWindow.walletRecord.display {
+  display: block;
 }
 html body .filter .jumpWindow.walletRecord .title {
-  height: 70px;
+  height: 50px;
   background: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 30px;
+  background: linear-gradient(135deg, #7c4dff, #887aff);
 }
 html body .filter .jumpWindow.walletRecord .title p {
-  font-size: 24px;
-  text-align: left;
-  color: #333333;
+  font-size: 21px;
+  text-align: center;
+  color: #ffffff;
 }
 html body .filter .jumpWindow.walletRecord .title i {
-  width: 29px;
-  height: 29px;
+  width: 20px;
+  height: 20px;
 }
 html body .filter .jumpWindow.walletRecord .content {
   height: auto;
   padding: 0 30px 23px;
 }
 html body .filter .jumpWindow.walletRecord .content .num {
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 2px;
   color: #333333;
+  padding-top: 10px;
 }
 html body .filter .jumpWindow.walletRecord .content table {
   width: 100%;
   margin-top: 18px;
+  border: 1px solid #dbdef4;
+  overflow: hidden;
 }
 html body .filter .jumpWindow.walletRecord .content table tr th {
   width: 25%;
   vertical-align: middle;
   height: 35px;
-  border-bottom: solid 2px #b3b3b3;
+  border-bottom: solid 2px #3d4cce;
   font-size: 12px;
   color: #333333;
+}
+html body .filter .jumpWindow.walletRecord .content table tr td {
+  padding: 10px 5px;
+  font-size: 14px;
+  border-bottom: 1px solid #dbdef4;
+}
+html body .filter .jumpWindow.walletRecord .content table tr td.numTd {
+  padding-left: 25px;
+}
+html body .filter .jumpWindow.walletRecord .content table tr td.nameTd {
+  padding-left: 55px;
+}
+html body .filter .jumpWindow.walletRecord .content table tr td.money {
+  padding-left: 97px;
+  color: #05b900;
+}
+html body .filter .jumpWindow.walletRecord .content table tr td.timTd {
+  padding-left: 25px;
 }
 html body .filter .jumpWindow.walletRecord .content .noData {
   height: 80px;
@@ -2515,7 +2541,7 @@ html body .gameWrap .downBar {
   width: 1400px;
   height: 120px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #7c4dff, #887aff);
+  background: #ffffff;
   -webkit-box-shadow: 0px 5px 10px 0px #c0c0c0;
           box-shadow: 0px 5px 10px 0px #c0c0c0;
   display: -webkit-box;
@@ -3365,7 +3391,7 @@ html body .innerPage .center .memberWrap .bottom .platformWrap .noData {
       -ms-flex-align: center;
           align-items: center;
   letter-spacing: 1px;
-  color: #666666;
+  color: #4d4d4d;
   font-weight: bold;
 }
 html body .innerPage .center .memberWrap .bottom .platformWrap .noData.display {
@@ -4330,7 +4356,7 @@ html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox .slide
   margin-top: 25px;
 }
 html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox .slider .card.register {
-  background: linear-gradient(120deg, #e8ebf2 0%, #cbcdd3 30%);
+  background: linear-gradient(120deg, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
   border: solid 1px #dbdef4;
   padding: 15px 17px 0;
 }
@@ -4353,7 +4379,7 @@ html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox .slide
 html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox .slider .card.register .account span {
   font-size: 18px;
   letter-spacing: 2px;
-  color: #333333;
+  color: #ffffff;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -4364,9 +4390,9 @@ html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox .slide
   text-align: center;
   letter-spacing: 1px;
   background: #ffffff;
-  color: #4d4d4d;
+  color: #333333;
   font-size: 16px;
-  border-radius: 0 0 5px 5px;
+  border-radius: 5px;
   margin-top: 4px;
   padding: 2px 0;
 }
@@ -4695,7 +4721,7 @@ html body .innerPage .center .rightSide .smallBoard .list .noData {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #666666;
+  color: #4d4d4d;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -5840,7 +5866,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable .
       -ms-flex-pack: center;
           justify-content: center;
   letter-spacing: 1px;
-  color: #666666;
+  color: #4d4d4d;
   font-weight: bold;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable .noData.display {
@@ -6009,7 +6035,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox2 .noData {
       -ms-flex-align: center;
           align-items: center;
   letter-spacing: 1px;
-  color: #666666;
+  color: #4d4d4d;
   font-weight: bold;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox2 .noData.display {

@@ -17,7 +17,7 @@
     .jumpWindow {
         width: 480px;
         height: auto;
-        background: $jumpWindow_bg;
+        background:$mainBG_2;
         border-radius: 5px;
         overflow: hidden;
 
@@ -350,22 +350,28 @@
 
         &.walletRecord {
             width: 976px;
+            display: none;
+
+            &.display {
+                display: block;
+            }
 
             .title {
-                height: 70px;
+                height: 50px;
                 background: none;
                 box-sizing: border-box;
                 padding: 0 30px;
+                background: $jumpWindow_titleBg;
 
                 p {
-                    font-size: 24px;
-                    text-align: left;
-                    color:$jumpWindow_Text;
+                    font-size: 21px;
+                    text-align: center;
+                    color:$jumpWindow_Titlecolor;
                 }
 
                 i {
-                    width: 29px;
-                    height: 29px;
+                    width: 20px;
+                    height: 20px;
                 }
             }
 
@@ -374,14 +380,17 @@
                 padding: 0 30px 23px;
 
                 .num {
-                    font-size: 20px;
+                    font-size: 16px;
                     letter-spacing: 2px;
                     color: $jumpWindow_Text;
+                    padding-top: 10px;
                 }
 
                 table {
                     width: 100%;
                     margin-top: 18px;
+                    border: 1px solid $main_Border_2;
+                    overflow: hidden;
 
                     tr {
 
@@ -389,9 +398,29 @@
                             width: 25%;
                             vertical-align: middle;
                             height: 35px;
-                            border-bottom: solid 2px $jumpWindow_border;
+                            border-bottom: solid 2px $specailBorder;
                             font-size: 12px;
                             color: $jumpWindow_Text;
+                        }
+
+                        td {
+                            padding: 10px 5px;
+                            font-size: 14px;
+                            border-bottom: 1px solid $main_Border_2;
+
+                            &.numTd {
+                                padding-left: 25px;
+                            }
+                            &.nameTd {
+                                padding-left: 55px;
+                            }
+                            &.money {
+                                padding-left: 97px;
+                                color: $bAseactive;
+                            }
+                            &.timTd {
+                                padding-left: 25px;
+                            }
                         }
                     }
                 }

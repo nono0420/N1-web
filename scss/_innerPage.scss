@@ -531,7 +531,7 @@
                         justify-content: center;
                         align-items: center;
                         letter-spacing: 1px;
-                        color: $fontColor_5;
+                        color: $main_Color6;
                         font-weight: bold;
 
                         &.display {
@@ -611,7 +611,7 @@
                         span {
                             font-size: 14px;
                             letter-spacing: 1px;
-                            color: $fontColor_10;
+                            color: $inner_Color;
                             font-weight: bold;
                             margin-right: 10px;
                         }
@@ -635,7 +635,7 @@
                     li {
                         width: 20%;
                         font-size: 14px;
-                        color: $fontColor_10;
+                        color: $inner_Color;
 
                         &:nth-of-type(2) {
                             margin-left: -18px;
@@ -678,7 +678,7 @@
                     letter-spacing: 2px;
                     font-size: 16px;
                     margin-bottom: 20px;
-                    color: $fontColor_10;
+                    color: $inner_Color;
                 }
 
                 .nextBar {
@@ -688,7 +688,7 @@
                     margin-bottom: 15px;
                     font-size: 14px;
                     letter-spacing: 1px;
-                    color: $fontColor_10;
+                    color: $inner_Color;
                     font-weight: bold;
 
                     .bar {
@@ -768,12 +768,12 @@
                             margin-bottom: 10px;
                             font-size: 15px;
                             letter-spacing: 1px;
-                            color: $fontColor_10;
+                            color: $inner_Color;
                         }
 
                         .num {
                             font-size: 28px;
-                            color: $fontColor_4;
+                            color: $headerTop_Remind;
                             font-weight: bold;
                         }
                     }
@@ -863,11 +863,11 @@
                                         div {
 
                                             .text {
-                                                color: $fontColor_1;
+                                                color: $main_Color2;
                                             }
 
                                             .num {
-                                                color: $fontColor_1;
+                                                color: $main_Color2;
                                             }
                                         }
                                     }
@@ -1157,7 +1157,7 @@
                                             width: 100%;
                                             font-size: 14px;
                                             letter-spacing: 1px;
-                                            color: $fontColor_1;
+                                            color: $main_Color2;
 
                                             i {
                                                 position: absolute;
@@ -1359,7 +1359,7 @@
                         //         letter-spacing: 1px;
                         //         font-size: 17px;
                         //         font-weight: bold;
-                        //         color: $fontColor_5;
+                        //         color: $main_Color6;
 
                         //         &.display {
                         //             display: flex;
@@ -1552,7 +1552,7 @@
                                             span {
                                                 font-size: 18px;
                                                 letter-spacing: 2px;
-                                                color: $main_Color;
+                                                color: $main_Color2;
                                                 font-weight: bold;
                                                 letter-spacing: 2px;
                                             }
@@ -1565,9 +1565,9 @@
                                             text-align: center;
                                             letter-spacing: 1px;
                                             background: $mainBG_2;
-                                            color: $fontColor_9;
+                                            color: $main_Color;
                                             font-size: 16px;
-                                            border-radius: 0 0 5px 5px;
+                                            border-radius: 5px;
                                             margin-top: 4px;
                                             padding: 2px 0;
                                         }
@@ -1868,7 +1868,7 @@
                         height: 307px;
                         align-items: center;
                         justify-content: center;
-                        color: $fontColor_5;
+                        color: $main_Color6;
                         font-weight: bold;
                         letter-spacing: 1px;
 
@@ -2820,7 +2820,7 @@
                                 align-items: center;
                                 justify-content: center;
                                 letter-spacing: 1px;
-                                color: $fontColor_5;
+                                color: $main_Color6;
                                 font-weight: bold;
 
                                 &.display {
@@ -3005,7 +3005,7 @@
                         justify-content: center;
                         align-items: center;
                         letter-spacing: 1px;
-                        color: $fontColor_5;
+                        color: $main_Color6;
                         font-weight: bold;
 
                         &.display {
@@ -3908,7 +3908,7 @@
                 //             letter-spacing: 1px;
                 //             font-weight: bold;
                 //             font-size: 17px;
-                //             color: $fontColor_5;
+                //             color: $main_Color6;
 
                 //             &.display {
                 //                 display: flex;
@@ -4198,7 +4198,7 @@
                         .remindTitle {
                             font-size: 13px;
                             letter-spacing: 1px;
-                            color: $fontColor_10;
+                            color: $inner_Color;
                             font-weight: bold;
                         }
 
@@ -4206,7 +4206,7 @@
                             margin-bottom: 11px;
                             font-size: 13px;
                             letter-spacing: 1px;
-                            color: $fontColor_9;
+                            color: $main_Color6;
                             font-weight: bold;
                         }
 
