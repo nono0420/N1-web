@@ -217,7 +217,7 @@
                         li {
                             font-size: 14px;
                             letter-spacing: 1px;
-                            color: $fontColor_2;
+                            color: $main_Color;
                             display: flex;
                             align-items: center;
                             margin-right: 27px;
@@ -467,7 +467,7 @@
                         padding: 20px 24px;
                         font-size: 17px;
                         letter-spacing: 2px;
-                        color: $fontColor_3;
+                        color: $main_Color7;
                         font-weight: bold;
                     }
                     table {
@@ -486,9 +486,9 @@
                                 font-size: 13px;
                                 letter-spacing: 1px;
                                 font-weight: bold;
-                                color: $fontColor_2;
+                                color: $main_Color;
                                 position: relative;
-                                border-bottom: solid 2px $borderColor_8;
+                                border-bottom: solid 2px $specailBorder;
 
                                 &:last-child {
 
@@ -547,7 +547,7 @@
             display: none;
             width: 1140px;
             height: auto;
-            background: $backgroundColor_3;
+            background: $mainBG_2;
             border-radius: 5px;
             box-shadow: 0 5px 10px -5px $boxShadow_3;
 
@@ -586,7 +586,7 @@
                             font-weight: bold;
                             font-size: 22px;
                             text-align: center;
-                            color: $fontColor_2;
+                            color: $main_Color;
                         }
                     }
                 }
@@ -603,7 +603,7 @@
                         font-size: 20px;
                         font-weight: bold;
                         letter-spacing: 2px;
-                        color: $fontColor_2;
+                        color: $main_Color;
                     }
 
                     .money {
@@ -696,7 +696,7 @@
                         height: 8px;
                         border-radius: 8px;
                         margin: 0 15px;
-                        background: $backgroundColor_12;
+                        background: $mainBG_3;
                         overflow: hidden;
                         position: relative;
 
@@ -707,7 +707,7 @@
                             position: absolute;
                             top: 0px;
                             left: 0px;
-                            background: $backgroundColor_13;
+                            background: $LV_Bg;
                         }
                     }
 
@@ -722,7 +722,7 @@
                         }
 
                         &.levelUp {
-                            @include buttonStyle_3;
+                            @include mainBtn;
                         }
                     }
                 }
@@ -741,7 +741,7 @@
                     margin-bottom: 30px;
                     font-size: 17px;
                     letter-spacing: 2px;
-                    color: $fontColor_3;
+                    color: $main_Color7;
                 }
 
                 ul {
@@ -797,7 +797,7 @@
                 font-size: 17px;
                 font-weight: bold;
                 letter-spacing: 2px;
-                color: $fontColor_3;
+                color: $main_Color7;
 
                 .back {
                     display: block;
@@ -893,7 +893,7 @@
                                             text-align: center;
                                             font-size: 16px;
                                             font-weight: bold;
-                                            color: $fontColor_2;
+                                            color: $main_Color;
                                         }
                                     }
                                 }
@@ -917,12 +917,12 @@
                                             &.text {
                                                 font-size: 12px;
                                                 margin-bottom: 8px;
-                                                color: $fontColor_7;
+                                                color: $remindColor_Main;
                                             }
 
                                             &.num {
                                                 font-size: 15px;
-                                                color: $fontColor_3;
+                                                color: $main_Color7;
                                             }
                                         }
                                     }
@@ -936,7 +936,7 @@
             .detailTitle_2 {
                 font-size: 17px;
                 font-weight: bold;
-                color: $fontColor_2;
+                color: $main_Color;
                 margin: 15px 0 10px 22px;
                 
                 &.first {
@@ -959,7 +959,7 @@
                     border-bottom: solid 1px $borderColor_2;
 
                     &.header {
-                        border-bottom: solid 2px $borderColor_8;
+                        border-bottom: solid 2px $specailBorder;
                     }
 
                     div {
@@ -967,7 +967,7 @@
                         text-align: center;
                         font-size: 13px;
                         letter-spacing: 1px;
-                        color: $fontColor_2;
+                        color: $main_Color;
                         border-right: solid 1px $borderColor_2;
                         box-sizing: border-box;
                         font-weight: bold;
@@ -1065,7 +1065,7 @@
                                         width: 240px;
                                         height: 31px;
                                         align-items: center;
-                                        background: $backgroundColor_13;
+                                        background: $LV_Bg;
                                         border-radius: 3px;
 
                                         p {
@@ -1149,7 +1149,7 @@
                                         width: 240px;
                                         height: 31px;
                                         align-items: center;
-                                        background: $backgroundColor_13;
+                                        background: $LV_Bg;
                                         border-radius: 3px;
 
                                         p {
@@ -1239,7 +1239,7 @@
                         .title {
                             font-weight: bold;
                             font-size: 17px;
-                            color: $fontColor_3;
+                            color: $main_Color7;
                             letter-spacing: 2px;
                         }
 
@@ -1315,7 +1315,7 @@
                         //                             width: 1%;
                         //                             height: 100%;
                         //                             border-radius: 10px;
-                        //                             background: $backgroundColor_13;
+                        //                             background: $LV_Bg;
                         //                         }
                         //                     }
 
@@ -1326,7 +1326,7 @@
                         //                         letter-spacing: 1px;
                         //                         font-weight: bold;
                         //                         margin-top: 3px;
-                        //                         color: $fontColor_7;
+                        //                         color: $remindColor_Main;
                         //                     }
                         //                 }
                         //             }
@@ -1508,7 +1508,7 @@
                                     }
                                     
                                     &.empty {
-                                        background: $linear_3;
+                                        background: $eMpty_Bg;
                                         align-items: center;
                                         justify-content: center;
 
@@ -1520,22 +1520,22 @@
                                         .text {
                                             font-size: 14px;
                                             letter-spacing: 1px;
-                                            color: $fontColor_1;
+                                            color: $main_Color2;
                                             font-weight: bold;
                                             margin-top: 25px;
                                         }
                                     }
 
                                     &.register {
-                                        background: $linear_4;
-                                        border: solid 1px $borderColor_3;
+                                        background: $register_Bg;
+                                        border: solid 1px $register_Border;
                                         padding: 15px 17px 0;
 
                                         .name {
                                             font-size: 22px;
                                             letter-spacing: 2px;
                                             font-weight: bold;
-                                            color: $fontColor_1;
+                                            color: $main_Color2;
                                         }
 
                                         .branch {
@@ -1543,7 +1543,7 @@
                                             font-size: 14px;
                                             font-weight: bold;
                                             letter-spacing: 1px;
-                                            color: $fontColor_1;
+                                            color: $main_Color2;
                                         }
 
                                         .account {
@@ -1552,7 +1552,7 @@
                                             span {
                                                 font-size: 18px;
                                                 letter-spacing: 2px;
-                                                color: $fontColor_1;
+                                                color: $main_Color;
                                                 font-weight: bold;
                                                 letter-spacing: 2px;
                                             }
@@ -1564,7 +1564,7 @@
                                             font-weight: bold;
                                             text-align: center;
                                             letter-spacing: 1px;
-                                            background: $backgroundColor_3;
+                                            background: $mainBG_2;
                                             color: $fontColor_9;
                                             font-size: 16px;
                                             border-radius: 0 0 5px 5px;
@@ -1598,7 +1598,7 @@
                                 font-size: 17px;
                                 letter-spacing: 2px;
                                 font-weight: bold;
-                                color: $fontColor_3;
+                                color: $main_Color7;
                             }
 
                             .formBox {
@@ -1636,7 +1636,7 @@
                                                     font-size: 14px;
                                                     letter-spacing: 1px;
                                                     font-weight: bold;
-                                                    color: $fontColor_2;
+                                                    color: $main_Color;
                                                     white-space: nowrap;
 
                                                     &::before {
@@ -1799,7 +1799,7 @@
                                 height: 19px;
                                 font-size: 14px;
                                 letter-spacing: 1px;
-                                color: $fontColor_2;
+                                color: $main_Color;
                                 font-weight: bold;
     
                                 .trans_arrow {
@@ -1992,6 +1992,7 @@
                         margin-right: 10px;
                         @include dateBtn;
                         border-radius: 5px;
+                        font-size: 14px;
                     }
                 }
             }
@@ -2041,12 +2042,18 @@
 
                                 &:nth-of-type(1) {
                                     width: 79px;
-                                    @include buttonStyle_12_3
+                                    @include bet_btn;
+                                    line-height: 27px;
+                                    border-radius: 5px;
+                                    font-size: 14px;
                                 }
 
                                 &:last-child {
                                     width: 51px;
-                                    @include buttonStyle_12_2;
+                                    @include smallBtn;
+                                    line-height: 27px;
+                                    border-radius: 5px;
+                                    font-size: 14px;
                                 }
                             }
                         }
@@ -2060,11 +2067,11 @@
                                 a {
 
                                     &:nth-of-type(1){
-                                        @include buttonStyle_12_3;
+                                        @include mailreadBtn;
                                     }
     
                                     &:nth-of-type(2) {
-                                        @include buttonStyle_12_4;
+                                        @include maildeleteBtn;
                                     }
                                 }
                             }
@@ -2073,7 +2080,10 @@
                                 width: 51px;
                                 
                                 &:last-child {
-                                    @include buttonStyle_12_2;
+                                    @include smallBtn;
+                                    font-size: 14px;
+                                    border-radius: 3px;
+                                    line-height: 25px;
                                 }
                             }
                         }
@@ -2092,7 +2102,7 @@
                             margin: 20px 34px 0 0;
                             display: flex;
                             align-items: center;
-                            color: $fontColor_7;
+                            color: $main_Color;
                             font-size: 16px;
 
                             input {
@@ -2107,9 +2117,9 @@
                                     top: 50%;
                                     left: 50%;
                                     transform: translate(-50%,-50%);
-                                    background: $backgroundColor_3;
+                                    background: $mainBG_2;
                                     border-radius: 50%;
-                                    border: 2px solid $borderColor_2;
+                                    border: 2px solid $main_Color6;
                                 }
 
                                 &:checked {
@@ -2122,9 +2132,10 @@
                                         top: 50%;
                                         left: 50%;
                                         transform: translate(-50%,-50%);
-                                        background: $backgroundColor_2;
+                                        background: $mainBG_1;
                                         border-radius: 50px;
                                         z-index: 2;
+                                        display: block;
                                     }
 
                                     &::after {
@@ -2135,9 +2146,9 @@
                                         top: 50%;
                                         left: 50%;
                                         transform: translate(-50%,-50%);
-                                        background: $backgroundColor_3;
+                                        background:$mainBG_2;
                                         border-radius: 50%;
-                                        border: 2px solid $borderColor_2;
+                                        border: 2px solid $main_Color6;
                                     }
                                 }
                             }
@@ -2680,6 +2691,7 @@
                             min-width: 105px;
                             height: 35px;
                             line-height: 35px;
+                            margin: 0 7px 0 0;
                             @include  tabs_btn;
                         }
                     }
@@ -2691,6 +2703,11 @@
                     background: $mainBG_2;
                     box-shadow: 0 5px 10px -5px $boxShadow_3;
                     border-radius: 5px;
+                    display: none;
+
+                    &.display {
+                        display: block;
+                    }
 
                     .reviewWrap {
                         width: 100%;
@@ -2734,7 +2751,7 @@
                                                 font-size: 14px;
                                                 margin-right: 25px;
                                                 letter-spacing: 1px;
-                                                color: $fontColor_2;
+                                                color: $main_Color;
                                                 font-weight: bold;
                                             }
 
@@ -2825,7 +2842,7 @@
                                         font-size: 13px;
                                         letter-spacing: 1px;
                                         font-weight: bold;
-                                        color: $fontColor_2;
+                                        color: $main_Color;
                                         position: relative;
                                         border-bottom: solid 2px $specailBorder;
 
@@ -2844,7 +2861,7 @@
                                             transform: translateY(-50%);
                                             top: 50%;
                                             right: 0px;
-                                            background: $backgroundColor_8;
+                                            background: $mainBG_2;
                                         }
                                     }
 
@@ -2856,6 +2873,146 @@
                             }
                         }
                     }
+                }
+                .dealBox2 {
+                    display: none;
+                    width: 100%;
+                    height: auto;
+                    background: $mainBG_2;
+                    box-shadow: 0px 5px 10px -5px $boxShadow_3;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    padding: 20px 24px;
+
+                    &.display {
+                        display: block;
+                    }
+
+                    h1 {
+                        padding: 20px 24px;
+                        font-size: 17px;
+                        letter-spacing: 2px;
+                        color: $main_Color7;
+                        font-weight: bold;
+                    }
+                    table {
+                        width: 100%;
+                        height: auto;
+                        margin: 20px 0 7px;
+
+                        tr {
+
+                            border-bottom: 1px solid $main_Border_2;
+
+                            th,td {
+                                height: 50px;
+                                vertical-align: middle;
+                                text-align: center;
+                                font-size: 13px;
+                                letter-spacing: 1px;
+                                font-weight: bold;
+                                color: $main_Color;
+                                position: relative;
+                                border-bottom: solid 2px $specailBorder;
+
+                                &:last-child {
+
+                                    &::before {
+                                        display: none;
+                                    }
+                                }
+
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 1px;
+                                    height: 42%;
+                                    transform: translateY(-50%);
+                                    top: 50%;
+                                    right: 0px;
+                                    background:$main_Border_2;
+                                }
+                            }
+
+                            td {
+                                border-bottom: none;
+
+                                &.wNo {
+                                    width: 12%;
+                                }
+                                &.wStatus {
+                                    width: 14%;
+                                }
+
+                                &.wVal {
+                                    width: 13%;
+                                    color:$main_Color4;
+                                }
+                                &.wLimit {
+                                    width: 13%;
+                                }
+                                &.wShift {
+                                    width: 13%;
+                                    color: $bAseactive;
+                                }
+                                &.wDate {
+                                    width: 14.5%;
+                                }
+                                &.wDrawback {
+                                    width: 9.5%;
+                                }
+                                &.wBethistory {
+                                    width: 6%;
+                                }
+                                &.wPs {
+                                    width: 5%;
+                                }
+
+                                &::before {
+                                    display: none;
+                                }
+
+                                .d-btn {
+                                    width: 50px;
+                                    height: 30px;
+                                    border-radius: 3px;
+                                    cursor: no-drop;
+                                    @include disable;
+                                }
+                                .b-btn {
+                                    width: 50px;
+                                    height: 30px;
+                                    border-radius: 3px;
+                                    @include bet_btn;
+                                }
+
+                                .expand-btn {
+                                    background: none;
+                                    font-size: 22px;
+                                    font-weight: bolder;
+                                    height: 30px;
+                                    line-height: 40px;
+                                    color: $main_Color3;
+                                }
+                            }
+                        }
+                    }
+
+                    .noData {
+                        display: none;
+                        width: 100%;
+                        height: 533px;
+                        justify-content: center;
+                        align-items: center;
+                        letter-spacing: 1px;
+                        color: $fontColor_5;
+                        font-weight: bold;
+
+                        &.display {
+                            display: flex;
+                        }
+                    }
+
                 }
             }
         }
@@ -2997,6 +3154,7 @@
                             .wordWrap {
                                 height: 40px;
                                 border-bottom: solid 1px $main_Border_2;
+                                background: $mainBG_2;
 
                                 .arrow_ic {
                                     transform: rotate(90deg);
@@ -3176,10 +3334,10 @@
                         width: 100%;
                         box-sizing: border-box;
                         padding: 0 18px 0 22px;
-                        border-bottom: solid 1px $borderColor_3;
+                        border-bottom: solid 1px $main_Border_2;
                         font-size: 20px;
                         letter-spacing: 2px;
-                        color: $fontColor_3;
+                        color: $main_Color;
                         font-weight: bold;
 
                         button {
@@ -3236,7 +3394,7 @@
                                     width: 127px;
                                     height: 36px;
                                     margin-right: 10px;
-                                    @include buttonStyle_6;
+                                    @include deposit_Btn;
 
                                     i {
                                         width: 27px;
@@ -3253,7 +3411,7 @@
                     width: 100%;
                     height: auto;
                     padding: 16px 0 56px 27px;
-                    background: $backgroundColor_3;
+                    background: $mainBG_2;
                     box-shadow: 0 5px 10px -5px $boxShadow_3;
                     border-radius: 5px;
                     box-sizing: border-box;
@@ -3261,7 +3419,7 @@
                     .title {
                         font-size: 17px;
                         letter-spacing: 2px;
-                        color: $fontColor_3;
+                        color: $main_Color4;
                         font-weight: bold;
                     }
 
@@ -3279,12 +3437,12 @@
                                 margin-bottom: 22px;
                                 font-weight: bold;
                                 font-size: 15px;
-                                color: $fontColor_2;
+                                color:$main_Color;
                                 position: relative;
 
                                 i {
                                     font-size: 16px;
-                                    color: $fontColor_7;
+                                    color: $remindColor_Main;
                                     margin-right: 5px;
                                 }
 
@@ -3292,14 +3450,14 @@
                                     width: 257px;
                                     height: 41px;
                                     margin-left: 26px;
-                                    @include selectStyle_1;
+                                    @include select_Style;
                                 }
 
                                 input {
                                     width: 257px;
                                     height: 41px;
                                     margin-left: 26px;
-                                    @include inputStyle_3;
+                                    @include inputStyle;
                                 }
 
                                 .remind {
@@ -3308,7 +3466,7 @@
                                     left: 108px;
                                     font-size: 12px;
                                     letter-spacing: 1px;
-                                    color: $fontColor_8;
+                                    color: $main_Color3;
                                 }
                             }
 
@@ -3316,7 +3474,7 @@
                                 width: 257px;
                                 height: 41px;
                                 margin: 46px 0 0 108px;
-                                @include buttonStyle_3;
+                                @include mainBtn;
                             }
                         }
 
@@ -3325,17 +3483,17 @@
                             height: auto;
                             padding: 15px 19px;
                             margin: 39px 0 0 -10px;
-                            border: solid 1px $borderColor_9;
+                            border: solid 1px $remineBoder;
                             box-sizing: border-box;
 
                             div {
-                                color: $fontColor_9;
+                                color: $remineText;
                                 font-size: 13px;
                                 letter-spacing: 1px;
                                 margin-bottom: 11px;
 
                                 &.title {
-                                    color: $fontColor_10;
+                                    color:$remineTitle;
                                 }
                             }
                         }
@@ -3352,7 +3510,7 @@
                 width: 880px;
                 height: auto;
                 margin-right: 15px;
-                background: $backgroundColor_3;
+                background: $mainBG_2;
                 box-shadow: 0 5px 10px -5px $boxShadow_3;
                 border-radius: 5px;
 
@@ -3365,7 +3523,7 @@
                     align-items: center;
 
                     div {
-                        color: $fontColor_2;
+                        color: $main_Color;
                         font-size: 20px;
                         letter-spacing: 2px;
                         font-weight: bold;
@@ -3395,7 +3553,7 @@
                                 align-items: center;
                                 font-size: 17px;
                                 letter-spacing: 2px;
-                                color: $fontColor_3;
+                                color: $main_Color7;
                                 font-weight: bold;
 
                                 .reset_ic {
@@ -3409,7 +3567,7 @@
                             button {
                                 width: 71px;
                                 height: 23px;
-                                @include buttonStyle_3;
+                                @include mainBtn;
                             }
                         }
 
@@ -3420,14 +3578,14 @@
                             padding: 13px 0 0 10px;
                             font-size: 43px;
                             font-weight: bold;
-                            color: $fontColor_2;
+                            color: $main_Color;
                         }
                     }
 
                     .line {
                         width: 1px;
                         height: 80px;
-                        background: $backgroundColor_8;
+                        background: $mainBG_2;
                     }
 
                     .activeWallet {
@@ -3442,7 +3600,7 @@
                                 font-size: 17px;
                                 letter-spacing: 2px;
                                 font-weight: bold;
-                                color: $fontColor_8;
+                                color: $remindColor_Main;
                             }
                         }
 
@@ -3453,7 +3611,7 @@
                             padding: 13px 0 0 10px;
                             font-size: 43px;
                             font-weight: bold;
-                            color: $fontColor_3;
+                            color: $main_Color7;
                         }
                     }
                 }
@@ -3469,7 +3627,7 @@
                         font-weight: bold;
                         letter-spacing: 2px;
                         margin-bottom: 20px;
-                        color: $fontColor_2;
+                        color: $main_Color;
                     }
 
                     ul {
@@ -3489,7 +3647,7 @@
                            box-sizing: border-box;
                            padding: 18px;
                            margin: 0 16px 16px 0;
-                           border: solid 1px $borderColor_4;
+                           border: solid 1px $main_Border;
                            border-radius: 5px;
 
                            &:nth-of-type(4n) {
@@ -3499,13 +3657,13 @@
                            .name {
                                margin-bottom: 5px;
                                font-size: 16px;
-                               color: $fontColor_2;
+                               color: $main_Color;
                             }
 
                             .amount {
                                 font-size: 25px;
                                 font-weight: bold;
-                                color: $fontColor_2;
+                                color: $main_Color;
                                 margin-top: 8px;
                             }
                         }
@@ -3521,7 +3679,7 @@
                         justify-content: center;
 
                         button {
-                            color: $fontColor_2;
+                            color: $main_Color;
                             background: none;
                             display: flex;
                             align-items: center;
@@ -3550,14 +3708,14 @@
                         margin-bottom: 25px;
                         font-size: 17px;
                         letter-spacing: 2px;
-                        color: $fontColor_2;
+                        color: $main_Color;
                         font-weight: bold;
 
                         .remind {
                             margin-left: 25px;
                             font-size: 14px;
                             letter-spacing: 1px;
-                            color: $fontColor_8;
+                            color: $remindColor_Main;
                         }
                     }
 
@@ -3573,7 +3731,7 @@
                             width: 56px;
                             text-align: center;
                             font-size: 14px;
-                            color: $fontColor_2;
+                            color: $main_Color;
                             font-weight: bold;
                         }
 
@@ -3586,7 +3744,7 @@
                         select {
                             width: 256px;
                             height: 42px;
-                            @include selectStyle_1;
+                            @include select_Style;
                         }
                     }
                     .platformBox2 {
@@ -3600,7 +3758,7 @@
                             width: 56px;
                             text-align: center;
                             font-size: 14px;
-                            color: $fontColor_2;
+                            color: $main_Color;
                             font-weight: bold;
                         }
 
@@ -3614,7 +3772,7 @@
                             width: 256px;
                             height: 42px;
                             margin-left: 32px;
-                            @include selectStyle_1;
+                            @include select_Style;
                         }
                     }
 
@@ -3634,13 +3792,13 @@
                             width: 120px;
                             font-size: 16px;
                             font-weight: bold;
-                            color: $fontColor_2;
+                            color: $main_Color;
                         }
     
                         input {
                             width: 267px;
                             height: 42px;
-                            @include inputStyle_3;
+                            @include inputStyle;
                         }
     
                         .trans_arrow {
@@ -3658,7 +3816,7 @@
                             button {
                                 width: 85px;
                                 height: 32px;
-                                @include buttonStyle_4;
+                                @include much_Btn;
                                 margin: 0 2px 6px 0;
     
                                 &:nth-of-type(3n) {
@@ -3671,7 +3829,7 @@
                         .check {
                             width: 267px;
                             height: 42px;
-                            @include buttonStyle_3;
+                            @include mainBtn;
                             margin-bottom: 20px;
                         }
                     }
@@ -3680,84 +3838,84 @@
                         width: 255px;
                         height: 42px;
                         margin: 20px 0 0 90px;
-                        @include buttonStyle_3;
+                        @include mainBtn;
                     }
                 }
 
-                .activeAccount {
-                    width: 100%;
-                    height: auto;
-                    padding: 20px 14px 0;
-                    box-sizing: border-box;
+                // .activeAccount {
+                //     width: 100%;
+                //     height: auto;
+                //     padding: 20px 14px 0;
+                //     box-sizing: border-box;
 
-                    .accountTitle {
-                        letter-spacing: 2px;
-                        font-size: 17px;
-                        font-weight: bold;
-                        color: $fontColor_3;
-                    }
+                //     .accountTitle {
+                //         letter-spacing: 2px;
+                //         font-size: 17px;
+                //         font-weight: bold;
+                //         color: $main_Color7;
+                //     }
 
-                    ul {
-                        margin-top: 10px;
+                //     ul {
+                //         margin-top: 10px;
 
-                        li {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                            width: auto;
-                            height: 50px;
-                            border-bottom: solid 2px $borderColor_2;
+                //         li {
+                //             display: flex;
+                //             align-items: center;
+                //             justify-content: space-between;
+                //             width: auto;
+                //             height: 50px;
+                //             border-bottom: solid 2px $borderColor_2;
 
-                            &.listTitle {
-                                border-color: $borderColor_5;
-                            }
+                //             &.listTitle {
+                //                 border-color: $borderColor_5;
+                //             }
 
-                            div {
-                                border-right: solid 1px $borderColor_2;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                height: 17px;
-                                font-size: 13px;
-                                letter-spacing: 1px;
-                                color: $fontColor_2;
+                //             div {
+                //                 border-right: solid 1px $borderColor_2;
+                //                 display: flex;
+                //                 align-items: center;
+                //                 justify-content: center;
+                //                 height: 17px;
+                //                 font-size: 13px;
+                //                 letter-spacing: 1px;
+                //                 color: $main_Color;
 
-                                &:nth-of-type(1) {
-                                    width: 104px;
-                                }
-                                &:nth-of-type(2) {
-                                    width: 143px;
-                                }
-                                &:nth-of-type(3) {
-                                    width: 102px;
-                                }
-                                &:nth-of-type(4) {
-                                    width: 278px;
-                                }
-                                &:nth-of-type(5) {
-                                    width: 212px;
-                                    border: none;
-                                }
-                            }
-                        }
+                //                 &:nth-of-type(1) {
+                //                     width: 104px;
+                //                 }
+                //                 &:nth-of-type(2) {
+                //                     width: 143px;
+                //                 }
+                //                 &:nth-of-type(3) {
+                //                     width: 102px;
+                //                 }
+                //                 &:nth-of-type(4) {
+                //                     width: 278px;
+                //                 }
+                //                 &:nth-of-type(5) {
+                //                     width: 212px;
+                //                     border: none;
+                //                 }
+                //             }
+                //         }
 
-                        .noData {
-                            display: none;
-                            width: 100%;
-                            height: 307px;
-                            align-items: center;
-                            justify-content: center;
-                            letter-spacing: 1px;
-                            font-weight: bold;
-                            font-size: 17px;
-                            color: $fontColor_5;
+                //         .noData {
+                //             display: none;
+                //             width: 100%;
+                //             height: 307px;
+                //             align-items: center;
+                //             justify-content: center;
+                //             letter-spacing: 1px;
+                //             font-weight: bold;
+                //             font-size: 17px;
+                //             color: $fontColor_5;
 
-                            &.display {
-                                display: flex;
-                            }
-                        }
-                    }
-                }
+                //             &.display {
+                //                 display: flex;
+                //             }
+                //         }
+                //     }
+                // }
             }
         }
 
@@ -3770,7 +3928,7 @@
                 margin-right: 15px;
 
                 .top {
-                    background: $backgroundColor_3;
+                    background:$mainBG_2;
                     box-shadow: 0 5px 10px -5px $boxShadow_3;
                     border-radius: 5px;
                     width: 100%;
@@ -3789,7 +3947,7 @@
                             font-weight: bold;
                             font-size: 20px;
                             letter-spacing: 2px;
-                            color: $fontColor_2;
+                            color: $main_Color;
                         }
                     }
     
@@ -3813,14 +3971,14 @@
                                     align-items: center;
                                     font-size: 17px;
                                     letter-spacing: 2px;
-                                    color: $fontColor_7;
+                                    color: $remindColor_Main;
                                     font-weight: bold;
     
                                     &.limit {
-                                        color: $fontColor_11;
+                                        color: $level_middle;
                                     }
                                     &.canUse {
-                                        color: $fontColor_12;
+                                        color: $bAseactive;
                                     }
     
                                     i {
@@ -3836,7 +3994,7 @@
                                 padding: 21px 0 0 10px;
                                 font-size: 33px;
                                 font-weight: bold;
-                                color: $fontColor_2;
+                                color: $main_Color;
                             }
                         }
                     }
@@ -3852,7 +4010,7 @@
                             font-weight: bold;
                             letter-spacing: 2px;
                             margin-bottom: 20px;
-                            color: $fontColor_2;
+                            color: $main_Color;
                         }
     
                         ul {
@@ -3872,7 +4030,7 @@
                                box-sizing: border-box;
                                padding: 18px;
                                margin: 0 16px 16px 0;
-                               border: solid 1px $borderColor_4;
+                               border: solid 1px $main_Border;
                                border-radius: 5px;
     
                                &:nth-of-type(4n) {
@@ -3882,13 +4040,13 @@
                                .name {
                                    margin-bottom: 5px;
                                    font-size: 16px;
-                                   color: $fontColor_2;
+                                   color: $main_Color;
                                 }
     
                                 .amount {
                                     font-size: 25px;
                                     font-weight: bold;
-                                    color: $fontColor_2;
+                                    color: $main_Color;
                                     margin-top: 8px;
                                 }
                             }
@@ -3904,7 +4062,7 @@
                             justify-content: center;
     
                             button {
-                                color: $fontColor_2;
+                                color: $main_Color;
                                 background: none;
                                 display: flex;
                                 align-items: center;
@@ -3922,7 +4080,7 @@
                 }
 
                 .bottom {
-                    background: $backgroundColor_3;
+                    background: $mainBG_2;
                     box-shadow: 0 5px 10px -5px $boxShadow_3;
                     border-radius: 5px;
                     width: 100%;
@@ -3933,7 +4091,7 @@
                     .title {
                         font-size: 17px;
                         letter-spacing: 2px;
-                        color: $fontColor_2;
+                        color: $main_Color;
                         margin-bottom: 20px;
                         font-weight: bold;
                     }
@@ -3952,12 +4110,12 @@
                             width: 222px;
                             height: 112px;
                             margin-right: 8px;
-                            border: solid 1px $borderColor_4;
+                            border: solid 1px $main_Border;
                             border-radius: 5px;
 
                             .name {
                                 font-size: 17px;
-                                color: $fontColor_2;
+                                color: $main_Color;
                                 font-weight: bold;
                             }
 
@@ -3965,7 +4123,7 @@
 
                                 span {
                                     font-size: 38px;
-                                    color: $fontColor_2;
+                                    color: $main_Color;
                                     font-weight: bold;
                                 }
                             }
@@ -3973,7 +4131,7 @@
                             .notice {
                                 font-size: 15px;
                                 letter-spacing: 2px;
-                                color: $fontColor_8;
+                                color: $remindColor_Second;
                             }
                         }
                     }
@@ -3987,13 +4145,13 @@
                             p {
                                 font-size: 14px;
                                 letter-spacing: 1px;
-                                color: $fontColor_2;
+                                color: $main_Color;
                                 font-weight: bold;
                                 margin-top: 13px;
                                 
                                 i {
                                     font-size: 12px;
-                                    color: $fontColor_7;
+                                    color: $remindColor_Main;
                                 }
                             }
 
@@ -4003,21 +4161,21 @@
                                     width: 257px;
                                     height: 40px;
                                     margin-left: 26px;
-                                    @include selectStyle_1;
+                                    @include select_Style;
                                 }
 
                                 input {
                                     width: 257px;
                                     height: 40px;
                                     margin-left: 26px;
-                                    @include inputStyle_3;
+                                    @include inputStyle;
                                 }
 
                                 .remind {
                                     margin: 8px 0 0 26px;
                                     font-size: 12px;
                                     letter-spacing: 1px;
-                                    color: $fontColor_7;
+                                    color: $remindColor_Second;
                                 }
                             }
                         }
@@ -4026,7 +4184,7 @@
                             width: 257px;
                             height: 40px;
                             margin-left: 100px;
-                            @include buttonStyle_3;
+                            @include mainBtn;
                         }
                     }
 
@@ -4054,7 +4212,7 @@
 
                         p {
                             display: inline;
-                            color: $fontColor_7;
+                            color: $remindColor_Main;
                             font-size: 13px;
                             letter-spacing: 1px;
                             font-weight: bold;

@@ -460,6 +460,23 @@ $(function(){
     })
 })
 
+//dealWrap 切換
+$(function(){
+    $('.dealWrap .tabs li:nth-of-type(1)').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.dealWrap .dealBox').addClass('display');
+        $('.dealWrap .dealBox2').removeClass('display');
+    })
+
+    $('.dealWrap .tabs li:nth-of-type(2)').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.dealWrap .dealBox').removeClass('display');
+        $('.dealWrap .dealBox2').addClass('display');
+    })
+})
+
 //betWrap 搜尋開關
 $(function(){
     $('.betWrap .fakeTable .arrow_ic').click(function(){

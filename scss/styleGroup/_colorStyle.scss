@@ -107,6 +107,7 @@ $jumpWindow_titleBg:linear-gradient(135deg,#7c4dff,#887aff);
     border-radius: 3px;
     font-weight: bold;
     font-size: 14px;
+    padding-left: 15px;
 }
 
 @mixin inputStyle_1 {
@@ -217,6 +218,7 @@ $game_hoverBG:#0000006e;
 //lv
 $LV_Bg:#cfb53d;
 $LV_Color:#ffffff;
+
 //轉存提小圓按鈕
 @mixin inout_Btn {
     background: #e6ebff;
@@ -236,11 +238,37 @@ $LV_Color:#ffffff;
     }
 }
 
-//存款教學小按鈕
+//忖款選項按鈕(滑入紫色漸層)
+@mixin deposit_Btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #cccccc;
+    border-radius: 3px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover,&:active,&.active {
+        background: linear-gradient(135deg,#7c4dff,#887aff);
+        color: #ffffff;
+        border-color: transparent;
+    }
+}
+
+//remindbox重要提醒框
+$remineBoder:#cca172;
+$remineTitle:#cfa678;
+$remineText:#333333;
+
+//字和邊框都金色按鈕
 @mixin smallBtn {
     border: solid 1px #cca172;
     color: #cca172;
     background: none;
+    text-decoration: none;
+    text-align: center;
 }
 //查看活動小按鈕
 @mixin smallBtn2 {
@@ -280,6 +308,60 @@ $LV_Color:#ffffff;
     &:hover,&:active,&.active {
         background: linear-gradient(135deg,#2e7bff,#734af6);
     }
+}
+//字和框都藍色小按鈕
+@mixin bet_btn {
+    color: #29abff;
+    background: none;
+    text-decoration: none;
+    border: 1px solid #29abff;
+    text-align: center;
+}
+
+//銀行卡片顏色
+$eMpty_Bg: linear-gradient(120deg,#e8ebf2 0%,#cbcdd3 30%);
+$register_Bg: linear-gradient(120deg,#e8ebf2 0%,#cbcdd3 30%);
+$register_Border: #dbdef4;
+
+//投注金額按鈕白金色
+@mixin much_Btn {
+    font-size: 15px;
+    font-weight: bold;
+    color: #999999;
+    background: linear-gradient(to bottom,#ffffff 40%,#f4f4f4 100%);
+    border: solid 1px #e8e8e8;
+    border-radius: 3px;
+    letter-spacing: 1px;
+
+    &:hover,&:active,&.active {
+        background: #4a59ed;
+        color: #ffffff;
+    }
+}
+
+//站內信
+$mailread_Color:#e8e8e8;
+//站內信已讀按鈕
+@mixin mailreadBtn {
+    color: #4cb816;
+    border: solid 1px #4cb816;
+    background: none;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 25px;
+    font-size: 14px;
+}
+//站內信刪除按鈕
+@mixin maildeleteBtn {
+    color: #e11515;
+    border: solid 1px #e11515;
+    background: none;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 25px;
+    
 }
 
 //footer
@@ -340,7 +422,7 @@ $footer_bg2:#e6e6e6;
 
 $backgroundColor_1: #3d4cce;
 $backgroundColor_2: #0068ff;
-$backgroundColor_3: #f8f8fa;
+$backgroundColor_2: #f8f8fa;
 $backgroundColor_4: #4a59ed;
 $backgroundColor_5: #333333;
 $backgroundColor_6: #e6e6e6;
@@ -357,8 +439,8 @@ $backgroundColor_14: #f0f5ff;
 
 
 $fontColor_1: #ffffff;
-$fontColor_2: #333333;
-$fontColor_3: #4a59ed;
+$main_Color: #333333;
+$main_Color7: #4a59ed;
 $fontColor_4: #0df;
 $fontColor_5: #666666;
 $fontColor_6: #3d4cce;
@@ -428,7 +510,7 @@ $linear_4: linear-gradient(120deg,#f1d7b7 0%,#cca172 50%,#f1c999 100%);
 }
 
 //常用黃漸層按鈕
-@mixin buttonStyle_3 {
+@mixin mainBtn {
     background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
     border: solid 1px #cca172;
     border-radius: 3px;
@@ -443,7 +525,7 @@ $linear_4: linear-gradient(120deg,#f1d7b7 0%,#cca172 50%,#f1c999 100%);
 }
 
 //投注金額按鈕
-@mixin buttonStyle_4 {
+@mixin much_Btn {
     font-size: 15px;
     font-weight: bold;
     color: #999999;
@@ -503,7 +585,7 @@ $linear_4: linear-gradient(120deg,#f1d7b7 0%,#cca172 50%,#f1c999 100%);
 
 
 //優惠頁查看活動
-@mixin buttonStyle_4-2 {
+@mixin much_Btn-2 {
     background: linear-gradient(to bottom,#9ddbec 0%,#0282cc 50%,#82aeeb 100%);
     border: solid 1px #0282cc;
     border-radius: 3px;
@@ -515,7 +597,7 @@ $linear_4: linear-gradient(120deg,#f1d7b7 0%,#cca172 50%,#f1c999 100%);
     }
 }
 //優惠頁返回
-@mixin buttonStyle_4-3 {
+@mixin much_Btn-3 {
     background: linear-gradient(to bottom,#ffffff 40%,#f4f4f4 100%);
     border: solid 1px #e8e8e8;
     border-radius: 3px;
@@ -704,7 +786,7 @@ button:disabled {
     font-weight: bold;
     font-size: 16px;
 }
-@mixin inputStyle_3 {
+@mixin inputStyle {
     padding: 0 15px;
     box-sizing: border-box;
     border: solid 1px #e6e6e6;
@@ -732,7 +814,7 @@ input:read-only {
 
 
 ///////select
-@mixin selectStyle_1 {
+@mixin select_Style {
     border-radius: 3px;
     border: solid 1px #e6e6e6;
     background-color: #ffffff;

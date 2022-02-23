@@ -437,9 +437,10 @@
                             <div class="header">
                                 <ul class="tabs">
                                     <li class="active">交易紀錄</li>
+                                    <li>流水紀錄</li>
                                 </ul>
                             </div>
-                            <div class="dealBox">
+                            <div class="dealBox display">
                                 <div class="reviewWrap">
                                     <div class="search">
                                         <form>
@@ -502,6 +503,42 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="dealBox2">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>編號</th>
+                                            <th>狀態</th>
+                                            <th>金額</th>
+                                            <th>未完成流水</th>
+                                            <th>流水變化</th>
+                                            <th>上鎖日期</th>
+                                            <th>查看回補</th>
+                                            <th>查看注單</th>
+                                            <th>備註</th>
+                                        </tr>
+                                        <tr>
+                                            <td class="wNo">163790876888924</td>
+                                            <td class="wStatus">會員存款</td>
+                                            <td class="wVal">100.0000</td>
+                                            <td class="wLimit">100.0000</td>
+                                            <td class="wShift">100.0000</td>
+                                            <td class="wDate">2021-12-29 15:32:08</td>
+                                            <td class="wDrawback">
+                                                <button class="d-btn disabled"> 回補 </button>
+                                            </td>
+                                            <td class="wBethistory">
+                                                <button class="b-btn"> 注單 </button>
+                                            </td>
+                                           <td class="wPs">
+                                               <button class="expand-btn">﹀</button>
+                                           </td>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- <p class="noData display">目前無資料</p> -->
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -537,6 +574,47 @@
             </div>
         </div>
     </footer>
+    <!-- <app-withdraw-bet-record>
+        <div class="panel">
+            <div class="header">
+                <p class="title">注單明細</p>
+                <button class="close-btn"></button>
+            </div>
+            <div class="cnt">
+                <p class="no"> 編號 163790876888924 </p>
+                <table class="bet-record">
+                    <thead>
+                        <th>編號</th>
+                        <th>平台</th>
+                        <th>金額</th>
+                        <th>日期</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0952fa1c0b3a469b8a53223dfe6ec10e1</td>
+                            <td>BNG電子娛樂</td><td class="money">40</td>
+                            <td>2021-12-30 10:44:04</td>
+                        </tr>
+                        <tr>
+                            <td>d3c551820b5742da823be7a3b5e2bc511</td>
+                            <td>BNG電子娛樂</td><td class="money">40</td>
+                            <td>2021-12-30 10:44:04</td>
+                        </tr>
+                        <tr>
+                            <td>8de99273213f4cc49bbce528e5c4af871</td>
+                            <td>BNG電子娛樂</td><td class="money">20.0000</td>
+                            <td>2021-12-30 10:44:04</td>
+                        </tr>
+                     </tbody>
+                </table>
+            </div>
+            <div class="pagination-bar">
+                <pagination-controls previouslabel="<" nextlabel=">" autohide="true" class="pagination">
+                    <pagination-template></pagination-template>
+                </pagination-controls>
+            </div>
+        </div>
+    </app-withdraw-bet-record> -->
     <div class="filter">
         <div class="jumpWindow betWindow sportGame01">
             <i class="close_ic"></i>
@@ -894,6 +972,25 @@
                     </div>
                 </li>
             </ul>
+        </div>
+        <div class="jumpWindow walletRecord">
+            <div class="title">
+                <p>注單明細</p>
+                <i class="close_ic_gray"></i>
+            </div>
+            <div class="content">
+                <p class="num">編號 347</p>
+                <table>
+                    <tr>
+                        <th>編號</th>
+                        <th>平台</th>
+                        <th>金額</th>
+                        <th>日期</th>
+                    </tr>
+                    <tr></tr>
+                </table>
+                <p class="noData">目前無資料</p>
+            </div>
         </div>
     </div>
 </body>

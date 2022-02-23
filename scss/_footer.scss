@@ -85,13 +85,20 @@ footer {
                 display: flex;
 
                 li {
-                    margin: 0 52px 0 0;
+                    width: auto;
+                    height: 100%;
+                    padding: 0 15px;
+                    margin: 0 20px 0 0;
                     justify-content: center;
-                    line-height: 5px;
                     color: $main_Color2;
                     font-weight: bold;
                     cursor: pointer;
                     line-height: 37px;
+
+                    &:hover,&:active,&.active {
+                        
+                        background: $mainBG_1;
+                    }
                     
                     &.title {
                         margin-bottom: 24px;
