@@ -1,39 +1,4 @@
 @charset "UTF-8";
-button:disabled {
-  background: #ccc !important;
-  border: none !important;
-  color: #ffffff !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-  cursor: not-allowed;
-}
-
-input:disabled {
-  background: #fafafa !important;
-  border-color: #e6e6e6 !important;
-  color: #000000 !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-  pointer-events: none !important;
-}
-
-input:-moz-read-only {
-  background: none !important;
-  border: none !important;
-  color: #000000 !important;
-  box-shadow: none !important;
-  pointer-events: none !important;
-}
-
-input:read-only {
-  background: none !important;
-  border: none !important;
-  color: #000000 !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-  pointer-events: none !important;
-}
-
 header .acc_ic {
   background: url("../images/icon/svg/id.svg") no-repeat;
   background-size: 100%;
@@ -885,18 +850,18 @@ html body header .top .user li:not(.platform) .loginForm button {
   width: auto;
   height: 30px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
   padding: 0 14px;
 }
 html body header .top .user li:not(.platform) .loginForm button:hover, html body header .top .user li:not(.platform) .loginForm button:active, html body header .top .user li:not(.platform) .loginForm button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body header .top .user li:not(.platform) .lv {
   color: #0df;
@@ -1524,32 +1489,30 @@ html body .filter .jumpWindow.forgetPassword form input {
   width: 322px;
   height: 42px;
   margin-top: 20px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
 }
 html body .filter .jumpWindow.forgetPassword form button {
   width: 322px;
   height: 42px;
   margin-top: 15px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .filter .jumpWindow.forgetPassword form button:hover, html body .filter .jumpWindow.forgetPassword form button:active, html body .filter .jumpWindow.forgetPassword form button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .filter .jumpWindow.forgetPassword form p {
   font-size: 14px;
@@ -1679,17 +1642,17 @@ html body .filter .jumpWindow.plsGo .btnBox button {
   width: 322px;
   height: 42px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .filter .jumpWindow.plsGo .btnBox button:hover, html body .filter .jumpWindow.plsGo .btnBox button:active, html body .filter .jumpWindow.plsGo .btnBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .filter .jumpWindow.score {
   display: none;
@@ -1829,15 +1792,13 @@ html body .filter .jumpWindow.passwordWindow form .content li:last-child {
 html body .filter .jumpWindow.passwordWindow form .content input {
   width: 100%;
   height: 42px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
 }
 html body .filter .jumpWindow.passwordWindow form .btnBox {
   padding-bottom: 43px;
@@ -1847,17 +1808,17 @@ html body .filter .jumpWindow.passwordWindow form .btnBox button {
   width: 322px;
   height: 42px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .filter .jumpWindow.passwordWindow form .btnBox button:hover, html body .filter .jumpWindow.passwordWindow form .btnBox button:active, html body .filter .jumpWindow.passwordWindow form .btnBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .filter .jumpWindow.walletRecord {
   width: 976px;
@@ -1974,17 +1935,17 @@ html body .filter .jumpWindow.checkEvent .btnBox button {
   width: 322px;
   height: 42px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .filter .jumpWindow.checkEvent .btnBox button:hover, html body .filter .jumpWindow.checkEvent .btnBox button:active, html body .filter .jumpWindow.checkEvent .btnBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .filter .jumpWindow.betWindow {
   display: none;
@@ -2054,15 +2015,13 @@ html body .filter .jumpWindow.betWindow form .row p {
 html body .filter .jumpWindow.betWindow form .row input {
   width: 267px;
   height: 42px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
 }
 html body .filter .jumpWindow.betWindow form .row .trans_arrow {
   display: block;
@@ -2100,18 +2059,18 @@ html body .filter .jumpWindow.betWindow form .row .check {
   width: 267px;
   height: 42px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
   margin-bottom: 20px;
 }
 html body .filter .jumpWindow.betWindow form .row .check:hover, html body .filter .jumpWindow.betWindow form .row .check:active, html body .filter .jumpWindow.betWindow form .row .check.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .filter .jumpWindow.betWindow .enterGame {
   width: 100%;
@@ -2124,17 +2083,17 @@ html body .filter .jumpWindow.betWindow .enterGame button {
   width: 351px;
   height: 42px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .filter .jumpWindow.betWindow .enterGame button:hover, html body .filter .jumpWindow.betWindow .enterGame button:active, html body .filter .jumpWindow.betWindow .enterGame button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .filter .jumpWindow .title {
   width: 100%;
@@ -2342,12 +2301,9 @@ html body .gameWrap .slotCenter .slotBody .nav .search i {
 html body .gameWrap .slotCenter .slotBody .nav .search input {
   width: 330px;
   height: 40px;
-  border: solid 1px #e6e6e6;
-  background: #ffffff;
-  color: #333333;
-  border-radius: 3px;
-  padding: 0 5px 0 30px;
-  font-size: 14px;
+  border: none;
+  background: transparent;
+  color: #000;
 }
 html body .gameWrap .slotCenter .slotBody .gameBox {
   padding: 24px 48px 40px;
@@ -2396,20 +2352,20 @@ html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfNa
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all {
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
   width: 137px;
   height: 40px;
   font-size: 18px;
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all:hover, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all:active, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all i {
   display: inline-block;
@@ -2715,17 +2671,17 @@ html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button {
   width: 117px;
   height: 37px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button:hover, html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button:active, html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .eventWrap .eventBody .eventList .eventBox ul .btnBox .disable {
   width: 117px;
@@ -2763,17 +2719,17 @@ html body .eventWrap .eventBody .eventDetail .title button {
   height: 36px;
   margin-top: 18px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .eventWrap .eventBody .eventDetail .title button:hover, html body .eventWrap .eventBody .eventDetail .title button:active, html body .eventWrap .eventBody .eventDetail .title button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .eventWrap .eventBody .eventDetail .title button i {
   display: inline-block;
@@ -3205,17 +3161,17 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
   position: relative;
   left: 110px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button:hover, html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button:active, html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.right ul {
   width: 100%;
@@ -3256,15 +3212,13 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
   width: 200px;
   height: 41px;
   font-size: 14px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword {
   padding: 20px 24px;
@@ -3292,28 +3246,25 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li
 html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li input {
   width: 190px;
   height: 41px;
-  border: solid 1px #e6e6e6;
-  background: #ffffff;
-  color: #333333;
-  border-radius: 3px;
-  padding: 0 5px 0 30px;
-  font-size: 14px;
+  border: none;
+  background: transparent;
+  color: #000;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li button {
   width: 70px;
   height: 32px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li button:hover, html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li button:active, html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .memberWrap .bottom .platformWrap {
   display: none;
@@ -3527,10 +3478,10 @@ html body .innerPage .center .vipWrap .lvGraph .bar {
 html body .innerPage .center .vipWrap .lvGraph .bar li {
   width: 20%;
   height: 100%;
-  background: #4a59ed;
+  background: #3d4cce;
 }
 html body .innerPage .center .vipWrap .lvGraph .bar li.active {
-  background: #f8f8fa;
+  background: #4a59ed;
 }
 html body .innerPage .center .vipWrap .nextBox {
   width: 100%;
@@ -3588,40 +3539,25 @@ html body .innerPage .center .vipWrap .nextBox .nextBar button {
 }
 html body .innerPage .center .vipWrap .nextBox .nextBar button.check {
   margin: 0 14px 0px 30px;
-  padding: 0 10px;
-  background: none;
   border: solid 1px #cca172;
-  border-radius: 3px;
   color: #cca172;
-  letter-spacing: 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background: none;
+  text-decoration: none;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  white-space: nowrap;
-}
-html body .innerPage .center .vipWrap .nextBox .nextBar button.check:hover, html body .innerPage .center .vipWrap .nextBox .nextBar button.check:active, html body .innerPage .center .vipWrap .nextBox .nextBar button.check.active {
-  opacity: 0.8;
 }
 html body .innerPage .center .vipWrap .nextBox .nextBar button.levelUp {
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .vipWrap .nextBox .nextBar button.levelUp:hover, html body .innerPage .center .vipWrap .nextBox .nextBar button.levelUp:active, html body .innerPage .center .vipWrap .nextBox .nextBar button.levelUp.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .vipWrap .levelEnjoy {
   width: 100%;
@@ -3686,26 +3622,11 @@ html body .innerPage .center .vipWrap .levelEnjoy .more {
   width: 321px;
   height: 41px;
   margin: 40px auto 44px;
-  padding: 0 10px;
-  background: none;
   border: solid 1px #cca172;
-  border-radius: 3px;
   color: #cca172;
-  letter-spacing: 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background: none;
+  text-decoration: none;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  white-space: nowrap;
-}
-html body .innerPage .center .vipWrap .levelEnjoy .more:hover, html body .innerPage .center .vipWrap .levelEnjoy .more:active, html body .innerPage .center .vipWrap .levelEnjoy .more.active {
-  opacity: 0.8;
 }
 html body .innerPage .center .vipWrap .detailTitle {
   display: -webkit-box;
@@ -4025,19 +3946,19 @@ html body .innerPage .center .walletWrap .walletMiddle .top .content .total .tot
   width: auto;
   height: auto;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
   padding: 1px 6px;
   margin-left: 220px;
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle button:hover, html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle button:active, html body .innerPage .center .walletWrap .walletMiddle .top .content .total .totalTitle button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .total .amount {
   width: 100%;
@@ -4485,15 +4406,13 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .form
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox input {
   width: 258px;
   height: 42px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox .err {
   display: none;
@@ -4517,17 +4436,17 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .form
   height: 42px;
   margin: 20px 0 0 8px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox button:hover, html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox button:active, html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox .upload-btn {
   width: 100%;
@@ -5486,9 +5405,12 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .s
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .bigBox .inputBox .row .fakeInput select {
   width: 258px;
   height: 42px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  border: solid 1px #e6e6e6;
-  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
   padding-left: 16px;
   background-image: linear-gradient(45deg, transparent 50%, #3278ff 0), linear-gradient(135deg, #3278ff 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
@@ -5497,8 +5419,6 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .s
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-size: 16px;
-  font-weight: bold;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .bigBox .inputBox .row .fakeInput select option {
   background: #ffffff;
@@ -5507,15 +5427,13 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .s
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .bigBox .inputBox .row .fakeInput input {
   width: 258px;
   height: 42px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
   padding: 15px;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .dateBtnBox {
@@ -5563,17 +5481,17 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .s
   width: 152px;
   height: 41px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .checkBtn button:hover, html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .checkBtn button:active, html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .checkBtn button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .tableWrap {
   width: 100%;
@@ -5756,9 +5674,12 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .bigBox .innerBox .row .inputBox select {
   width: 258px;
   height: 42px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  border: solid 1px #e6e6e6;
-  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
   padding-left: 16px;
   background-image: linear-gradient(45deg, transparent 50%, #3278ff 0), linear-gradient(135deg, #3278ff 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
@@ -5767,8 +5688,6 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-size: 16px;
-  font-weight: bold;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .bigBox .innerBox .row .inputBox select option {
   background: #ffffff;
@@ -5777,17 +5696,16 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .bigBox .innerBox .row .inputBox input {
   width: 258px;
   height: 42px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
   padding: 0 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: solid 1px #e6e6e6;
-  border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
-  font-weight: bold;
-  padding: 0 15px;
-  box-sizing: border-box;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .btnBox {
   width: auto;
@@ -5836,17 +5754,17 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form
   width: 152px;
   height: 41px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .checkBtn button:hover, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .checkBtn button:active, html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form .checkBtn button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable {
   width: 100%;
@@ -6089,9 +6007,12 @@ html body .innerPage .center .betWrap form .inputGroup select {
   width: 287px;
   height: 43px;
   margin-right: 30px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  border: solid 1px #e6e6e6;
-  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
   padding-left: 16px;
   background-image: linear-gradient(45deg, transparent 50%, #3278ff 0), linear-gradient(135deg, #3278ff 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
@@ -6100,8 +6021,6 @@ html body .innerPage .center .betWrap form .inputGroup select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-size: 16px;
-  font-weight: bold;
 }
 html body .innerPage .center .betWrap form .inputGroup select option {
   background: #ffffff;
@@ -6146,15 +6065,13 @@ html body .innerPage .center .betWrap form .timeGroup .timeBox input {
   width: 287px;
   height: 43px;
   margin-right: 30px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
   padding: 0 15px;
 }
 html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox {
@@ -6195,17 +6112,17 @@ html body .innerPage .center .betWrap form .timeGroup .checkBtn {
   width: 152px;
   height: 43px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .betWrap form .timeGroup .checkBtn:hover, html body .innerPage .center .betWrap form .timeGroup .checkBtn:active, html body .innerPage .center .betWrap form .timeGroup .checkBtn.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .betWrap .fakeTable {
   width: 100%;
@@ -6552,9 +6469,12 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .content form .
   width: 257px;
   height: 41px;
   margin-left: 26px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  border: solid 1px #e6e6e6;
-  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
   padding-left: 16px;
   background-image: linear-gradient(45deg, transparent 50%, #3278ff 0), linear-gradient(135deg, #3278ff 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
@@ -6563,8 +6483,6 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .content form .
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-size: 16px;
-  font-weight: bold;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .content form .row select option {
   background: #ffffff;
@@ -6574,15 +6492,13 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .content form .
   width: 257px;
   height: 41px;
   margin-left: 26px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .content form .row .remind {
   position: absolute;
@@ -6597,17 +6513,17 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .content form b
   height: 41px;
   margin: 46px 0 0 108px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .content form button:hover, html body .innerPage .center .depositWrap .depositMiddle .bottom .content form button:active, html body .innerPage .center .depositWrap .depositMiddle .bottom .content form button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .content .remindBox {
   width: 839px;
@@ -6713,17 +6629,17 @@ html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet
   width: 71px;
   height: 23px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet .walletTitle button:hover, html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet .walletTitle button:active, html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet .walletTitle button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet .amount {
   width: 100%;
@@ -6901,9 +6817,12 @@ html body .innerPage .center .transferWrap .transferMiddle form .platformBox .tr
 html body .innerPage .center .transferWrap .transferMiddle form .platformBox select {
   width: 256px;
   height: 42px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  border: solid 1px #e6e6e6;
-  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
   padding-left: 16px;
   background-image: linear-gradient(45deg, transparent 50%, #3278ff 0), linear-gradient(135deg, #3278ff 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
@@ -6912,8 +6831,6 @@ html body .innerPage .center .transferWrap .transferMiddle form .platformBox sel
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-size: 16px;
-  font-weight: bold;
 }
 html body .innerPage .center .transferWrap .transferMiddle form .platformBox select option {
   background: #ffffff;
@@ -6949,9 +6866,12 @@ html body .innerPage .center .transferWrap .transferMiddle form .platformBox2 se
   width: 256px;
   height: 42px;
   margin-left: 32px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  border: solid 1px #e6e6e6;
-  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
   padding-left: 16px;
   background-image: linear-gradient(45deg, transparent 50%, #3278ff 0), linear-gradient(135deg, #3278ff 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
@@ -6960,8 +6880,6 @@ html body .innerPage .center .transferWrap .transferMiddle form .platformBox2 se
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-size: 16px;
-  font-weight: bold;
 }
 html body .innerPage .center .transferWrap .transferMiddle form .platformBox2 select option {
   background: #ffffff;
@@ -6993,15 +6911,13 @@ html body .innerPage .center .transferWrap .transferMiddle form .row p {
 html body .innerPage .center .transferWrap .transferMiddle form .row input {
   width: 267px;
   height: 42px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
 }
 html body .innerPage .center .transferWrap .transferMiddle form .row .trans_arrow {
   display: block;
@@ -7039,35 +6955,35 @@ html body .innerPage .center .transferWrap .transferMiddle form .row .check {
   width: 267px;
   height: 42px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
   margin-bottom: 20px;
 }
 html body .innerPage .center .transferWrap .transferMiddle form .row .check:hover, html body .innerPage .center .transferWrap .transferMiddle form .row .check:active, html body .innerPage .center .transferWrap .transferMiddle form .row .check.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .transferWrap .transferMiddle form button {
   width: 255px;
   height: 42px;
   margin: 20px 0 0 90px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .transferWrap .transferMiddle form button:hover, html body .innerPage .center .transferWrap .transferMiddle form button:active, html body .innerPage .center .transferWrap .transferMiddle form button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .withdrawalWrap {
   display: -webkit-box;
@@ -7320,9 +7236,12 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row
   width: 257px;
   height: 40px;
   margin-left: 26px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  border: solid 1px #e6e6e6;
-  background-color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
   padding-left: 16px;
   background-image: linear-gradient(45deg, transparent 50%, #3278ff 0), linear-gradient(135deg, #3278ff 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
@@ -7331,8 +7250,6 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-size: 16px;
-  font-weight: bold;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row div select option {
   background: #ffffff;
@@ -7342,15 +7259,13 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row
   width: 257px;
   height: 40px;
   margin-left: 26px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row div .remind {
   margin: 8px 0 0 26px;
@@ -7363,17 +7278,17 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form butt
   height: 40px;
   margin-left: 100px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form button:hover, html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form button:active, html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form button.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom .remindBox {
   width: 839px;
@@ -7736,15 +7651,13 @@ html body .registerWrap .bigBox .right label {
 html body .registerWrap .bigBox .right label input {
   width: 332px;
   height: 41px;
-  padding: 0 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: solid 1px #e6e6e6;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
   border-radius: 3px;
-  font-size: 14px;
-  background: #ffffff;
-  color: #000000;
   font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
 }
 html body .registerWrap .bigBox .right label .err {
   position: absolute;
@@ -7773,26 +7686,11 @@ html body .registerWrap .bigBox .right label button {
   width: 86px;
   height: 29px;
   right: 11px;
-  padding: 0 10px;
-  background: none;
   border: solid 1px #cca172;
-  border-radius: 3px;
   color: #cca172;
-  letter-spacing: 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background: none;
+  text-decoration: none;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  white-space: nowrap;
-}
-html body .registerWrap .bigBox .right label button:hover, html body .registerWrap .bigBox .right label button:active, html body .registerWrap .bigBox .right label button.active {
-  opacity: 0.8;
 }
 html body .registerWrap .bigBox .right .tips {
   width: 332px;
@@ -7832,15 +7730,15 @@ html body .registerWrap .bigBox .right .checkBtn {
   width: 332px;
   height: 41px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to bottom, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-  border: solid 1px #cca172;
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
-  letter-spacing: 1px;
+  padding: 0 16px;
 }
 html body .registerWrap .bigBox .right .checkBtn:hover, html body .registerWrap .bigBox .right .checkBtn:active, html body .registerWrap .bigBox .right .checkBtn.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }

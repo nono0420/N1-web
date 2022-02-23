@@ -377,7 +377,7 @@
                                             //     right: 0px;
                                             //     top: 50%;
                                             //     transform: translateY(-50%);
-                                            //     @include buttonStyle_8;
+                                            //     @include smallBtn;
                                             // }
                                         }
                                     }
@@ -657,10 +657,10 @@
                     li {
                         width: 20%;
                         height: 100%;
-                        background: $backgroundColor_4;
+                        background: $mainBG_1;
 
                         &.active {
-                            background: $backgroundColor_2;
+                            background: $main_Color7;
                         }
                     }
                 }
@@ -718,7 +718,7 @@
 
                         &.check {
                             margin: 0 14px 0px 30px;
-                            @include buttonStyle_8;
+                            @include smallBtn;
                         }
 
                         &.levelUp {
@@ -733,7 +733,7 @@
                 height: auto;
                 box-sizing: border-box;
                 padding: 18px 22px 6px;
-                border-top: solid 1px $borderColor_2;
+                border-top: solid 1px $main_Border;
 
                 .title {
                     width: 100%;
@@ -752,7 +752,7 @@
 
                     li {
                         width: calc(33.3% - 1px);
-                        border-right: solid 1px $borderColor_2;
+                        border-right: solid 1px $main_Border;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -784,7 +784,7 @@
                     width: 321px;
                     height: 41px;
                     margin: 40px auto 44px;
-                    @include buttonStyle_8;
+                    @include smallBtn;
                 }
             }
 
@@ -956,7 +956,7 @@
                     align-items: center;
                     justify-content: space-between;
                     height: 50px;
-                    border-bottom: solid 1px $borderColor_2;
+                    border-bottom: solid 1px $main_Border;
 
                     &.header {
                         border-bottom: solid 2px $specailBorder;
@@ -968,7 +968,7 @@
                         font-size: 13px;
                         letter-spacing: 1px;
                         color: $main_Color;
-                        border-right: solid 1px $borderColor_2;
+                        border-right: solid 1px $main_Border;
                         box-sizing: border-box;
                         font-weight: bold;
 
@@ -1083,7 +1083,7 @@
                                                 left: -8px;
                                                 border-style: solid;
                                                 border-width: 6px 8px 6px 0px;
-                                                border-color: transparent $borderColor_9;
+                                                border-color: transparent $remineBoder;
                                             }
                                         }
                                     }
@@ -1167,7 +1167,7 @@
                                                 left: -8px;
                                                 border-style: solid;
                                                 border-width: 6px 8px 6px 0px;
-                                                border-color: transparent $borderColor_9;
+                                                border-color: transparent $remineBoder;
                                             }
                                         }
                                     }
@@ -1249,14 +1249,14 @@
                         //     margin-top: 10px;
 
                         //     li {
-                        //         border-bottom: solid 2px $borderColor_2;
+                        //         border-bottom: solid 2px $main_Border;
                         //         display: flex;
                         //         align-items: center;
                         //         justify-content: space-between;
                         //         height: 50px;
 
                         //         &.detailTitle {
-                        //             border-bottom: solid 2px $borderColor_5;
+                        //             border-bottom: solid 2px $main_Border;
                         //         }
 
                         //         div {
@@ -1304,7 +1304,7 @@
                         //                         height: 5px;
                         //                         justify-content: flex-start;
                         //                         border-radius: 10px;
-                        //                         background: $backgroundColor_12;
+                        //                         background: $mainBG_3;
                         //                         overflow: hidden;
                         //                         position: relative;
 
@@ -1338,13 +1338,13 @@
                         //                     width: 71px;
                         //                     height: 31px;
                         //                     margin-right: 10px;
-                        //                     @include buttonStyle_8;
+                        //                     @include smallBtn;
                         //                 }
 
                         //                 .trans {
                         //                     width: 97px;
                         //                     height: 31px;
-                        //                     @include buttonStyle_8_2;
+                        //                     @include smallBtn_2;
                         //                 }
                         //             }
                         //         }
@@ -3864,14 +3864,14 @@
                 //             justify-content: space-between;
                 //             width: auto;
                 //             height: 50px;
-                //             border-bottom: solid 2px $borderColor_2;
+                //             border-bottom: solid 2px $main_Border;
 
                 //             &.listTitle {
-                //                 border-color: $borderColor_5;
+                //                 border-color: $main_Border;
                 //             }
 
                 //             div {
-                //                 border-right: solid 1px $borderColor_2;
+                //                 border-right: solid 1px $main_Border;
                 //                 display: flex;
                 //                 align-items: center;
                 //                 justify-content: center;
@@ -4193,7 +4193,7 @@
                         box-sizing: border-box;
                         padding: 15px 19px;
                         margin: 24px 0 0 -10px;
-                        border: solid 1px $borderColor_9;
+                        border: solid 1px $remineBoder;
 
                         .remindTitle {
                             font-size: 13px;
