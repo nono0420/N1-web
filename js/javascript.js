@@ -220,7 +220,7 @@ $(function(){
         $('.filter').removeClass('display');
     })
 
-    $('.loginForm .forget').click(function(){
+    $('header .forget').click(function(){
         $('.jumpWindow').removeClass('display');
         $('.filter,.forgetPassword').addClass('display');
     })
@@ -338,6 +338,29 @@ $(function(){
     $('.eventDetail .back').click(function(){
         $('.eventList').addClass('display');
         $('.eventDetail').removeClass('display');
+    })
+})
+
+//入金 切換
+$(function(){
+    $(".depositMiddle .box li").click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    })
+
+    $('.depositMiddle .box li:nth-of-type(1)').click(function(){
+        // $('.depositMiddle .bottom').removeClass('display');
+        // $(".depositMiddle .bottom.bank").addClass("display");
+        $(".depositMiddle .bottom").addClass("display");
+        $(".depositMiddle .bottom").siblings().removeClass("display");
+    })
+    $('.depositMiddle .box li:nth-of-type(2)').click(function(){
+        $(".depositMiddle .bottom2").addClass("display");
+        $(".depositMiddle .bottom2").siblings().removeClass("display");
+    })
+    $('.depositMiddle .box li:nth-of-type(3)').click(function(){
+        $(".depositMiddle .bottom3").addClass("display");
+        $(".depositMiddle .bottom3").siblings().removeClass("display");
     })
 })
 
@@ -547,10 +570,10 @@ $(function(){
         $('.question_2').addClass('display');
         $('.question_2').siblings().removeClass('display');
     })
-    $('.forQues_3').click(function(){
-        $('.question_3').addClass('display');
-        $('.question_3').siblings().removeClass('display');
-    })
+    // $('.forQues_3').click(function(){
+    //     $('.question_3').addClass('display');
+    //     $('.question_3').siblings().removeClass('display');
+    // })
 
     $('.forUs_1').click(function(){
         $('.aboutUs_1').addClass('display');
@@ -575,6 +598,27 @@ $(function(){
     $('.forUs_6').click(function(){
         $('.aboutUs_6').addClass('display');
         $('.aboutUs_6').siblings().removeClass('display');
+    })
+    $('.forUs_7').click(function(){
+        $('.aboutUs_7').addClass('display');
+        $('.aboutUs_7').siblings().removeClass('display');
+    })
+    $('.forUs_8').click(function(){
+        $('.aboutUs_8').addClass('display');
+        $('.aboutUs_8').siblings().removeClass('display');
+    })
+
+    $('.dLoad_1').click(function(){
+        $('.downLoad_1').addClass('display');
+        $('.downLoad_1').siblings().removeClass('display');
+    })
+    $('.dLoad_2').click(function(){
+        $('.downLoad_2').addClass('display');
+        $('.downLoad_2').siblings().removeClass('display');
+    })
+    $('.dLoad_3').click(function(){
+        $('.downLoad_3').addClass('display');
+        $('.downLoad_3').siblings().removeClass('display');
     })
 })
 

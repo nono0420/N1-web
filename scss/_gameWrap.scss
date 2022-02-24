@@ -194,7 +194,9 @@
                     input {
                         width: 330px;
                         height: 40px;
-                        @include inputStyle_1;
+                        @include inputStyle;
+                        padding-left: 36px;
+
                     }
                 }
             }

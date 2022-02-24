@@ -26,6 +26,8 @@ $main_Color3:#747474;
 $main_Color4:#3d4cce;
 $main_Color6: #4d4d4d;
 $main_Color7: #4a59ed;
+//相關條款與隱私政策
+$readcolor:#c69c6d;
 //內頁金色字
 $inner_Color:#cfa678;
 //主要陰影
@@ -83,6 +85,13 @@ $jumpWindow_titleBg:linear-gradient(135deg,#7c4dff,#887aff);
             background: #0068ff;
         }
     }
+}
+
+//註冊頁金色line&wechet
+@mixin register_lineBtn {
+    border: 1px solid #adadad;
+    background: linear-gradient(0deg,#d9d9d9 0,#ededed 50%,#fff);
+    border-radius: 5px;
 }
 
 //投注金額按鈕
@@ -389,6 +398,10 @@ $footer_bg2:#e6e6e6;
 @mixin disable {
     background:#c7c7c7;
     color: #ffffff;
+    &:hover,&:active,&.active {
+        background:#c7c7c7;
+        color: #ffffff;
+    }
 }
 
 //sideBar

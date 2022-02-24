@@ -7,14 +7,39 @@ header .pass_ic {
     background: url('../images/icon/svg/pwd.svg') no-repeat;
     background-size: 100%;
 }
-header .forget {
-    background: url('../images/icon/svg/question.svg') no-repeat;
-    background-size: 100%;
-}
+// header .forget {
+//     background: url('../images/icon/svg/question.svg') no-repeat;
+//     background-size: 100%;
+// }
 
 //註冊
 header .register_ic {
     background: url('../images/icon/svg/register.svg') no-repeat;
+    background-size: 100%;
+}
+header .forget_ic {
+    background: url('../images/icon/svg/forget.svg') no-repeat;
+    background-size: 100%;
+}
+
+.registerWrap .top {
+    background: url('../../images/registerTop.png');
+    background-size: cover;
+}
+.registerWrap .logo {
+    background: url('../../images/icon/i88logo_w.png');
+    background-size: 100%;
+}
+.registerWrap .photo {
+    background: url('../images/icon/svg/register_w.svg');
+    background-size: 100%;
+}
+.registerWrap .photo {
+    background: url('../images/icon/svg/register_w.svg');
+    background-size: 100%;
+}
+.registerWrap .bigBox .left span {
+    background: url('../images/icon/lineWechat.png');
     background-size: 100%;
 }
 
@@ -251,6 +276,10 @@ header .logout_ic {
     background: url('../images/icon/svg/innerNav_card.svg') no-repeat;
     background-size: 100%;
 }
+.innerNav .card_ic {
+    background: url('../images/icon/svg/innerNav_card.svg') no-repeat;
+    background-size: 100%;
+}
 .innerNav .dealRecord_ic {
     background: url('../images/icon/svg/innerNav_dealRecord.svg') no-repeat;
     background-size: 100%;
@@ -370,6 +399,10 @@ header .logout_ic {
     background: url('../images/icon/svg/shop.svg') no-repeat;
     background-size: 100%;
 }
+.depositWrap .list .atm_ic {
+    background: url('../images/icon/svg/atm.svg') no-repeat;
+    background-size: 100%;
+}
 .depositWrap .list .prev,.depositWrap .list .next {
     background: url('../images/icon/svg/arrow_r.svg') no-repeat;
     background-size: 100%;
@@ -437,6 +470,10 @@ header .logout_ic {
     background: url('../images/icon/svg/aboutus.svg') no-repeat;
     background-size: 100%;
 }
+.helpPage .nav .dowl_p {
+    background: url('../images/icon/svg/dowl_p.svg') no-repeat;
+    background-size: 100%;
+}
 //helpPage .teachList arrow_ic
 .helpPage .teachList .arrow_ic {
     background: url('../images/icon/svg/arrow_b.svg') no-repeat;
@@ -461,6 +498,10 @@ header .logout_ic {
 }
 .helpPage .img.online05 {
     background: url('../images/help/online05.png') no-repeat;
+    background-size: 100%;
+}
+.helpPage .img.license {
+    background: url('../images/help/license.jpg') no-repeat;
     background-size: 100%;
 }
 
@@ -488,10 +529,10 @@ header .logout_ic {
     background: url('../images/icon/svg/eye.svg') no-repeat;
     background-size: 100%;
 }
-.registerWrap .left {
-    background: url('../images/register_background2.png') no-repeat;
-    background-size: cover;
-}
+// .registerWrap .left {
+//     background: url('../images/register_background2.png') no-repeat;
+//     background-size: cover;
+// }
 
 
 ////////img↓↓↓↓↓↓↓↓↓

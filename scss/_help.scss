@@ -96,6 +96,7 @@
         .helpWrap {
             width: 980px;
             height: auto;
+            min-height: 590px;
             background: $mainBG_2;
             box-shadow: 0px 5px 10px -5px $boxShadow_3;
             border-radius: 5px;
@@ -132,7 +133,7 @@
                     margin-bottom: 23px;
                     color:$main_Color;
                     font-size: 16px;
-                    line-height: 24px;
+                    line-height: 18px;
                 }
 
                 a {
@@ -227,6 +228,18 @@
                         height: 379px;
                         margin: 10px 0 20px 55px;
                     }
+
+                    &.license {
+                        width: auto;
+                        height: 1190px;
+                    }
+                }
+
+                button {
+                    width: 257px;
+                    height: 41px;
+                    @include mainBtn;
+                    padding: 10px 20px;
                 }
             }
         }

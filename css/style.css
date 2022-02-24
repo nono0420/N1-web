@@ -9,13 +9,38 @@ header .pass_ic {
   background-size: 100%;
 }
 
-header .forget {
-  background: url("../images/icon/svg/question.svg") no-repeat;
+header .register_ic {
+  background: url("../images/icon/svg/register.svg") no-repeat;
   background-size: 100%;
 }
 
-header .register_ic {
-  background: url("../images/icon/svg/register.svg") no-repeat;
+header .forget_ic {
+  background: url("../images/icon/svg/forget.svg") no-repeat;
+  background-size: 100%;
+}
+
+.registerWrap .top {
+  background: url("../../images/registerTop.png");
+  background-size: cover;
+}
+
+.registerWrap .logo {
+  background: url("../../images/icon/i88logo_w.png");
+  background-size: 100%;
+}
+
+.registerWrap .photo {
+  background: url("../images/icon/svg/register_w.svg");
+  background-size: 100%;
+}
+
+.registerWrap .photo {
+  background: url("../images/icon/svg/register_w.svg");
+  background-size: 100%;
+}
+
+.registerWrap .bigBox .left span {
+  background: url("../images/icon/lineWechat.png");
   background-size: 100%;
 }
 
@@ -263,6 +288,11 @@ header .logout_ic {
   background-size: 100%;
 }
 
+.innerNav .card_ic {
+  background: url("../images/icon/svg/innerNav_card.svg") no-repeat;
+  background-size: 100%;
+}
+
 .innerNav .dealRecord_ic {
   background: url("../images/icon/svg/innerNav_dealRecord.svg") no-repeat;
   background-size: 100%;
@@ -383,6 +413,11 @@ header .logout_ic {
   background-size: 100%;
 }
 
+.depositWrap .list .atm_ic {
+  background: url("../images/icon/svg/atm.svg") no-repeat;
+  background-size: 100%;
+}
+
 .depositWrap .list .prev, .depositWrap .list .next {
   background: url("../images/icon/svg/arrow_r.svg") no-repeat;
   background-size: 100%;
@@ -454,6 +489,11 @@ header .logout_ic {
   background-size: 100%;
 }
 
+.helpPage .nav .dowl_p {
+  background: url("../images/icon/svg/dowl_p.svg") no-repeat;
+  background-size: 100%;
+}
+
 .helpPage .teachList .arrow_ic {
   background: url("../images/icon/svg/arrow_b.svg") no-repeat;
   background-size: 100%;
@@ -484,6 +524,11 @@ header .logout_ic {
   background-size: 100%;
 }
 
+.helpPage .img.license {
+  background: url("../images/help/license.jpg") no-repeat;
+  background-size: 100%;
+}
+
 .jumpWindow.betWindow .close_ic {
   background: url("../images/icon/svg/close_gray.svg") no-repeat;
   background-size: 100%;
@@ -508,11 +553,6 @@ header .logout_ic {
 .registerWrap .eye {
   background: url("../images/icon/svg/eye.svg") no-repeat;
   background-size: 100%;
-}
-
-.registerWrap .left {
-  background: url("../images/register_background2.png") no-repeat;
-  background-size: cover;
 }
 
 header .topGameList div {
@@ -831,10 +871,6 @@ html body header .top .user li:not(.platform) .loginForm div i.pass_ic {
   width: 12px;
   left: 21px;
 }
-html body header .top .user li:not(.platform) .loginForm div i.forget {
-  right: 15px;
-  cursor: pointer;
-}
 html body header .top .user li:not(.platform) .loginForm div input {
   width: 152px;
   height: 30px;
@@ -893,6 +929,18 @@ html body header .top .user li:not(.platform).register:hover, html body header .
 html body header .top .user li:not(.platform).register .register_ic {
   width: 27px;
   height: 27px;
+  margin-right: 10px;
+}
+html body header .top .user li:not(.platform).forget {
+  font-size: 14px;
+  cursor: pointer;
+}
+html body header .top .user li:not(.platform).forget:hover, html body header .top .user li:not(.platform).forget:active, html body header .top .user li:not(.platform).forget.active {
+  background: #0068ff;
+}
+html body header .top .user li:not(.platform).forget .forget_ic {
+  width: 21px;
+  height: 21px;
   margin-right: 10px;
 }
 html body header .top .user li:not(.platform).moneyTotal {
@@ -1098,7 +1146,7 @@ html body header .topGameList .listWrap {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-top: solid 1px #dbdef4;
-  background: #f8f8fa;
+  background: #ffffff;
 }
 html body header .topGameList .listWrap .center {
   width: 1400px;
@@ -2301,9 +2349,14 @@ html body .gameWrap .slotCenter .slotBody .nav .search i {
 html body .gameWrap .slotCenter .slotBody .nav .search input {
   width: 330px;
   height: 40px;
-  border: none;
+  border: solid 1px #dedede;
   background: transparent;
-  color: #000;
+  text-align: left;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-left: 36px;
 }
 html body .gameWrap .slotCenter .slotBody .gameBox {
   padding: 24px 48px 40px;
@@ -2693,6 +2746,10 @@ html body .eventWrap .eventBody .eventList .eventBox ul .btnBox .disable {
   text-align: center;
   line-height: 37px;
   cursor: no-drop;
+  background: #c7c7c7;
+  color: #ffffff;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul .btnBox .disable:hover, html body .eventWrap .eventBody .eventList .eventBox ul .btnBox .disable:active, html body .eventWrap .eventBody .eventList .eventBox ul .btnBox .disable.active {
   background: #c7c7c7;
   color: #ffffff;
 }
@@ -5924,6 +5981,10 @@ html body .innerPage .center .dealWrap .bottom .dealBox2 table tr td .d-btn {
   background: #c7c7c7;
   color: #ffffff;
 }
+html body .innerPage .center .dealWrap .bottom .dealBox2 table tr td .d-btn:hover, html body .innerPage .center .dealWrap .bottom .dealBox2 table tr td .d-btn:active, html body .innerPage .center .dealWrap .bottom .dealBox2 table tr td .d-btn.active {
+  background: #c7c7c7;
+  color: #ffffff;
+}
 html body .innerPage .center .dealWrap .bottom .dealBox2 table tr td .b-btn {
   width: 50px;
   height: 30px;
@@ -6432,6 +6493,10 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom {
   border-radius: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: none;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom.display {
+  display: block;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .title {
   font-size: 17px;
@@ -6502,7 +6567,7 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .content form .
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .content form .row .remind {
   position: absolute;
-  bottom: -25px;
+  bottom: -17px;
   left: 108px;
   font-size: 12px;
   letter-spacing: 1px;
@@ -6541,6 +6606,256 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .content .remin
   margin-bottom: 11px;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .content .remindBox div.title {
+  color: #cfa678;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2 {
+  width: 100%;
+  height: auto;
+  padding: 16px 0 56px 27px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 5px 10px -5px #00000033;
+          box-shadow: 0 5px 10px -5px #00000033;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: none;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2.display {
+  display: block;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2 .title {
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: #3d4cce;
+  font-weight: bold;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content {
+  margin-top: 26px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 41px;
+  margin-bottom: 22px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #333333;
+  position: relative;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form .row i {
+  font-size: 16px;
+  color: #e11515;
+  margin-right: 5px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form .row select {
+  width: 257px;
+  height: 41px;
+  margin-left: 26px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 16px;
+  background-image: linear-gradient(45deg, transparent 50%, #3278ff 0), linear-gradient(135deg, #3278ff 50%, transparent 0);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form .row select option {
+  background: #ffffff;
+  color: #000000;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form .row input {
+  width: 257px;
+  height: 41px;
+  margin-left: 26px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form .row .remind {
+  position: absolute;
+  bottom: -25px;
+  left: 108px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #747474;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form button {
+  width: 257px;
+  height: 41px;
+  margin: 46px 0 0 108px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 16px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form button:hover, html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form button:active, html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form button.active {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content .remindBox {
+  width: 839px;
+  height: auto;
+  padding: 15px 19px;
+  margin: 39px 0 0 -10px;
+  border: solid 1px #cca172;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content .remindBox div {
+  color: #333333;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 11px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content .remindBox div.title {
+  color: #cfa678;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3 {
+  width: 100%;
+  height: auto;
+  padding: 16px 0 56px 27px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 5px 10px -5px #00000033;
+          box-shadow: 0 5px 10px -5px #00000033;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: none;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3.display {
+  display: block;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3 .title {
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: #3d4cce;
+  font-weight: bold;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content {
+  margin-top: 26px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 41px;
+  margin-bottom: 22px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #333333;
+  position: relative;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form .row i {
+  font-size: 16px;
+  color: #e11515;
+  margin-right: 5px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form .row select {
+  width: 257px;
+  height: 41px;
+  margin-left: 26px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 16px;
+  background-image: linear-gradient(45deg, transparent 50%, #3278ff 0), linear-gradient(135deg, #3278ff 50%, transparent 0);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form .row select option {
+  background: #ffffff;
+  color: #000000;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form .row input {
+  width: 257px;
+  height: 41px;
+  margin-left: 26px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form .row .remind {
+  position: absolute;
+  bottom: -25px;
+  left: 108px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #747474;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form button {
+  width: 257px;
+  height: 41px;
+  margin: 46px 0 0 108px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 16px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form button:hover, html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form button:active, html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form button.active {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content .remindBox {
+  width: 839px;
+  height: auto;
+  padding: 15px 19px;
+  margin: 39px 0 0 -10px;
+  border: solid 1px #cca172;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content .remindBox div {
+  color: #333333;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 11px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content .remindBox div.title {
   color: #cfa678;
 }
 html body .innerPage .center .transferWrap {
@@ -7445,6 +7760,7 @@ html body .helpPage .center .nav li.box ul li:hover::before, html body .helpPage
 html body .helpPage .center .helpWrap {
   width: 980px;
   height: auto;
+  min-height: 590px;
   background: #ffffff;
   -webkit-box-shadow: 0px 5px 10px -5px #00000033;
           box-shadow: 0px 5px 10px -5px #00000033;
@@ -7479,7 +7795,7 @@ html body .helpPage .center .helpWrap div p {
   margin-bottom: 23px;
   color: #333333;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 18px;
 }
 html body .helpPage .center .helpWrap div a {
   color: #e11515;
@@ -7564,6 +7880,27 @@ html body .helpPage .center .helpWrap div .img.online05 {
   height: 379px;
   margin: 10px 0 20px 55px;
 }
+html body .helpPage .center .helpWrap div .img.license {
+  width: auto;
+  height: 1190px;
+}
+html body .helpPage .center .helpWrap div button {
+  width: 257px;
+  height: 41px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 16px;
+  padding: 10px 20px;
+}
+html body .helpPage .center .helpWrap div button:hover, html body .helpPage .center .helpWrap div button:active, html body .helpPage .center .helpWrap div button.active {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
+}
 html body .registerWrap {
   width: 100%;
   height: 100%;
@@ -7581,76 +7918,73 @@ html body .registerWrap {
           justify-content: center;
 }
 html body .registerWrap .bigBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: auto;
+  height: 511px;
+  display: block;
   border-radius: 17px;
   overflow: hidden;
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
-}
-html body .registerWrap .bigBox .left {
-  width: 432px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-html body .registerWrap .bigBox .right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 432px;
-  padding: 32px 0 37px;
   background: #ffffff;
 }
-html body .registerWrap .bigBox .right .title {
+html body .registerWrap .bigBox .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  height: auto;
-  font-size: 25px;
-  font-weight: bold;
-  letter-spacing: 2px;
+  width: 864px;
+  height: 93px;
+  border-radius: 0;
 }
-html body .registerWrap .bigBox .right .title .person_ic {
-  width: 44px;
-  height: 44px;
-  margin-right: 15px;
-}
-html body .registerWrap .bigBox .right label {
-  position: relative;
-  margin-bottom: 19px;
+html body .registerWrap .bigBox .top .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-weight: bold;
 }
-html body .registerWrap .bigBox .right label input {
+html body .registerWrap .bigBox .top .title .logo {
+  width: 88px;
+  height: 41px;
+  display: inline-block;
+}
+html body .registerWrap .bigBox .top .title .photo {
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin: 0 15px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+html body .registerWrap .bigBox .bottom {
+  width: auto;
+  height: auto;
+  background: #ffffff;
+  display: inline-block;
+  position: relative;
+  width: 864px;
+  padding: 28px 80px 30px;
+}
+html body .registerWrap .bigBox .bottom .left {
+  width: 50%;
+  height: 390px;
+  float: left;
+}
+html body .registerWrap .bigBox .bottom .left input {
   width: 332px;
   height: 41px;
+  padding: 0 0 0 19px;
   border: solid 1px #dedede;
   background: transparent;
   text-align: left;
@@ -7658,31 +7992,128 @@ html body .registerWrap .bigBox .right label input {
   font-weight: bold;
   font-size: 14px;
   padding-left: 15px;
+  margin-bottom: 20px;
 }
-html body .registerWrap .bigBox .right label .err {
+html body .registerWrap .bigBox .bottom .left .linebar {
+  padding: 0 0 0 65px;
+}
+html body .registerWrap .bigBox .bottom .left ul {
   position: absolute;
-  bottom: -15px;
-  left: 0;
-  font-size: 12px;
-  font-weight: bold;
-  color: #0df;
+  width: 58px;
+  height: 41px;
+  left: 80px;
+  top: 211px;
+  z-index: 2;
 }
-html body .registerWrap .bigBox .right label .eye {
+html body .registerWrap .bigBox .bottom .left ul::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 5px;
+  background: #747474;
+  -webkit-transform: rotate(45deg) translateY(-50%);
+          transform: rotate(45deg) translateY(-50%);
+  top: 50%;
+  right: 10px;
+  z-index: 2;
+}
+html body .registerWrap .bigBox .bottom .left ul::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 5px;
+  background: #747474;
+  -webkit-transform: rotate(-45deg) translateY(-50%);
+          transform: rotate(-45deg) translateY(-50%);
+  top: 50%;
+  right: 10px;
+  z-index: 2;
+}
+html body .registerWrap .bigBox .bottom .left ul li {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #adadad;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #d9d9d9), color-stop(50%, #ededed), to(#fff));
+  background: linear-gradient(0deg, #d9d9d9 0, #ededed 50%, #fff);
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+}
+html body .registerWrap .bigBox .bottom .left ul li.display {
+  display: block;
+}
+html body .registerWrap .bigBox .bottom .left ul li.wechat span {
+  background-position-y: 100%;
+}
+html body .registerWrap .bigBox .bottom .left ul li span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 27px;
+  height: 27px;
+}
+html body .registerWrap .bigBox .bottom .left .err {
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: left;
+  color: #e11515;
+  position: absolute;
+  margin-top: -20px;
+}
+html body .registerWrap .bigBox .bottom .left .eye {
   display: block;
   width: 23px;
   height: 17px;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 20px;
   cursor: pointer;
+  top: 100px;
+  margin-left: 290px;
 }
-html body .registerWrap .bigBox .right label button {
+html body .registerWrap .bigBox .bottom .left .intoBtn {
+  width: 332px;
+  height: 41px;
+  border-radius: 3px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 16px;
+  margin-top: 80px;
+  font-size: 16px;
+}
+html body .registerWrap .bigBox .bottom .left .intoBtn:hover, html body .registerWrap .bigBox .bottom .left .intoBtn:active, html body .registerWrap .bigBox .bottom .left .intoBtn.active {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
+}
+html body .registerWrap .bigBox .bottom .right {
+  width: 50%;
+  height: 390px;
+  float: right;
+  text-align: right;
+}
+html body .registerWrap .bigBox .bottom .right input {
+  width: 332px;
+  height: 41px;
+  padding: 0 0 0 19px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+html body .registerWrap .bigBox .bottom .right .verification-btn {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   width: 86px;
   height: 29px;
   right: 11px;
@@ -7691,15 +8122,15 @@ html body .registerWrap .bigBox .right label button {
   background: none;
   text-decoration: none;
   text-align: center;
+  border-radius: 2px;
+  margin: 6px 78px 0px 0px;
 }
-html body .registerWrap .bigBox .right .tips {
-  width: 332px;
-  font-size: 12px;
-  font-weight: bold;
+html body .registerWrap .bigBox .bottom .right .tips {
+  font-size: 14px;
+  padding-right: 42px;
   color: #e11515;
-  text-align: left;
 }
-html body .registerWrap .bigBox .right .checkBox {
+html body .registerWrap .bigBox .bottom .right .checkBox {
   width: 332px;
   height: auto;
   display: -webkit-box;
@@ -7711,22 +8142,24 @@ html body .registerWrap .bigBox .right .checkBox {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 23px 0 32px;
+  margin: 12px 0 15px;
 }
-html body .registerWrap .bigBox .right .checkBox input {
+html body .registerWrap .bigBox .bottom .right .checkBox input {
   width: 16px;
   height: 16px;
   margin-right: 10px;
 }
-html body .registerWrap .bigBox .right .checkBox p {
+html body .registerWrap .bigBox .bottom .right .checkBox p {
   font-size: 16px;
   font-weight: bold;
+  margin-top: -15px;
   color: #333333;
 }
-html body .registerWrap .bigBox .right .checkBox p span {
-  color: #4d4d4d;
+html body .registerWrap .bigBox .bottom .right .checkBox p span {
+  color: #c69c6d;
+  cursor: pointer;
 }
-html body .registerWrap .bigBox .right .checkBtn {
+html body .registerWrap .bigBox .bottom .right .checkBtn {
   width: 332px;
   height: 41px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
@@ -7737,8 +8170,22 @@ html body .registerWrap .bigBox .right .checkBtn {
   font-size: 14px;
   font-weight: bold;
   padding: 0 16px;
+  font-size: 16px;
 }
-html body .registerWrap .bigBox .right .checkBtn:hover, html body .registerWrap .bigBox .right .checkBtn:active, html body .registerWrap .bigBox .right .checkBtn.active {
+html body .registerWrap .bigBox .bottom .right .checkBtn:hover, html body .registerWrap .bigBox .bottom .right .checkBtn:active, html body .registerWrap .bigBox .bottom .right .checkBtn.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
   background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
+}
+html body .registerWrap .bigBox .bottom .right .disable {
+  width: 332px;
+  height: 41px;
+  background: #c7c7c7;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  cursor: no-drop;
+}
+html body .registerWrap .bigBox .bottom .right .disable:hover, html body .registerWrap .bigBox .bottom .right .disable:active, html body .registerWrap .bigBox .bottom .right .disable.active {
+  background: #c7c7c7;
+  color: #ffffff;
 }

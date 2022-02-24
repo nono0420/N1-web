@@ -84,10 +84,10 @@ header {
                                 width: 12px;
                                 left: 21px;
                             }
-                            &.forget {
-                                right: 15px;
-                                cursor: pointer;
-                            }
+                            // &.forget {
+                            //     right: 15px;
+                            //     cursor: pointer;
+                            // }
                         }
 
                         input {
@@ -143,6 +143,22 @@ header {
                     .register_ic {
                         width: 27px;
                         height: 27px;
+                        margin-right: 10px;
+                    }
+                }
+
+                //忘記密碼
+                &.forget {
+                    font-size: 14px;
+                    cursor: pointer;
+
+                    &:hover,&:active,&.active {
+                        background: $headerTop_Hover;
+                    }
+
+                    .forget_ic {
+                        width: 21px;
+                        height: 21px;
                         margin-right: 10px;
                     }
                 }
@@ -344,7 +360,7 @@ header {
             height: 170px;
             box-sizing: border-box;
             border-top: solid 1px $main_Border_2;
-            background: $mainBG_3;
+            background: $mainBG_2;
 
             .center {
                 width: 1400px;
