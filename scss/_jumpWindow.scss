@@ -309,6 +309,10 @@
         }
 
         &.passwordWindow {
+            display: none;
+            &.display {
+                display: block;
+            }
 
             form {
                 

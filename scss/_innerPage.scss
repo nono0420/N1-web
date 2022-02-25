@@ -337,12 +337,20 @@
                                                     }
                                                 }
 
-                                                button {
-                                                    width: 257px;
-                                                    height: 42px;
-                                                    position: relative;
-                                                    left: 110px;
+                                                // button {
+                                                //     width: 257px;
+                                                //     height: 42px;
+                                                //     position: relative;
+                                                //     left: 110px;
+                                                //     @include mainBtn;
+                                                // }
+
+                                                .smalltyBtn {
+                                                    width: 70px;
+                                                    height: 32px;
                                                     @include mainBtn;
+                                                    margin: 5px 0px 0 -76px;
+                                                    position: absolute;
                                                 }
                                             }
                                         }
@@ -433,7 +441,7 @@
                                 }
 
                                 input {
-                                    width: 190px;
+                                    width: 180px;
                                     height: 41px;
                                     @include inputStyle_1;
                                 }
@@ -1019,13 +1027,14 @@
 
                     .content {
                         display: flex;
+                        height: auto;
 
                         //左
                         .total {
                             width: 50%;
                             box-sizing: border-box;
                             padding: 14px 0 0 24px;
-                            height: 203px;
+                            height: 170px;
                             border-right: solid 1px $main_Border_2;
 
                             &:nth-of-type(2) {
@@ -1114,7 +1123,7 @@
                             width: 50%;
                             box-sizing: border-box;
                             padding: 14px 0 0 24px;
-                            height: 203px;
+                            height: 170px;
                             
                             .ableTitle {
                                 display: flex;
@@ -1370,7 +1379,7 @@
 
                     .platformWallet {
                         display: none;
-                        padding: 21px 23px 0;
+                        padding: 21px 23px 8px;
 
                         &.display {
                             display: block;
@@ -2892,6 +2901,7 @@
                     display: none;
                     width: 100%;
                     height: auto;
+                    min-height: 440px;
                     background: $mainBG_2;
                     box-shadow: 0px 5px 10px -5px $boxShadow_3;
                     border-radius: 5px;

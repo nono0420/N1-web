@@ -1832,6 +1832,12 @@ html body .filter .jumpWindow.score ul li div.point .notice p i {
   border-width: 0px 6px 8px;
   border-color: #b3b3b3 transparent;
 }
+html body .filter .jumpWindow.passwordWindow {
+  display: none;
+}
+html body .filter .jumpWindow.passwordWindow.display {
+  display: block;
+}
 html body .filter .jumpWindow.passwordWindow form .content {
   width: 100%;
   height: auto;
@@ -3222,11 +3228,9 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .remind.np span {
   color: #4a59ed;
 }
-html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button {
-  width: 257px;
-  height: 42px;
-  position: relative;
-  left: 110px;
+html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .smalltyBtn {
+  width: 70px;
+  height: 32px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
   background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
   border: 1px solid #d2a269;
@@ -3235,8 +3239,10 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
   font-size: 14px;
   font-weight: bold;
   padding: 0 16px;
+  margin: 5px 0px 0 -76px;
+  position: absolute;
 }
-html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button:hover, html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button:active, html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button.active {
+html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .smalltyBtn:hover, html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .smalltyBtn:active, html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .smalltyBtn.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
   background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
@@ -3311,7 +3317,7 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li
   font-weight: bold;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li input {
-  width: 190px;
+  width: 180px;
   height: 41px;
   border: none;
   background: transparent;
@@ -3936,13 +3942,14 @@ html body .innerPage .center .walletWrap .walletMiddle .top .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: auto;
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .total {
   width: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 14px 0 0 24px;
-  height: 203px;
+  height: 170px;
   border-right: solid 1px #dbdef4;
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .total:nth-of-type(2) {
@@ -4042,7 +4049,7 @@ html body .innerPage .center .walletWrap .walletMiddle .top .content .able {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 14px 0 0 24px;
-  height: 203px;
+  height: 170px;
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .able .ableTitle {
   display: -webkit-box;
@@ -4182,7 +4189,7 @@ html body .innerPage .center .walletWrap .walletMiddle .bottom .activeWallet .ti
 }
 html body .innerPage .center .walletWrap .walletMiddle .bottom .platformWallet {
   display: none;
-  padding: 21px 23px 0;
+  padding: 21px 23px 8px;
 }
 html body .innerPage .center .walletWrap .walletMiddle .bottom .platformWallet.display {
   display: block;
@@ -5906,6 +5913,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox2 {
   display: none;
   width: 100%;
   height: auto;
+  min-height: 440px;
   background: #ffffff;
   -webkit-box-shadow: 0px 5px 10px -5px #00000033;
           box-shadow: 0px 5px 10px -5px #00000033;
