@@ -3570,6 +3570,10 @@
                                     width: 95px;
                                     height: 27px;
                                     margin: 0;
+
+                                    &:hover,&:active,&.active {
+                                        background: none;
+                                    }
                                 }
                             }
 

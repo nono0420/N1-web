@@ -6682,6 +6682,9 @@ html body .innerPage .center .depositWrap .depositMiddle .confirm .content .conf
   height: 27px;
   margin: 0;
 }
+html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box .confin_number button:hover, html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box .confin_number button:active, html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box .confin_number button.active {
+  background: none;
+}
 html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box button {
   width: 257px;
   height: 41px;
