@@ -3518,83 +3518,69 @@
                         }
                     }
                 }
-                .bottom2 {
-                    width: 100%;
-                    height: auto;
-                    padding: 16px 0 56px 27px;
-                    background: $mainBG_2;
-                    box-shadow: 0 5px 10px -5px $boxShadow_3;
-                    border-radius: 5px;
-                    box-sizing: border-box;
-                    display: none;
-
-                    &.display {
-                        display: block;
-                    }
-
-
-                    .title {
-                        font-size: 17px;
-                        letter-spacing: 2px;
-                        color: $main_Color4;
-                        font-weight: bold;
-                    }
-
+                .confirm {
+    
                     .content {
-                        margin-top: 26px;
 
-                        form {
+                        .confin_box {
                             width: 100%;
                             height: auto;
 
-                            .row {
-                                display: flex;
-                                align-items: center;
-                                height: 41px;
-                                margin-bottom: 22px;
-                                font-weight: bold;
+                            span {
+                                color: $main_Color;
                                 font-size: 15px;
-                                color:$main_Color;
-                                position: relative;
+                                font-weight: bold;
+                            }
+                            .confin_name {
+                                color: $main_Color;
+                                font-size: 16px;
+                                margin: 25px 0 0 92px;
+                                font-weight: bold;
+                            }
+                            .confin_name2 {
+                                color: $main_Color;
+                                font-size: 16px;
+                                font-weight: bold;
+                                margin: -14px 0 0 138px;
+                            }
 
-                                i {
-                                    font-size: 16px;
-                                    color: $remindColor_Main;
-                                    margin-right: 5px;
+                            .confin_number {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                font-weight: bold;
+                                line-height: 2.5;
+                                margin-top: 15px;
+                                align-items: center;
+
+
+                                .number_num1 {
+                                    color: $main_Color6;
+                                    font-size: 14px;
+                                    text-align: right;
                                 }
-
-                                select {
-                                    width: 257px;
-                                    height: 41px;
-                                    margin-left: 26px;
-                                    @include select_Style;
+                                .number_num {
+                                    color: $main_Color;
+                                    font-size: 15px;
+                                    padding: 0 18px;
                                 }
-
-                                input {
-                                    width: 257px;
-                                    height: 41px;
-                                    margin-left: 26px;
-                                    @include inputStyle;
-                                }
-
-                                .remind {
-                                    position: absolute;
-                                    bottom: -25px;
-                                    left: 108px;
-                                    font-size: 12px;
-                                    letter-spacing: 1px;
-                                    color: $main_Color3;
+                                button {
+                                    @include smallBtn;
+                                    font-size: 12px !important;
+                                    width: 95px;
+                                    height: 27px;
+                                    margin: 0;
                                 }
                             }
 
                             button {
                                 width: 257px;
                                 height: 41px;
-                                margin: 46px 0 0 108px;
+                                font-size: 14px;
                                 @include mainBtn;
+                                margin: 25px 0 0 108px;
                             }
                         }
-
                         .remindBox {
                             width: 839px;
                             height: auto;
@@ -3610,105 +3596,7 @@
                                 margin-bottom: 11px;
 
                                 &.title {
-                                    color:$remineTitle;
-                                }
-                            }
-                        }
-                    }
-                }
-                .bottom3 {
-                    width: 100%;
-                    height: auto;
-                    padding: 16px 0 56px 27px;
-                    background: $mainBG_2;
-                    box-shadow: 0 5px 10px -5px $boxShadow_3;
-                    border-radius: 5px;
-                    box-sizing: border-box;
-                    display: none;
-
-                    &.display {
-                        display: block;
-                    }
-
-
-                    .title {
-                        font-size: 17px;
-                        letter-spacing: 2px;
-                        color: $main_Color4;
-                        font-weight: bold;
-                    }
-
-                    .content {
-                        margin-top: 26px;
-
-                        form {
-                            width: 100%;
-                            height: auto;
-
-                            .row {
-                                display: flex;
-                                align-items: center;
-                                height: 41px;
-                                margin-bottom: 22px;
-                                font-weight: bold;
-                                font-size: 15px;
-                                color:$main_Color;
-                                position: relative;
-
-                                i {
-                                    font-size: 16px;
-                                    color: $remindColor_Main;
-                                    margin-right: 5px;
-                                }
-
-                                select {
-                                    width: 257px;
-                                    height: 41px;
-                                    margin-left: 26px;
-                                    @include select_Style;
-                                }
-
-                                input {
-                                    width: 257px;
-                                    height: 41px;
-                                    margin-left: 26px;
-                                    @include inputStyle;
-                                }
-
-                                .remind {
-                                    position: absolute;
-                                    bottom: -25px;
-                                    left: 108px;
-                                    font-size: 12px;
-                                    letter-spacing: 1px;
-                                    color: $main_Color3;
-                                }
-                            }
-
-                            button {
-                                width: 257px;
-                                height: 41px;
-                                margin: 46px 0 0 108px;
-                                @include mainBtn;
-                            }
-                        }
-
-                        .remindBox {
-                            width: 839px;
-                            height: auto;
-                            padding: 15px 19px;
-                            margin: 39px 0 0 -10px;
-                            border: solid 1px $remineBoder;
-                            box-sizing: border-box;
-
-                            div {
-                                color: $remineText;
-                                font-size: 13px;
-                                letter-spacing: 1px;
-                                margin-bottom: 11px;
-
-                                &.title {
-                                    color:$remineTitle;
+                                    color: $remineTitle;
                                 }
                             }
                         }

@@ -6617,100 +6617,65 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .content .remin
 html body .innerPage .center .depositWrap .depositMiddle .bottom .content .remindBox div.title {
   color: #cfa678;
 }
-html body .innerPage .center .depositWrap .depositMiddle .bottom2 {
+html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box {
   width: 100%;
   height: auto;
-  padding: 16px 0 56px 27px;
-  background: #ffffff;
-  -webkit-box-shadow: 0 5px 10px -5px #00000033;
-          box-shadow: 0 5px 10px -5px #00000033;
-  border-radius: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: none;
 }
-html body .innerPage .center .depositWrap .depositMiddle .bottom2.display {
-  display: block;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom2 .title {
-  font-size: 17px;
-  letter-spacing: 2px;
-  color: #3d4cce;
+html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box span {
+  color: #333333;
+  font-size: 15px;
   font-weight: bold;
 }
-html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content {
-  margin-top: 26px;
+html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box .confin_name {
+  color: #333333;
+  font-size: 16px;
+  margin: 25px 0 0 92px;
+  font-weight: bold;
 }
-html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form {
+html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box .confin_name2 {
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  margin: -14px 0 0 138px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box .confin_number {
   width: 100%;
   height: auto;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: bold;
+  line-height: 2.5;
+  margin-top: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 41px;
-  margin-bottom: 22px;
-  font-weight: bold;
-  font-size: 15px;
+}
+html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box .confin_number .number_num1 {
+  color: #4d4d4d;
+  font-size: 14px;
+  text-align: right;
+}
+html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box .confin_number .number_num {
   color: #333333;
-  position: relative;
+  font-size: 15px;
+  padding: 0 18px;
 }
-html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form .row i {
-  font-size: 16px;
-  color: #e11515;
-  margin-right: 5px;
+html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box .confin_number button {
+  border: solid 1px #cca172;
+  color: #cca172;
+  background: none;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px !important;
+  width: 95px;
+  height: 27px;
+  margin: 0;
 }
-html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form .row select {
+html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box button {
   width: 257px;
   height: 41px;
-  margin-left: 26px;
-  border: solid 1px #dedede;
-  background: transparent;
-  text-align: left;
-  border-radius: 3px;
-  font-weight: bold;
   font-size: 14px;
-  padding-left: 16px;
-  background-image: linear-gradient(45deg, transparent 50%, #3278ff 0), linear-gradient(135deg, #3278ff 50%, transparent 0);
-  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
-  background-size: 5px 5px, 5px 5px;
-  background-repeat: no-repeat;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form .row select option {
-  background: #ffffff;
-  color: #000000;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form .row input {
-  width: 257px;
-  height: 41px;
-  margin-left: 26px;
-  border: solid 1px #dedede;
-  background: transparent;
-  text-align: left;
-  border-radius: 3px;
-  font-weight: bold;
-  font-size: 14px;
-  padding-left: 15px;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form .row .remind {
-  position: absolute;
-  bottom: -25px;
-  left: 108px;
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: #747474;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form button {
-  width: 257px;
-  height: 41px;
-  margin: 46px 0 0 108px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
   background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
   border: 1px solid #d2a269;
@@ -6719,12 +6684,13 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form 
   font-size: 14px;
   font-weight: bold;
   padding: 0 16px;
+  margin: 25px 0 0 108px;
 }
-html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form button:hover, html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form button:active, html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content form button.active {
+html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box button:hover, html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box button:active, html body .innerPage .center .depositWrap .depositMiddle .confirm .content .confin_box button.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
   background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
-html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content .remindBox {
+html body .innerPage .center .depositWrap .depositMiddle .confirm .content .remindBox {
   width: 839px;
   height: auto;
   padding: 15px 19px;
@@ -6733,138 +6699,13 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content .remi
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content .remindBox div {
+html body .innerPage .center .depositWrap .depositMiddle .confirm .content .remindBox div {
   color: #333333;
   font-size: 13px;
   letter-spacing: 1px;
   margin-bottom: 11px;
 }
-html body .innerPage .center .depositWrap .depositMiddle .bottom2 .content .remindBox div.title {
-  color: #cfa678;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3 {
-  width: 100%;
-  height: auto;
-  padding: 16px 0 56px 27px;
-  background: #ffffff;
-  -webkit-box-shadow: 0 5px 10px -5px #00000033;
-          box-shadow: 0 5px 10px -5px #00000033;
-  border-radius: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: none;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3.display {
-  display: block;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3 .title {
-  font-size: 17px;
-  letter-spacing: 2px;
-  color: #3d4cce;
-  font-weight: bold;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content {
-  margin-top: 26px;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form {
-  width: 100%;
-  height: auto;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 41px;
-  margin-bottom: 22px;
-  font-weight: bold;
-  font-size: 15px;
-  color: #333333;
-  position: relative;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form .row i {
-  font-size: 16px;
-  color: #e11515;
-  margin-right: 5px;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form .row select {
-  width: 257px;
-  height: 41px;
-  margin-left: 26px;
-  border: solid 1px #dedede;
-  background: transparent;
-  text-align: left;
-  border-radius: 3px;
-  font-weight: bold;
-  font-size: 14px;
-  padding-left: 16px;
-  background-image: linear-gradient(45deg, transparent 50%, #3278ff 0), linear-gradient(135deg, #3278ff 50%, transparent 0);
-  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
-  background-size: 5px 5px, 5px 5px;
-  background-repeat: no-repeat;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form .row select option {
-  background: #ffffff;
-  color: #000000;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form .row input {
-  width: 257px;
-  height: 41px;
-  margin-left: 26px;
-  border: solid 1px #dedede;
-  background: transparent;
-  text-align: left;
-  border-radius: 3px;
-  font-weight: bold;
-  font-size: 14px;
-  padding-left: 15px;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form .row .remind {
-  position: absolute;
-  bottom: -25px;
-  left: 108px;
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: #747474;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form button {
-  width: 257px;
-  height: 41px;
-  margin: 46px 0 0 108px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
-  border: 1px solid #d2a269;
-  border-radius: 3px;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 0 16px;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form button:hover, html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form button:active, html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content form button.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content .remindBox {
-  width: 839px;
-  height: auto;
-  padding: 15px 19px;
-  margin: 39px 0 0 -10px;
-  border: solid 1px #cca172;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content .remindBox div {
-  color: #333333;
-  font-size: 13px;
-  letter-spacing: 1px;
-  margin-bottom: 11px;
-}
-html body .innerPage .center .depositWrap .depositMiddle .bottom3 .content .remindBox div.title {
+html body .innerPage .center .depositWrap .depositMiddle .confirm .content .remindBox div.title {
   color: #cfa678;
 }
 html body .innerPage .center .transferWrap {
@@ -7873,12 +7714,12 @@ html body .helpPage .center .helpWrap div .img.online01 {
 }
 html body .helpPage .center .helpWrap div .img.online02 {
   width: 862px;
-  height: 749px;
+  height: 620px;
   margin-bottom: 20px;
 }
 html body .helpPage .center .helpWrap div .img.online03 {
   width: 862px;
-  height: 957px;
+  height: 785px;
 }
 html body .helpPage .center .helpWrap div .img.online04 {
   width: 187px;

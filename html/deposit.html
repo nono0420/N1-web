@@ -12,7 +12,7 @@
     <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
     <script src="../js/javascript.js"></script>
 </head>
-<body onload="currentTime()">
+<body>
     <header>
         <div class="top">
             <span class="brad">
@@ -461,7 +461,7 @@
                                     <i class="next"></i>
                                 </div>
                             </div>
-                            <div class="bottom display">
+                            <div class="bottom bottom1 display">
                                 <p class="title">銀行卡轉帳</p>
                                 <div class="content">
                                     <form>
@@ -479,7 +479,7 @@
                                             <input type="text">
                                             <p class="remind">單筆存款金額1000~2000</p>
                                         </div>
-                                        <button>確認送出</button>
+                                        <button type="button">確認送出</button>
                                     </form>
                                     <div class="remindBox">
                                         <div class="title">重要提醒</div>
@@ -488,7 +488,35 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="bottom2">
+                            <div class="bottom confirm">
+                                <p class="title">銀行卡轉帳</p>
+                                <div class="content">
+                                    <div class="confin_box">
+                                        <span>已存款到下列帳號</span>
+                                        <div class="confin_number">
+                                            <div class="number_num1">銀行</div>
+                                            <div class="number_num">測試2</div>
+                                        </div>
+                                        <div class="confin_number">
+                                            <div class="number_num1">帳號</div>
+                                            <div class="number_num">002233</div>
+                                            <button>點擊即複製</button>
+                                        </div>
+                                        <div class="confin_number">
+                                            <div class="number_num1">金額</div>
+                                            <div class="number_num">100</div>
+                                            <button>點擊即複製</button>
+                                        </div>
+                                    <button>我已匯款</button>
+                                    </div>
+                                    <div class="remindBox">
+                                        <div class="title">重要提醒</div>
+                                        <div>1.存款帳戶需為本人的銀行帳戶，如為非本人的帳戶存款無法成功存款。</div>
+                                        <div>2.存款金額需與申請提交金額相同，如不相同會以實際入帳金額為主。</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom bottom2">
                                 <p class="title">超商儲值</p>
                                 <div class="content">
                                     <form>
@@ -514,7 +542,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="bottom3">
+                            <div class="bottom bottom3">
                                 <p class="title">超商儲值</p>
                                 <div class="content">
                                     <form>
@@ -589,7 +617,7 @@
             </div>
         </div>
     </footer>
-    <div class="filter display">
+    <div class="filter">
         <div class="jumpWindow betWindow sportGame01">
             <i class="close_ic"></i>
             <div class="betTitle">36588</div>
@@ -947,7 +975,7 @@
                 </li>
             </ul>
         </div>
-        <div class="jumpWindow plsGo display">
+        <!-- <div class="jumpWindow plsGo display">
             <div class="title">
                 <p>提示</p>
                 <i class="close_ic"></i>
@@ -958,7 +986,7 @@
             <div class="btnBox">
                 <button>同意</button>
             </div>
-        </div>
+        </div> -->
     </div>
 </body>
 </html>

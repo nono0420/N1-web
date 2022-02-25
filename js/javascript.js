@@ -351,16 +351,20 @@ $(function(){
     $('.depositMiddle .box li:nth-of-type(1)').click(function(){
         // $('.depositMiddle .bottom').removeClass('display');
         // $(".depositMiddle .bottom.bank").addClass("display");
-        $(".depositMiddle .bottom").addClass("display");
-        $(".depositMiddle .bottom").siblings().removeClass("display");
+        $(".depositMiddle .bottom.bottom1").addClass("display");
+        $(".depositMiddle .bottom.bottom1").siblings().removeClass("display");
     })
     $('.depositMiddle .box li:nth-of-type(2)').click(function(){
-        $(".depositMiddle .bottom2").addClass("display");
-        $(".depositMiddle .bottom2").siblings().removeClass("display");
+        $(".depositMiddle .bottom.bottom2").addClass("display");
+        $(".depositMiddle .bottom.bottom2").siblings().removeClass("display");
     })
     $('.depositMiddle .box li:nth-of-type(3)').click(function(){
-        $(".depositMiddle .bottom3").addClass("display");
-        $(".depositMiddle .bottom3").siblings().removeClass("display");
+        $(".depositMiddle .bottom.bottom3").addClass("display");
+        $(".depositMiddle .bottom.bottom3").siblings().removeClass("display");
+    })
+    $(".depositMiddle .bottom.bottom1 button").click(function(){
+        $(".depositMiddle .bottom.confirm").addClass("display");
+        $(".depositMiddle .bottom.confirm").siblings().removeClass("display");
     })
 })
 
