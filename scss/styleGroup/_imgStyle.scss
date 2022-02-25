@@ -23,11 +23,11 @@ header .forget_ic {
 }
 
 .registerWrap .top {
-    background: url('../../images/registerTop.png');
+    background: url('../images/registerTop.png');
     background-size: cover;
 }
 .registerWrap .logo {
-    background: url('../../images/icon/i88logo_w.png');
+    background: url('../images/icon/i88logo_w.png');
     background-size: 100%;
 }
 .registerWrap .photo {
@@ -558,7 +558,7 @@ header .topGameList div {
 
 //入口頁中央遊戲入口圖 .mainWrap .img
 main .mainWrap {
-    background: url('../../images/home_bg_1.jpg');
+    background: url('../images/home_bg_1.jpg');
     background-size: 100%;
 }
 .mainWrap .typeList .img {
@@ -593,7 +593,7 @@ main .mainWrap {
 //gameWrap .mainImg左圖
 
 .gameWrap {
-    background: url('../../images/home_bg_1.jpg');
+    background: url('../images/home_bg_1.jpg');
     background-size: 100%;
     background-repeat: repeat;
 }

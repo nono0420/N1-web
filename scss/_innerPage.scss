@@ -457,7 +457,7 @@
                     box-shadow: 0px 5px 10px -5px $boxShadow_3;
                     border-radius: 5px;
                     box-sizing: border-box;
-                    padding: 20px 24px;
+                    padding: 20px 0px 24px;
 
                     &.display {
                         display: block;
@@ -2194,6 +2194,19 @@
                                 color: $main_Color6;
                             }
                         }
+
+                        & .notRead {
+                            .title {
+                                color: $main_Color4;
+                            }
+    
+                            .date {
+                                width: 30%;
+                                text-align: center;
+                                color: $main_Color4;
+                            }
+                            
+                        }
                     }
                 }
             }
@@ -2596,13 +2609,14 @@
                             width: 100%;
                             height: auto;
                             box-sizing: border-box;
-                            padding: 22px;
+                            padding: 22px 0 22px;
 
                             .tableTitle {
                                 font-size: 17px;
                                 font-weight: bold;
                                 letter-spacing: 2px;
                                 color: $main_Color7;
+                                padding-left: 15px;
                             }
 
                             table {
@@ -2811,7 +2825,7 @@
                             width: 100%;
                             height: auto;
                             box-sizing: border-box;
-                            padding: 0 21px 10px;
+                            padding: 0 0px 10px;
 
                             .noData {
                                 display: none;
@@ -2882,7 +2896,7 @@
                     box-shadow: 0px 5px 10px -5px $boxShadow_3;
                     border-radius: 5px;
                     box-sizing: border-box;
-                    padding: 20px 24px;
+                    padding: 20px 0px 24px;
 
                     &.display {
                         display: block;
@@ -2938,7 +2952,7 @@
                                 border-bottom: none;
 
                                 &.wNo {
-                                    width: 12%;
+                                    width: 13%;
                                 }
                                 &.wStatus {
                                     width: 14%;
@@ -3848,7 +3862,7 @@
                            box-sizing: border-box;
                            padding: 18px;
                            margin: 0 16px 16px 0;
-                           border: solid 1px $main_Border;
+                           border: solid 1px $main_Border_2;
                            border-radius: 5px;
 
                            &:nth-of-type(4n) {
@@ -4231,7 +4245,7 @@
                                box-sizing: border-box;
                                padding: 18px;
                                margin: 0 16px 16px 0;
-                               border: solid 1px $main_Border;
+                               border: solid 1px $main_Border_2;
                                border-radius: 5px;
     
                                &:nth-of-type(4n) {
@@ -4311,7 +4325,7 @@
                             width: 222px;
                             height: 112px;
                             margin-right: 8px;
-                            border: solid 1px $main_Border;
+                            border: solid 1px $main_Border_2;
                             border-radius: 5px;
 
                             .name {

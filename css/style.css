@@ -20,12 +20,12 @@ header .forget_ic {
 }
 
 .registerWrap .top {
-  background: url("../../images/registerTop.png");
+  background: url("../images/registerTop.png");
   background-size: cover;
 }
 
 .registerWrap .logo {
-  background: url("../../images/icon/i88logo_w.png");
+  background: url("../images/icon/i88logo_w.png");
   background-size: 100%;
 }
 
@@ -574,7 +574,7 @@ header .topGameList div img {
 }
 
 main .mainWrap {
-  background: url("../../images/home_bg_1.jpg");
+  background: url("../images/home_bg_1.jpg");
   background-size: 100%;
 }
 
@@ -614,7 +614,7 @@ main .mainWrap {
 }
 
 .gameWrap {
-  background: url("../../images/home_bg_1.jpg");
+  background: url("../images/home_bg_1.jpg");
   background-size: 100%;
   background-repeat: repeat;
 }
@@ -3333,7 +3333,7 @@ html body .innerPage .center .memberWrap .bottom .platformWrap {
   border-radius: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 20px 24px;
+  padding: 20px 0px 24px;
 }
 html body .innerPage .center .memberWrap .bottom .platformWrap.display {
   display: block;
@@ -5070,6 +5070,14 @@ html body .innerPage .center .mailWrap .bottom .list ul li .date {
   text-align: center;
   color: #4d4d4d;
 }
+html body .innerPage .center .mailWrap .bottom .list ul .notRead .title {
+  color: #3d4cce;
+}
+html body .innerPage .center .mailWrap .bottom .list ul .notRead .date {
+  width: 30%;
+  text-align: center;
+  color: #3d4cce;
+}
 html body .innerPage .center .eventWrap {
   width: 1140px;
 }
@@ -5555,13 +5563,14 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .t
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 22px;
+  padding: 22px 0 22px;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .tableWrap .tableTitle {
   font-size: 17px;
   font-weight: bold;
   letter-spacing: 2px;
   color: #4a59ed;
+  padding-left: 15px;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .tableWrap table {
   width: 100%;
@@ -5828,7 +5837,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable {
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 21px 10px;
+  padding: 0 0px 10px;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable .noData {
   display: none;
@@ -5893,7 +5902,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox2 {
   border-radius: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 20px 24px;
+  padding: 20px 0px 24px;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox2.display {
   display: block;
@@ -5942,7 +5951,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox2 table tr td {
   border-bottom: none;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox2 table tr td.wNo {
-  width: 12%;
+  width: 13%;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox2 table tr td.wStatus {
   width: 14%;
@@ -7028,7 +7037,7 @@ html body .innerPage .center .transferWrap .transferMiddle .platform ul li {
           box-sizing: border-box;
   padding: 18px;
   margin: 0 16px 16px 0;
-  border: solid 1px #4c4c4c;
+  border: solid 1px #dbdef4;
   border-radius: 5px;
 }
 html body .innerPage .center .transferWrap .transferMiddle .platform ul li:nth-of-type(4n) {
@@ -7420,7 +7429,7 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .platformBox
           box-sizing: border-box;
   padding: 18px;
   margin: 0 16px 16px 0;
-  border: solid 1px #4c4c4c;
+  border: solid 1px #dbdef4;
   border-radius: 5px;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .platformBox ul li:nth-of-type(4n) {
@@ -7512,7 +7521,7 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom ul li {
   width: 222px;
   height: 112px;
   margin-right: 8px;
-  border: solid 1px #4c4c4c;
+  border: solid 1px #dbdef4;
   border-radius: 5px;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom ul li .name {

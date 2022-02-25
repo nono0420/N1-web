@@ -1,16 +1,16 @@
 //時間列
-function currentTime() {
-    now = new Date();
-    yy = now.getFullYear();
-    mm = now.getMonth() + 1;
-    dd = now.getDate();
-    h = now.getHours();
-    m = now.getMinutes();
-    s = now.getSeconds();
-    var curTime = document.getElementsByClassName('time');
-    curTime[0].innerHTML = '現在時間: '+yy+'年 '+mm+'月 '+dd+'日 '+h+':'+m+':'+ s;
-    setTimeout('currentTime()',1000);
-}
+// function currentTime() {
+//     now = new Date();
+//     yy = now.getFullYear();
+//     mm = now.getMonth() + 1;
+//     dd = now.getDate();
+//     h = now.getHours();
+//     m = now.getMinutes();
+//     s = now.getSeconds();
+//     var curTime = document.getElementsByClassName('time');
+//     curTime[0].innerHTML = '現在時間: '+yy+'年 '+mm+'月 '+dd+'日 '+h+':'+m+':'+ s;
+//     setTimeout('currentTime()',1000);
+// }
 
 //topGameList 滑入彈出效果
 $(function() {
@@ -73,10 +73,10 @@ $(document).on('ready', function() {
 
 //slot+fish+board下拉選單寬度+點擊滑動
 $(function(){
-    var slot = document.querySelectorAll('.listWrap .slot li');
+    var slot = $('.listWrap .slot li');
     var slotl = slot.length;
-    var slwp = document.getElementsByClassName('slot');
-    slwp[0].style.width = 220 * slotl + 'px'; 
+    var slwp = $('.slot');
+    slwp[0].style.width = 220 * slotl + 'px';
 
     var n = 0;
     var nt = $('.listWrap .next');
@@ -85,7 +85,7 @@ $(function(){
         n ++;
         slwp[0].style.transform = "translateX(" + (-220 * n) + "px)";
 
-        if(n == 1){
+        if(n == 3){
             n --;
         }
     })
@@ -670,3 +670,8 @@ function openBoardGame(){
     $('.jumpWindow').removeClass('display');
     $('.filter,.betWindow.boardGame01').addClass('display');
 }
+
+//regitster
+$(function(){
+    console.log("ddd");
+})
