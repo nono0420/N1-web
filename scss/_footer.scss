@@ -98,6 +98,11 @@ footer {
                     &:hover,&:active,&.active {
                         
                         background: $mainBG_1;
+
+                        &:nth-of-type(5) {
+                            background: none;
+                            cursor: context-menu;
+                        }
                     }
                     
                     &.title {
@@ -117,6 +122,13 @@ footer {
                         opacity: 0.7;
                         margin-bottom: 10px;
                     }
+                }
+                .pright {
+                    position: relative;
+                    left: 728px;
+                    background: none;
+                    font-size: 14px;
+                    letter-spacing: 1px;
                 }
             }
         }
