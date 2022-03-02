@@ -189,7 +189,7 @@ $headerBottom_Border: #4a59ed;
 $headerBottom_trianGle:#4a59ed;
 
 //跑馬燈 
-$marqueeArea_BG:#f8f8fa;
+$marqueeArea_BG:#ffffff;
 $marqueeArea_Color:#333333;
 $marqueeArea_Shadow:#dee1f5;
 
@@ -202,21 +202,21 @@ $game_hoverBG:#0000006e;
 @mixin game_btn {
     font-size: 15px;
     font-weight: bold;
-    color: #333333;
-    background: linear-gradient(to bottom,#ffffff 40%,#f4f4f4 100%);
-    border: solid 1px #e8e8e8;
-    border-radius: 3px;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #f1c999 1%,#cca172 50%,#f1d7b7 100%);
+    border: solid 1px #f9e3c8;
+    border-radius: 5px;
     letter-spacing: 1px;
 
     &:hover,&:active,&.active {
-        background: #4a59ed;
+        background: linear-gradient(to top, #f1c999 0%,#cca172 100%);
         color: #ffffff;
     }
 }
 @mixin game_Lastbtn {
     background: linear-gradient(to bottom,#9ddbec 0%,#0282cc 50%,#82aeeb 100%);
     border: solid 1px #0282cc;
-    border-radius: 3px;
+    border-radius: 5px;
     color: #ffffff;
     font-size: 14px;
 

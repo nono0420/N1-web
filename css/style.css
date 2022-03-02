@@ -379,7 +379,7 @@ header .logout_ic {
 }
 
 .rightSide .smallBoard .arrow {
-  background: url("../images/icon/svg/arrow_r.svg") no-repeat;
+  background: url("../images/icon/svg/arrow_blue.svg") no-repeat;
   background-size: 100%;
 }
 
@@ -1221,7 +1221,7 @@ html body main .marqueeArea {
   width: 1400px;
   margin: auto;
   height: 35px;
-  background: #f8f8fa;
+  background: #ffffff;
   -webkit-box-shadow: 0 0 13px 3px #dee1f5;
           box-shadow: 0 0 13px 3px #dee1f5;
   color: #333333;
@@ -2539,22 +2539,23 @@ html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .game
   height: 40px;
   font-size: 15px;
   font-weight: bold;
-  color: #333333;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#f4f4f4));
-  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
-  border: solid 1px #e8e8e8;
-  border-radius: 3px;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f1c999), color-stop(50%, #cca172), to(#f1d7b7));
+  background: linear-gradient(to bottom, #f1c999 1%, #cca172 50%, #f1d7b7 100%);
+  border: solid 1px #f9e3c8;
+  border-radius: 5px;
   letter-spacing: 1px;
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button:hover, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button:active, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button.active {
-  background: #4a59ed;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f1c999), to(#cca172));
+  background: linear-gradient(to top, #f1c999 0%, #cca172 100%);
   color: #ffffff;
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li .btnBox button:last-child {
   background: -webkit-gradient(linear, left top, left bottom, from(#9ddbec), color-stop(50%, #0282cc), to(#82aeeb));
   background: linear-gradient(to bottom, #9ddbec 0%, #0282cc 50%, #82aeeb 100%);
   border: solid 1px #0282cc;
-  border-radius: 3px;
+  border-radius: 5px;
   color: #ffffff;
   font-size: 14px;
 }
@@ -4411,7 +4412,7 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .titl
   font-size: 17px;
   letter-spacing: 2px;
   font-weight: bold;
-  color: #4a59ed;
+  color: #333333;
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox {
   margin-top: 25px;
@@ -6528,7 +6529,7 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom.display {
 html body .innerPage .center .depositWrap .depositMiddle .bottom .title {
   font-size: 17px;
   letter-spacing: 2px;
-  color: #3d4cce;
+  color: #333333;
   font-weight: bold;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .content {
@@ -6812,7 +6813,7 @@ html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet
   margin-left: 6px;
 }
 html body .innerPage .center .transferWrap .transferMiddle .wallet .centerWallet .walletTitle button {
-  width: 71px;
+  width: 92px;
   height: 23px;
   background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
   background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
@@ -7627,6 +7628,9 @@ html body .helpPage .center .nav li.box ul li:hover::before, html body .helpPage
   left: 0px;
   top: 0px;
   background: #0068ff;
+}
+html body .helpPage .center .nav li.box ul li::before {
+  display: none;
 }
 html body .helpPage .center .helpWrap {
   width: 980px;

@@ -1607,7 +1607,7 @@
                                 font-size: 17px;
                                 letter-spacing: 2px;
                                 font-weight: bold;
-                                color: $main_Color7;
+                                color: $main_Color;
                             }
 
                             .formBox {
@@ -3448,7 +3448,7 @@
                     .title {
                         font-size: 17px;
                         letter-spacing: 2px;
-                        color: $main_Color4;
+                        color: $main_Color;
                         font-weight: bold;
                     }
 
@@ -3682,7 +3682,7 @@
                             }
 
                             button {
-                                width: 71px;
+                                width: 92px;
                                 height: 23px;
                                 @include mainBtn;
                             }
