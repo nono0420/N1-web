@@ -1778,7 +1778,7 @@
                     &.trans {
                         height: 321px;
                         box-sizing: border-box;
-                        padding: 15px 14px 42px;
+                        padding: 15px 0px 42px;
 
                         .transList {
                             height: 53px;
@@ -1786,6 +1786,7 @@
                             margin-bottom: 13px;
                             display: flex;
                             flex-direction: column;
+                            padding: 0 10px;
 
                             .transTitle {
                                 display: flex;

@@ -530,7 +530,7 @@ header .logout_ic {
 }
 
 .jumpWindow.betWindow .close_ic {
-  background: url("../images/icon/svg/close_gray.svg") no-repeat;
+  background: url("../images/icon/svg/close_w.svg") no-repeat;
   background-size: 100%;
 }
 
@@ -2013,12 +2013,17 @@ html body .filter .jumpWindow.checkEvent .btnBox button:hover, html body .filter
 }
 html body .filter .jumpWindow.betWindow {
   display: none;
-  padding-top: 54px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+}
+html body .filter .jumpWindow.betWindow::before {
+  content: "";
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(135deg, #7c4dff, #887aff);
 }
 html body .filter .jumpWindow.betWindow.display {
   display: -webkit-box;
@@ -2027,27 +2032,31 @@ html body .filter .jumpWindow.betWindow.display {
 }
 html body .filter .jumpWindow.betWindow .close_ic {
   position: absolute;
-  top: 24px;
+  top: 16px;
   right: 24px;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 }
 html body .filter .jumpWindow.betWindow .betTitle {
-  width: 100%;
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-left: 45px;
-  font-size: 29px;
+  font-size: 21px;
   font-weight: bold;
+  position: absolute;
+  top: 2.5%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  color: #ffffff;
 }
 html body .filter .jumpWindow.betWindow form {
   width: 100%;
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-top: 40px;
+  margin-top: 35px;
   padding: 0 45px;
 }
 html body .filter .jumpWindow.betWindow form .row {
@@ -4607,7 +4616,7 @@ html body .innerPage .center .rightSide .smallBoard .list.trans {
   height: 321px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 15px 14px 42px;
+  padding: 15px 0px 42px;
 }
 html body .innerPage .center .rightSide .smallBoard .list.trans .transList {
   height: 53px;
@@ -4620,6 +4629,7 @@ html body .innerPage .center .rightSide .smallBoard .list.trans .transList {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 10px;
 }
 html body .innerPage .center .rightSide .smallBoard .list.trans .transList .transTitle {
   display: -webkit-box;
@@ -7512,7 +7522,7 @@ html body .helpPage {
   padding-bottom: 42px;
 }
 html body .helpPage .center {
-  width: 1200px;
+  width: 1400px;
   margin: 0 auto;
   padding-top: 25px;
   display: -webkit-box;
