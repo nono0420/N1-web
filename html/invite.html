@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.25">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
@@ -439,159 +440,44 @@
                     </ul>
                 </aside>
                 <section>
-                    <div class="depositWrap">
-                        <div class="depositMiddle">
-                            <div class="top">
-                                <div class="title">
-                                    存款專區
-                                    <button>
-                                        <i></i>
-                                        存款教學
-                                    </button>
-                                </div>
-                                <div class="list">
-                                    <i class="prev"></i>
-                                    <div class="box">
-                                        <ul>
-                                            <li class="active">
-                                                <i class="card_ic"></i>
-                                                銀行卡轉帳
+                    <div class="inviteWrap">
+                        <div class="inviteMiddle">
+                            <div class="invite_bg">
+                                <div class="title">邀請會員</div>
+                                <div class="content">
+                                    <div class="invitebox">
+                                        <div class="left">
+                                            <li>
+                                                <span>邀請碼</span>
+                                                <span>
+                                                    M54ea858
+                                                    <button class="copy">複製</button>
+                                                </span>
                                             </li>
                                             <li>
-                                                <i class="atm_ic"></i>
-                                                ATM
+                                                <span>推廣網址</span>
+                                                <span>
+                                                    <input type="text" value="https://mbfe.op8899.net/#/register?code=M54ea858">
+                                                    <button class="copy">複製</button>
+                                                </span>
                                             </li>
-                                            <li>
-                                                <i class="shop_ic"></i>
-                                                超商代碼
+                                        </div>
+                                        <div class="right">
+                                            <li class="forQR">
+                                                <span>推廣網址</span>
+                                                <span>QR code</span>
+                                                <div class="qrCode"></div>
                                             </li>
-                                        </ul>
+                                        </div>
                                     </div>
-                                    <i class="next"></i>
-                                </div>
-                            </div>
-                            <div class="bottom bottom1 display">
-                                <p class="title">銀行卡轉帳</p>
-                                <div class="content">
-                                    <form>
-                                        <div class="row">
-                                            <i>※</i>
-                                            選擇銀行
-                                            <select>
-                                                <option>上海商銀 - 41879</option>
-                                            </select>
-                                            <p class="remind">尾號:41879</p>
-                                        </div>
-                                        <div class="row">
-                                            <i>※</i>
-                                            存款金額
-                                            <input type="text">
-                                            <p class="remind">單筆存款金額1000~2000</p>
-                                        </div>
-                                        <button type="button">確認送出</button>
-                                    </form>
-                                    <div class="remindBox">
-                                        <div class="title">重要提醒</div>
-                                        <div>1.存款帳戶需為本人的銀行帳戶，如為非本人的帳戶存款無法成功存款。</div>
-                                        <div>2.存款金額需與申請提交金額相同，如不相同會以實際入帳金額為主。</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bottom confirm">
-                                <p class="title">銀行卡轉帳</p>
-                                <div class="content">
-                                    <div class="confin_box">
-                                        <span>已存款到下列帳號</span>
-                                        <div class="confin_number">
-                                            <div class="number_num1">銀行</div>
-                                            <div class="number_num">測試2</div>
-                                        </div>
-                                        <div class="confin_number">
-                                            <div class="number_num1">帳號</div>
-                                            <div class="number_num">002233</div>
-                                            <button>點擊即複製</button>
-                                        </div>
-                                        <div class="confin_number">
-                                            <div class="number_num1">金額</div>
-                                            <div class="number_num">100</div>
-                                            <button>點擊即複製</button>
-                                        </div>
-                                    <button>我已匯款</button>
-                                    </div>
-                                    <div class="remindBox">
-                                        <div class="title">重要提醒</div>
-                                        <div>1.存款帳戶需為本人的銀行帳戶，如為非本人的帳戶存款無法成功存款。</div>
-                                        <div>2.存款金額需與申請提交金額相同，如不相同會以實際入帳金額為主。</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bottom bottom2">
-                                <p class="title">超商儲值</p>
-                                <div class="content">
-                                    <form>
-                                        <div class="row">
-                                            <i>※</i>
-                                            選擇銀行
-                                            <select>
-                                                <option>G虛擬帳號</option>
-                                            </select>
-                                        </div>
-                                        <div class="row">
-                                            <i>※</i>
-                                            存款金額
-                                            <input type="text"  value="請輸入充值金額">
-                                            <p class="remind">單筆存款金額1000~2000</p>
-                                        </div>
-                                        <button>確認送出</button>
-                                    </form>
-                                    <div class="remindBox">
-                                        <div class="title">重要提醒</div>
-                                        <div>1.存款帳戶需為本人的銀行帳戶，如為非本人的帳戶存款無法成功存款。</div>
-                                        <div>2.存款金額需與申請提交金額相同，如不相同會以實際入帳金額為主。</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bottom bottom3">
-                                <p class="title">超商儲值</p>
-                                <div class="content">
-                                    <form>
-                                        <div class="row">
-                                            <i>※</i>
-                                            選擇銀行
-                                            <select>
-                                                <option>G超商</option>
-                                            </select>
-                                        </div>
-                                        <div class="row">
-                                            <i>※</i>
-                                            存款金額
-                                            <input type="text" value="請輸入充值金額">
-                                            <p class="remind">單筆存款金額1000~2000</p>
-                                        </div>
-                                        <button>確認送出</button>
-                                    </form>
-                                    <div class="remindBox">
-                                        <div class="title">重要提醒</div>
-                                        <div>1.存款帳戶需為本人的銀行帳戶，如為非本人的帳戶存款無法成功存款。</div>
-                                        <div>2.存款金額需與申請提交金額相同，如不相同會以實際入帳金額為主。</div>
-                                    </div>
-                                </div>
+                                <div class="inviteimg"></div>
+                                <P>會員A:0.2%(B)+0.05%(C)+0.05%(D)=0.3%</P>
+                                <P>會員A:0.2%(B)+0.05%(C)+0.05%(D)=0.3%</P>
+                                <P>會員A:0.2%(B)+0.05%(C)+0.05%(D)=0.3%</P>
+                                <P>會員A:0.2%(B)+0.05%(C)+0.05%(D)=0.3%</P>
+                                </div>    
                             </div>
                         </div>
-                        <aside class="rightSide">
-                            <div class="smallBoard">
-                                <div class="title">
-                                    存款紀錄
-                                    <p class="more" onclick="window.location.href='./dealRecord.html'">
-                                        更多
-                                        <i class="arrow"></i>
-                                    </p>
-                                </div>
-                                <ul class="list">
-                                    <p class="noData display">目前無資料</p>
-                                </ul>
-                            </div>
-                        </aside>
                     </div>
                 </section>
             </div>

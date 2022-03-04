@@ -264,6 +264,10 @@ header .logout_ic {
     background: url('../images/icon/svg/innerNav_user.svg') no-repeat;
     background-size: 100%;
 }
+.innerNav .invite_ic {
+    background: url('../images/icon/svg/invite_ic.svg') no-repeat;
+    background-size: 100%;
+}
 .innerNav .vip_ic {
     background: url('../images/icon/svg/innerNav_vip.svg') no-repeat;
     background-size: 100%;
@@ -282,6 +286,10 @@ header .logout_ic {
 }
 .innerNav .dealRecord_ic {
     background: url('../images/icon/svg/innerNav_dealRecord.svg') no-repeat;
+    background-size: 100%;
+}
+.innerNav .dividend_ic {
+    background: url('../images/icon/svg/dividend_ic.svg') no-repeat;
     background-size: 100%;
 }
 .innerNav .betRecord_ic {
@@ -587,6 +595,12 @@ main .mainWrap {
 }
 .mainWrap .typeList .board .img {
     background: url('../images/入口圖/board.png') no-repeat;
+    background-size: 100%;
+}
+
+//邀請會員示意圖
+.inviteWrap .inviteimg {
+    background: url('../images/invitevip.png') no-repeat;
     background-size: 100%;
 }
 

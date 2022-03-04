@@ -273,6 +273,11 @@ header .logout_ic {
   background-size: 100%;
 }
 
+.innerNav .invite_ic {
+  background: url("../images/icon/svg/invite_ic.svg") no-repeat;
+  background-size: 100%;
+}
+
 .innerNav .vip_ic {
   background: url("../images/icon/svg/innerNav_vip.svg") no-repeat;
   background-size: 100%;
@@ -295,6 +300,11 @@ header .logout_ic {
 
 .innerNav .dealRecord_ic {
   background: url("../images/icon/svg/innerNav_dealRecord.svg") no-repeat;
+  background-size: 100%;
+}
+
+.innerNav .dividend_ic {
+  background: url("../images/icon/svg/dividend_ic.svg") no-repeat;
   background-size: 100%;
 }
 
@@ -610,6 +620,11 @@ main .mainWrap {
 
 .mainWrap .typeList .board .img {
   background: url("../images/入口圖/board.png") no-repeat;
+  background-size: 100%;
+}
+
+.inviteWrap .inviteimg {
+  background: url("../images/invitevip.png") no-repeat;
   background-size: 100%;
 }
 
@@ -2899,7 +2914,7 @@ html body .innerPage .center .innerSide {
   -webkit-box-shadow: 0 5px 10px -5px #00000033;
           box-shadow: 0 5px 10px -5px #00000033;
   width: 245px;
-  height: 100%;
+  height: auto;
   margin-right: 15px;
   padding-bottom: 25px;
 }
@@ -3047,6 +3062,10 @@ html body .innerPage .center .innerSide .innerNav li i.user_ic {
   width: 14px;
   height: 16px;
 }
+html body .innerPage .center .innerSide .innerNav li i.invite_ic {
+  width: 17px;
+  height: 19px;
+}
 html body .innerPage .center .innerSide .innerNav li i.vip_ic {
   width: 17px;
   height: 17px;
@@ -3062,6 +3081,10 @@ html body .innerPage .center .innerSide .innerNav li i.card_ic {
 html body .innerPage .center .innerSide .innerNav li i.dealRecord_ic {
   width: 13px;
   height: 15px;
+}
+html body .innerPage .center .innerSide .innerNav li i.dividend_ic {
+  width: 15px;
+  height: 14px;
 }
 html body .innerPage .center .innerSide .innerNav li i.betRecord_ic {
   width: 12px;
@@ -6758,6 +6781,56 @@ html body .innerPage .center .depositWrap .depositMiddle .confirm .content .remi
 }
 html body .innerPage .center .depositWrap .depositMiddle .confirm .content .remindBox div.title {
   color: #cfa678;
+}
+html body .innerPage .center .inviteWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle {
+  width: 1140px;
+  height: auto;
+  margin-right: 15px;
+  padding: 0 10px;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  padding-top: 12px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 5px 10px -5px #00000033;
+          box-shadow: 0 5px 10px -5px #00000033;
+  border-radius: 5px;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .title {
+  padding-left: 23px;
+  margin-bottom: 9px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #333333;
+  font-weight: bold;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content {
+  width: 100%;
+  height: auto;
+  padding: 15px 22px 18px;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content ul {
+  width: 50%;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content ul li {
+  width: auto;
+  height: 60px;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content .inviteimg {
+  height: 485px;
+  margin-bottom: 15px;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 html body .innerPage .center .transferWrap {
   display: -webkit-box;

@@ -25,7 +25,7 @@
             border-radius: 5px;
             box-shadow: 0 5px 10px -5px $boxShadow_3;
             width: 245px;
-            height: 100%;
+            height: auto;
             margin-right: 15px;
             padding-bottom: 25px;
     
@@ -118,6 +118,10 @@
                             width: 14px;
                             height: 16px;
                         }
+                        &.invite_ic {
+                            width: 17px;
+                            height: 19px;
+                        }
                         &.vip_ic {
                             width: 17px;
                             height: 17px;
@@ -133,6 +137,10 @@
                         &.dealRecord_ic {
                             width: 13px;
                             height: 15px;
+                        }
+                        &.dividend_ic {
+                            width: 15px;
+                            height: 14px;
                         }
                         &.betRecord_ic {
                             width: 12px;
@@ -3622,6 +3630,63 @@
                                     color: $remineTitle;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+
+        //invite
+        .inviteWrap {
+            display: flex;
+
+            .inviteMiddle {
+                width: 1140px;
+                height: auto;
+                margin-right: 15px;
+                padding: 0 10px;
+
+                .invite_bg {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 15px;
+                    padding-top: 12px;
+                    background: $mainBG_2;
+                    box-shadow: 0 5px 10px -5px $boxShadow_3;
+                    border-radius: 5px;
+
+                    .title {
+                        padding-left: 23px;
+                        margin-bottom: 9px;
+                        font-size: 20px;
+                        letter-spacing: 2px;
+                        color: $main_Color;
+                        font-weight: bold;
+                    }
+
+                    .content {
+                        width: 100%;
+                        height: auto;
+                        padding: 15px 22px 18px;
+
+                        ul {
+                            width: 50%;
+                            // float: left;
+                            li {
+                                width: auto;
+                                height: 60px;
+                            }
+                        }
+
+                        .inviteimg {
+                            height:485px;
+                            margin-bottom: 15px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                            font-weight: bold;
                         }
                     }
                 }
