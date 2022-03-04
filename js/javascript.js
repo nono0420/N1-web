@@ -255,35 +255,19 @@ $(function(){
         $('.filter,.plsGo').addClass('display');
     })
 
-    $('.sportPage .sportGame01').click(function(){
+    $('.sportPage .sportGame').click(function(){
         $('.jumpWindow').removeClass('display');
-        $('.filter,.betWindow.sportGame01').addClass('display');
+        $('.filter,.betWindow.sportGame').addClass('display');
     })
 
-    $('.livePage .liveGame01').click(function(){
+    $('.livePage .liveGame').click(function(){
         $('.jumpWindow').removeClass('display');
-        $('.filter,.betWindow.liveGame01').addClass('display');
-    })
-    $('.livePage .liveGame02').click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.betWindow.liveGame02').addClass('display');
-    })
-    $('.livePage .liveGame03').click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.betWindow.liveGame03').addClass('display');
-    })
-    $('.livePage .liveGame04').click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.betWindow.liveGame04').addClass('display');
+        $('.filter,.betWindow.liveGame').addClass('display');
     })
 
-    $('.lotteryPage .lotteryGame01').click(function(){
+    $('.lotteryPage .lotteryGame').click(function(){
         $('.jumpWindow').removeClass('display');
-        $('.filter,.betWindow.lotteryGame01').addClass('display');
-    })
-    $('.lotteryPage .lotteryGame02').click(function(){
-        $('.jumpWindow').removeClass('display');
-        $('.filter,.betWindow.lotteryGame02').addClass('display');
+        $('.filter,.betWindow.lotteryGame').addClass('display');
     })
 })
 function unlogin(){
@@ -652,27 +636,27 @@ $(function(){
 
 function openSportGame(){
     $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.sportGame01').addClass('display');
+    $('.filter,.betWindow.sportGame').addClass('display');
 }
 function openLiveGame(){
     $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.liveGame01').addClass('display');
+    $('.filter,.betWindow.liveGame').addClass('display');
 }
 function openSlotGame(){
     $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.slotGame01').addClass('display');
+    $('.filter,.betWindow.slotGame').addClass('display');
 }
 function openLotteryGame(){
     $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.lotteryGame01').addClass('display');
+    $('.filter,.betWindow.lotteryGame').addClass('display');
 }
 function openFishGame(){
     $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.fishGame01').addClass('display');
+    $('.filter,.betWindow.fishGame').addClass('display');
 }
 function openBoardGame(){
     $('.jumpWindow').removeClass('display');
-    $('.filter,.betWindow.boardGame01').addClass('display');
+    $('.filter,.betWindow.boardGame').addClass('display');
 }
 
 //regitster

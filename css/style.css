@@ -1145,7 +1145,7 @@ html body header .topGameList .listWrap {
   height: 170px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-top: solid 1px #dbdef4;
+  border-top: solid 1px #e6e6e6;
   background: #ffffff;
 }
 html body header .topGameList .listWrap .center {
@@ -1347,6 +1347,9 @@ html body .sideBar .download {
   background: linear-gradient(#3179ff, #784dff);
   color: #ffffff;
 }
+html body .sideBar .download:hover, html body .sideBar .download:active, html body .sideBar .download.active {
+  background: #0068FF;
+}
 html body .sideBar .download i {
   width: 30px;
   height: 32px;
@@ -1378,6 +1381,9 @@ html body .sideBar .rightSide li {
   background: -webkit-gradient(linear, left top, left bottom, from(#3179ff), to(#784dff));
   background: linear-gradient(#3179ff, #784dff);
   color: #ffffff;
+}
+html body .sideBar .rightSide li:hover, html body .sideBar .rightSide li:active, html body .sideBar .rightSide li.active {
+  background: #0068FF;
 }
 html body .sideBar .rightSide li i {
   width: 30px;
@@ -1494,7 +1500,7 @@ html body footer .footerList .footer-site .center-wrap {
   margin: 20px auto;
   font-size: 12px;
   line-height: 1.8;
-  color: #747474;
+  color: #999999;
   font-weight: bold;
 }
 html body .filter {
@@ -1921,7 +1927,7 @@ html body .filter .jumpWindow.walletRecord .content .num {
 html body .filter .jumpWindow.walletRecord .content table {
   width: 100%;
   margin-top: 18px;
-  border: 1px solid #dbdef4;
+  border: 1px solid #e6e6e6;
   overflow: hidden;
 }
 html body .filter .jumpWindow.walletRecord .content table tr th {
@@ -1935,7 +1941,7 @@ html body .filter .jumpWindow.walletRecord .content table tr th {
 html body .filter .jumpWindow.walletRecord .content table tr td {
   padding: 10px 5px;
   font-size: 14px;
-  border-bottom: 1px solid #dbdef4;
+  border-bottom: 1px solid #e6e6e6;
 }
 html body .filter .jumpWindow.walletRecord .content table tr td.numTd {
   padding-left: 25px;
@@ -2056,7 +2062,7 @@ html body .filter .jumpWindow.betWindow form {
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-top: 35px;
+  margin-top: 20px;
   padding: 0 45px;
 }
 html body .filter .jumpWindow.betWindow form .row {
@@ -2069,9 +2075,10 @@ html body .filter .jumpWindow.betWindow form .row {
   width: 100%;
   height: 42px;
   margin-bottom: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+html body .filter .jumpWindow.betWindow form .row:nth-of-type(3) {
+  margin: 2px;
+  margin-top: -5px;
 }
 html body .filter .jumpWindow.betWindow form .row.forBtn {
   -webkit-box-pack: end;
@@ -2084,6 +2091,9 @@ html body .filter .jumpWindow.betWindow form .row p {
   font-size: 16px;
   font-weight: bold;
   color: #333333;
+}
+html body .filter .jumpWindow.betWindow form .row span {
+  font-size: 28px;
 }
 html body .filter .jumpWindow.betWindow form .row input {
   width: 267px;
@@ -2102,7 +2112,7 @@ html body .filter .jumpWindow.betWindow form .row .trans_arrow {
   height: 21px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  margin-left: 120px;
+  margin-left: 240px;
 }
 html body .filter .jumpWindow.betWindow form .row .btnBox {
   width: 267px;
@@ -2301,7 +2311,7 @@ html body .gameWrap .slotCenter .slotBody {
 html body .gameWrap .slotCenter .slotBody .nav {
   margin: 0 26px;
   height: 70px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2320,7 +2330,7 @@ html body .gameWrap .slotCenter .slotBody .nav ul {
   display: flex;
 }
 html body .gameWrap .slotCenter .slotBody .nav ul li {
-  color: #747474;
+  color: #999999;
   width: auto;
   height: calc(100% - 3px);
   padding: 0 50px;
@@ -2659,7 +2669,7 @@ html body .eventWrap .eventBody .side ul {
 html body .eventWrap .eventBody .side ul li {
   width: 100%;
   height: 60px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
   color: #666666;
   font-size: 14px;
   padding-left: 64px;
@@ -2830,7 +2840,7 @@ html body .eventWrap .eventBody .eventDetail .date {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
 }
 html body .eventWrap .eventBody .eventDetail .date span {
   color: #333333;
@@ -2879,7 +2889,7 @@ html body .innerPage .center section {
 }
 html body .innerPage .center hr {
   width: 100%;
-  border: solid 1px #dbdef4;
+  border: solid 1px #e6e6e6;
   border-width: 1px 0 0;
   margin: 0;
 }
@@ -2926,7 +2936,7 @@ html body .innerPage .center .innerSide .userInfo div .account .lv {
   border-radius: 5px;
 }
 html body .innerPage .center .innerSide .userInfo div .days {
-  color: #747474;
+  color: #999999;
   font-size: 14px;
   margin-top: 10px;
   font-weight: bold;
@@ -3023,7 +3033,7 @@ html body .innerPage .center .innerSide .innerNav li:hover::before, html body .i
   background: #0068ff;
 }
 html body .innerPage .center .innerSide .innerNav li:nth-of-type(1), html body .innerPage .center .innerSide .innerNav li:nth-of-type(7) {
-  border-top: solid 1px #dbdef4;
+  border-top: solid 1px #e6e6e6;
 }
 html body .innerPage .center .innerSide .innerNav li i {
   display: block;
@@ -3093,7 +3103,7 @@ html body .innerPage .center .memberWrap .top h1 {
   font-size: 20px;
   letter-spacing: 2px;
   color: #333333;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
   font-weight: bold;
 }
 html body .innerPage .center .memberWrap .top .content {
@@ -3193,7 +3203,7 @@ html body .innerPage .center .memberWrap .bottom .dataWrap.display {
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content {
   padding: 20px 24px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content h1 {
   font-size: 17px;
@@ -3228,12 +3238,18 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li input {
   width: 257px;
 }
+html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .notable {
+  background: #fafafa;
+}
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .remind {
   font-size: 12px;
   padding-left: 110px;
-  color: #999999;
+  color: #e11515;
   font-weight: bold;
   margin-top: 6px;
+}
+html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .remind.np {
+  color: #999999;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .remind.np span {
   color: #4a59ed;
@@ -3377,7 +3393,7 @@ html body .innerPage .center .memberWrap .bottom .platformWrap table {
   margin: 20px 0 7px;
 }
 html body .innerPage .center .memberWrap .bottom .platformWrap table tr {
-  border-bottom: 1px solid #dbdef4;
+  border-bottom: 1px solid #e6e6e6;
 }
 html body .innerPage .center .memberWrap .bottom .platformWrap table tr th, html body .innerPage .center .memberWrap .bottom .platformWrap table tr td {
   height: 50px;
@@ -3402,7 +3418,7 @@ html body .innerPage .center .memberWrap .bottom .platformWrap table tr th::befo
           transform: translateY(-50%);
   top: 50%;
   right: 0px;
-  background: #dbdef4;
+  background: #e6e6e6;
 }
 html body .innerPage .center .memberWrap .bottom .platformWrap table tr td {
   width: 17%;
@@ -3960,7 +3976,7 @@ html body .innerPage .center .walletWrap .walletMiddle .top .content .total {
           box-sizing: border-box;
   padding: 14px 0 0 24px;
   height: 170px;
-  border-right: solid 1px #dbdef4;
+  border-right: solid 1px #e6e6e6;
 }
 html body .innerPage .center .walletWrap .walletMiddle .top .content .total:nth-of-type(2) {
   border: none;
@@ -4229,7 +4245,7 @@ html body .innerPage .center .walletWrap .walletMiddle .bottom .platformWallet u
   height: 100px;
   margin: 0 9px 9px 0;
   border-radius: 5px;
-  border: solid 1px #dbdef4;
+  border: solid 1px #e6e6e6;
   padding: 18px;
 }
 html body .innerPage .center .walletWrap .walletMiddle .bottom .platformWallet ul li:nth-of-type(5n) {
@@ -4269,7 +4285,7 @@ html body .innerPage .center .cardWrap .cardMiddle .top .header {
   padding: 10px 0 15px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
 }
 html body .innerPage .center .cardWrap .cardMiddle .top .header span {
   font-size: 20px;
@@ -4498,6 +4514,9 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .form
   font-size: 14px;
   padding-left: 15px;
 }
+html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox .notable {
+  background: #fafafa;
+}
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox .err {
   display: none;
   font-size: 12px;
@@ -4513,7 +4532,7 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .form
   position: absolute;
   left: 0;
   bottom: -16px;
-  color: #999999;
+  color: #e11515;
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox button {
   width: 255px;
@@ -4582,7 +4601,7 @@ html body .innerPage .center .rightSide .smallBoard .title {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 20px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
   font-size: 16px;
   letter-spacing: 2px;
   color: #333333;
@@ -4620,7 +4639,7 @@ html body .innerPage .center .rightSide .smallBoard .list.trans {
 }
 html body .innerPage .center .rightSide .smallBoard .list.trans .transList {
   height: 53px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
   margin-bottom: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4679,7 +4698,7 @@ html body .innerPage .center .rightSide .smallBoard .list.trans .transList .text
 html body .innerPage .center .rightSide .smallBoard .list .smallList {
   height: 84px;
   padding: 8px 18px 12px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -4707,7 +4726,7 @@ html body .innerPage .center .rightSide .smallBoard .list .smallList ul li p {
 html body .innerPage .center .rightSide .smallBoard .list .smallList ul li p:nth-of-type(1) {
   font-size: 12px;
   font-weight: bold;
-  color: #747474;
+  color: #999999;
 }
 html body .innerPage .center .rightSide .smallBoard .list .smallList ul li p:last-child {
   font-size: 14px;
@@ -4800,7 +4819,7 @@ html body .innerPage .center .mailWrap.innerMode .msgTitle button.next {
 html body .innerPage .center .mailWrap.innerMode .date {
   width: 100%;
   font-size: 15px;
-  color: #747474;
+  color: #999999;
   padding-bottom: 18px;
 }
 html body .innerPage .center .mailWrap.innerMode .msg {
@@ -4834,7 +4853,7 @@ html body .innerPage .center .mailWrap .top p {
   font-size: 20px;
   font-weight: bold;
   color: #333333;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
 }
 html body .innerPage .center .mailWrap .top div {
   width: 100%;
@@ -4923,7 +4942,7 @@ html body .innerPage .center .mailWrap .bottom .list .btnBox {
   width: 100%;
   height: auto;
   padding-bottom: 16px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
 }
 html body .innerPage .center .mailWrap .bottom .list .btnBox.nor {
   -webkit-box-pack: end;
@@ -5067,7 +5086,7 @@ html body .innerPage .center .mailWrap .bottom .list ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
   cursor: pointer;
 }
 html body .innerPage .center .mailWrap .bottom .list ul li:hover, html body .innerPage .center .mailWrap .bottom .list ul li:active, html body .innerPage .center .mailWrap .bottom .list ul li.active {
@@ -5091,7 +5110,7 @@ html body .innerPage .center .mailWrap .bottom .list ul li .title::before {
   right: 0;
   width: 1px;
   height: 15px;
-  background: #dbdef4;
+  background: #e6e6e6;
 }
 html body .innerPage .center .mailWrap .bottom .list ul li .date {
   width: 30%;
@@ -5190,7 +5209,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li {
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header {
   width: 100%;
   height: 47px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 15px;
@@ -5223,10 +5242,10 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div
           align-items: center;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p.first {
-  color: #747474;
+  color: #666666;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p span {
-  color: #747474;
+  color: #666666;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .header div p span.now {
   color: #05b900;
@@ -5285,7 +5304,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li p.smallTitle {
   margin-right: 25px;
-  color: #747474;
+  color: #666666;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox ul li .content ul li p.cur {
   color: #05b900;
@@ -5318,7 +5337,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li {
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header {
   width: 100%;
   height: 47px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 15px;
@@ -5351,10 +5370,10 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header di
           align-items: center;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div p.first {
-  color: #747474;
+  color: #666666;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div p span {
-  color: #747474;
+  color: #666666;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .header div p span.now {
   color: #05b900;
@@ -5413,7 +5432,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .content u
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .content ul li p.smallTitle {
   margin-right: 25px;
-  color: #747474;
+  color: #666666;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventBox2 ul li .content ul li p.cur {
   color: #05b900;
@@ -5442,7 +5461,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .s
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 24px 18px 24px 24px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form {
   width: 100%;
@@ -5720,7 +5739,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 24px 18px 24px 24px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .search form {
   width: 100%;
@@ -5918,7 +5937,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable t
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable table tr td {
   width: 25%;
-  border-bottom: 1px solid #dbdef4;
+  border-bottom: 1px solid #e6e6e6;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox2 {
   display: none;
@@ -5949,7 +5968,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox2 table {
   margin: 20px 0 7px;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox2 table tr {
-  border-bottom: 1px solid #dbdef4;
+  border-bottom: 1px solid #e6e6e6;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox2 table tr th, html body .innerPage .center .dealWrap .bottom .dealBox2 table tr td {
   height: 50px;
@@ -5974,7 +5993,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox2 table tr th::before, ht
           transform: translateY(-50%);
   top: 50%;
   right: 0px;
-  background: #dbdef4;
+  background: #e6e6e6;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox2 table tr td {
   border-bottom: none;
@@ -6039,7 +6058,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox2 table tr td .expand-btn
   font-weight: bolder;
   height: 30px;
   line-height: 40px;
-  color: #747474;
+  color: #999999;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox2 .noData {
   display: none;
@@ -6235,7 +6254,7 @@ html body .innerPage .center .betWrap .fakeTable ul {
 html body .innerPage .center .betWrap .fakeTable ul li {
   width: 100%;
   height: 40px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
 }
 html body .innerPage .center .betWrap .fakeTable ul li.title {
   border-bottom: solid 2px #3d4cce;
@@ -6249,7 +6268,7 @@ html body .innerPage .center .betWrap .fakeTable ul li.active {
 }
 html body .innerPage .center .betWrap .fakeTable ul li.active .wordWrap {
   height: 40px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
   background: #ffffff;
 }
 html body .innerPage .center .betWrap .fakeTable ul li.active .wordWrap .arrow_ic {
@@ -6307,7 +6326,7 @@ html body .innerPage .center .betWrap .fakeTable ul li .wordWrap p::before {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: #dbdef4;
+  background: #e6e6e6;
 }
 html body .innerPage .center .betWrap .fakeTable ul li .wordWrap p.result {
   color: #3d4cce;
@@ -6378,7 +6397,7 @@ html body .innerPage .center .betWrap .noData {
       -ms-flex-pack: center;
           justify-content: center;
   letter-spacing: 1px;
-  color: #747474;
+  color: #999999;
   font-weight: bold;
 }
 html body .innerPage .center .betWrap .noData.display {
@@ -6420,7 +6439,7 @@ html body .innerPage .center .depositWrap .depositMiddle .top .title {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 18px 0 22px;
-  border-bottom: solid 1px #dbdef4;
+  border-bottom: solid 1px #e6e6e6;
   font-size: 20px;
   letter-spacing: 2px;
   color: #333333;
@@ -6609,7 +6628,7 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .content form .
   left: 108px;
   font-size: 12px;
   letter-spacing: 1px;
-  color: #747474;
+  color: #e11515;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .content form button {
   width: 257px;
@@ -6910,7 +6929,7 @@ html body .innerPage .center .transferWrap .transferMiddle .platform ul li {
           box-sizing: border-box;
   padding: 18px;
   margin: 0 16px 16px 0;
-  border: solid 1px #dbdef4;
+  border: solid 1px #e6e6e6;
   border-radius: 5px;
 }
 html body .innerPage .center .transferWrap .transferMiddle .platform ul li:nth-of-type(4n) {
@@ -7302,7 +7321,7 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .platformBox
           box-sizing: border-box;
   padding: 18px;
   margin: 0 16px 16px 0;
-  border: solid 1px #dbdef4;
+  border: solid 1px #e6e6e6;
   border-radius: 5px;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .top .platformBox ul li:nth-of-type(4n) {
@@ -7394,7 +7413,7 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom ul li {
   width: 222px;
   height: 112px;
   margin-right: 8px;
-  border: solid 1px #dbdef4;
+  border: solid 1px #e6e6e6;
   border-radius: 5px;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom ul li .name {
@@ -7468,7 +7487,7 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row
   margin: 8px 0 0 26px;
   font-size: 12px;
   letter-spacing: 1px;
-  color: #999999;
+  color: #e11515;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form button {
   width: 257px;
@@ -7895,7 +7914,7 @@ html body .registerWrap .bigBox .bottom .left ul::before {
   position: absolute;
   width: 2px;
   height: 5px;
-  background: #747474;
+  background: #999999;
   -webkit-transform: rotate(45deg) translateY(-50%);
           transform: rotate(45deg) translateY(-50%);
   top: 50%;
@@ -7907,7 +7926,7 @@ html body .registerWrap .bigBox .bottom .left ul::after {
   position: absolute;
   width: 2px;
   height: 5px;
-  background: #747474;
+  background: #999999;
   -webkit-transform: rotate(-45deg) translateY(-50%);
           transform: rotate(-45deg) translateY(-50%);
   top: 50%;

@@ -5,7 +5,7 @@ $mainBG_3: #f8f8fa;
 
 //主要boder
 $main_Border: #4c4c4c;
-$main_Border_2: #dbdef4;
+$main_Border_2: #e6e6e6;
 
 //Table用底線
 $specailBorder: #3d4cce;
@@ -22,7 +22,7 @@ $table_Td_Border:#dbdef4;
 //主要文字色
 $main_Color:#333333;
 $main_Color2:#ffffff;
-$main_Color3:#747474;
+$main_Color3:#999999;
 $main_Color4:#3d4cce;
 $main_Color6: #4d4d4d;
 $main_Color7: #4a59ed;
@@ -404,8 +404,15 @@ $footer_bg2:#e6e6e6;
     }
 }
 
+//不能打字的input
+$notable:#fafafa;
+
 //sideBar
 @mixin sideBar {
     background:linear-gradient(#3179ff,#784dff);
     color: #ffffff;
+
+    &:hover,&:active,&.active {
+        background: #0068FF;
+    }
 }
