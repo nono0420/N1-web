@@ -628,6 +628,11 @@ main .mainWrap {
   background-size: 100%;
 }
 
+.inviteWrap .qrCode {
+  background: url("../images/qr.png") no-repeat;
+  background-size: 100%;
+}
+
 .gameWrap {
   background: url("../images/home_bg_1.jpg");
   background-size: 100%;
@@ -5956,7 +5961,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable t
           transform: translateY(-50%);
   top: 50%;
   right: 0px;
-  background: #ffffff;
+  background: #e6e6e6;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap .fakeTable table tr td {
   width: 25%;
@@ -6816,12 +6821,72 @@ html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content {
   height: auto;
   padding: 15px 22px 18px;
 }
-html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content ul {
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content .invitebox {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content .invitebox ::marker {
+  color: transparent;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content .invitebox .left {
   width: 50%;
 }
-html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content ul li {
-  width: auto;
-  height: 60px;
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content .invitebox .left .li {
+  margin-bottom: 20px;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content .invitebox .left .li span {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 25px 20px 0;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content .invitebox .left .li span button {
+  width: 94px;
+  height: 27px;
+  margin-left: 20px;
+  border-radius: 3px;
+  border: solid 1px #cca172;
+  color: #cca172;
+  background: none;
+  text-decoration: none;
+  text-align: center;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content .invitebox .left .li span input {
+  padding: 4px 15px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content .invitebox .right {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content .invitebox .right .forQR {
+  margin-top: 10px;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content .invitebox .right .forQR span {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content .invitebox .right .forQR h1 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0 0 22px;
+}
+html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content .invitebox .right .qrCode {
+  width: 100px;
+  height: 100px;
+  margin: -15px 0px 0 60px;
 }
 html body .innerPage .center .inviteWrap .inviteMiddle .invite_bg .content .inviteimg {
   height: 485px;
@@ -7273,6 +7338,426 @@ html body .innerPage .center .transferWrap .transferMiddle form button {
 html body .innerPage .center .transferWrap .transferMiddle form button:hover, html body .innerPage .center .transferWrap .transferMiddle form button:active, html body .innerPage .center .transferWrap .transferMiddle form button.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
   background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
+}
+html body .innerPage .center .dividendWrap {
+  width: 1140px;
+}
+html body .innerPage .center .dividendWrap .top {
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 5px 10px -5px #00000033;
+          box-shadow: 0 5px 10px -5px #00000033;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 22px;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-radius: 5px 5px 0 0;
+}
+html body .innerPage .center .dividendWrap .bottom {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center .dividendWrap .bottom .header {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center .dividendWrap .bottom .header .tabs {
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center .dividendWrap .bottom .header .tabs li {
+  min-width: 105px;
+  height: 35px;
+  line-height: 35px;
+  margin: 0 7px 0 0;
+  background: #999;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+html body .innerPage .center .dividendWrap .bottom .header .tabs li:hover, html body .innerPage .center .dividendWrap .bottom .header .tabs li:active, html body .innerPage .center .dividendWrap .bottom .header .tabs li.active {
+  background: linear-gradient(135deg, #2e7bff, #734af6);
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  -webkit-box-shadow: 0 5px 10px -5px #00000033;
+          box-shadow: 0 5px 10px -5px #00000033;
+  border-radius: 0 0 5px 5px;
+  display: none;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox.display {
+  display: block;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search {
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 18px 24px 24px;
+  border-bottom: solid 1px #e6e6e6;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .bigBox {
+  width: 345px;
+  height: auto;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .bigBox .innerBox {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .bigBox .innerBox .row {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .bigBox .innerBox .row:last-child {
+  margin: 0;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .bigBox .innerBox .row .smallTitle {
+  width: auto;
+  max-width: 48px;
+  font-size: 14px;
+  margin-right: 25px;
+  letter-spacing: 1px;
+  color: #333333;
+  font-weight: bold;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .bigBox .innerBox .row .inputBox {
+  width: 286px;
+  height: auto;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .bigBox .innerBox .row .inputBox select {
+  width: 258px;
+  height: 42px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 16px;
+  background-image: linear-gradient(45deg, transparent 50%, #3278ff 0), linear-gradient(135deg, #3278ff 50%, transparent 0);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .bigBox .innerBox .row .inputBox select option {
+  background: #ffffff;
+  color: #000000;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .bigBox .innerBox .row .inputBox input {
+  width: 258px;
+  height: 42px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .btnBox {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .btnBox button {
+  width: 72px;
+  height: 43px;
+  margin-right: 8px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff), to(#f4f4f4));
+  background: linear-gradient(#fff 40%, #f4f4f4);
+  border: 1px solid #e8e8e8;
+  color: #333333;
+  border-radius: 3px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .btnBox button:hover, html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .btnBox button:active, html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .btnBox button.active {
+  background: #0068ff;
+  color: #ffffff;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .checkBtn {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .checkBtn button {
+  width: 152px;
+  height: 41px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 16px;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .checkBtn button:hover, html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .checkBtn button:active, html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .search form .checkBtn button.active {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .fakeTable {
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 0px 10px;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .fakeTable .noData {
+  display: none;
+  width: 100%;
+  height: 233px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 1px;
+  color: #4d4d4d;
+  font-weight: bold;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .fakeTable .noData.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .fakeTable table {
+  width: 100%;
+  height: auto;
+  margin: 20px 0 60px;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .fakeTable table tr th, html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .fakeTable table tr td {
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #333333;
+  position: relative;
+  border-bottom: solid 2px #3d4cce;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .fakeTable table tr th:last-child::before, html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .fakeTable table tr td:last-child::before {
+  display: none;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .fakeTable table tr th::before, html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .fakeTable table tr td::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  right: 0px;
+  background: #e6e6e6;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox .reviewWrap .fakeTable table tr td {
+  width: 25%;
+  border-bottom: 1px solid #e6e6e6;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 {
+  display: none;
+  width: 100%;
+  height: auto;
+  min-height: 440px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 5px 10px -5px #00000033;
+          box-shadow: 0px 5px 10px -5px #00000033;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 0px 24px;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2.display {
+  display: block;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 h1 {
+  padding: 20px 24px;
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: #4a59ed;
+  font-weight: bold;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table {
+  width: 100%;
+  height: auto;
+  margin: 20px 0 7px;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr {
+  border-bottom: 1px solid #e6e6e6;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr th, html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td {
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #333333;
+  position: relative;
+  border-bottom: solid 2px #3d4cce;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr th:last-child::before, html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td:last-child::before {
+  display: none;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr th::before, html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 42%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  right: 0px;
+  background: #e6e6e6;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td {
+  border-bottom: none;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td.wNo {
+  width: 13%;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td.wStatus {
+  width: 14%;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td.wVal {
+  width: 13%;
+  color: #3d4cce;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td.wLimit {
+  width: 13%;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td.wShift {
+  width: 13%;
+  color: #05b900;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td.wDate {
+  width: 14.5%;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td.wDrawback {
+  width: 9.5%;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td.wBethistory {
+  width: 6%;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td.wPs {
+  width: 5%;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td::before {
+  display: none;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td .d-btn {
+  width: 50px;
+  height: 30px;
+  border-radius: 3px;
+  cursor: no-drop;
+  background: #c7c7c7;
+  color: #ffffff;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td .d-btn:hover, html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td .d-btn:active, html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td .d-btn.active {
+  background: #c7c7c7;
+  color: #ffffff;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td .b-btn {
+  width: 50px;
+  height: 30px;
+  border-radius: 3px;
+  color: #29abff;
+  background: none;
+  text-decoration: none;
+  border: 1px solid #29abff;
+  text-align: center;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 table tr td .expand-btn {
+  background: none;
+  font-size: 22px;
+  font-weight: bolder;
+  height: 30px;
+  line-height: 40px;
+  color: #999999;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 .noData {
+  display: none;
+  width: 100%;
+  height: 533px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 1px;
+  color: #4d4d4d;
+  font-weight: bold;
+}
+html body .innerPage .center .dividendWrap .bottom .dealBox2 .noData.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 html body .innerPage .center .withdrawalWrap {
   display: -webkit-box;
