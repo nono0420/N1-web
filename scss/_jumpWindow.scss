@@ -352,6 +352,68 @@
             }
         }
 
+        &.ReviseWindow {
+            display: none;
+
+            &.display {
+                display: block;
+            }
+
+            form {
+
+                padding-bottom: 25px;
+                
+                .content {
+                    width: 100%;
+                    height: auto;
+                    box-sizing: border-box;
+                    padding: 24px 80px;
+
+                    li {
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: 30px;
+                        font-size: 14px;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                        button {
+                            @include smallBtn;
+                            padding: 4px 13px;
+                            border-radius: 3px;
+                            position: absolute;
+                            margin: 8px 0px 0px -100px;
+                        }
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 42px;
+                        @include inputStyle;
+                    }
+                }
+
+                .btnBox {
+                    padding-bottom: 15px;
+                    text-align: center;
+
+                    button {
+                        width: 322px;
+                        height: 42px;
+                        @include mainBtn;
+                    }
+                }
+
+                span {
+                    color: $remindColor_Main;
+                    font-size: 15px;
+                    font-weight: bold;
+                    padding-left: 105px;
+                }
+            }
+        }
+
         &.walletRecord {
             width: 976px;
             display: none;
@@ -609,6 +671,89 @@
                     width: 351px;
                     height: 42px;
                     @include  mainBtn;
+                }
+            }
+        }
+        &.onemember {
+            width: 495px;
+            display: none;
+
+            &.display {
+                display: block;
+            }
+
+            .title {
+                height: 50px;
+                background: none;
+                box-sizing: border-box;
+                padding: 0 30px;
+                background: $jumpWindow_titleBg;
+
+                p {
+                    font-size: 21px;
+                    text-align: center;
+                    color:$jumpWindow_Titlecolor;
+                }
+
+                i {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .content {
+                height: auto;
+                padding: 0 30px 23px;
+
+                .num {
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                    color: $jumpWindow_Text;
+                    padding-top: 10px;
+                }
+
+                table {
+                    width: 100%;
+                    margin-top: 18px;
+                    border: 1px solid $main_Border_2;
+                    overflow: hidden;
+
+                    tr {
+
+                        th {
+                            width: 25%;
+                            vertical-align: middle;
+                            height: 35px;
+                            border-bottom: solid 2px $specailBorder;
+                            font-size: 15px;
+                            font-weight: bold;
+                            color: $jumpWindow_Text;
+                        }
+
+                        td {
+                            padding: 10px 5px;
+                            font-size: 14px;
+                            border-bottom: 1px solid $main_Border_2;
+
+                            &.numTd {
+                                text-align: center;
+                            }
+                            &.nameTd {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+
+                .noData {
+                    height: 80px;
+                    padding: 0 30px 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                    color:$remindColor_Main;
                 }
             }
         }

@@ -235,6 +235,16 @@ $(function(){
         $('.filter,.score').addClass('display');
     })
 
+    $('.left .Revise').click(function(){
+        $('.jumpWindow').removeClass('display');
+        $('.filter, .ReviseWindow').addClass('display');
+    })
+
+    $('.dealBox .fakeTable td a').click(function(){
+        $('.jumpWindow').removeClass('display');
+        $('.filter, .onemember').addClass('display');
+    })
+
     $('.changePassword button').click(function(){
         $('.jumpWindow').removeClass('display');
         $('.filter,.passwordWindow').addClass('display');

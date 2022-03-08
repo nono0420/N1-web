@@ -1910,6 +1910,79 @@ html body .filter .jumpWindow.passwordWindow form .btnBox button:hover, html bod
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
   background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
 }
+html body .filter .jumpWindow.ReviseWindow {
+  display: none;
+}
+html body .filter .jumpWindow.ReviseWindow.display {
+  display: block;
+}
+html body .filter .jumpWindow.ReviseWindow form {
+  padding-bottom: 25px;
+}
+html body .filter .jumpWindow.ReviseWindow form .content {
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 24px 80px;
+}
+html body .filter .jumpWindow.ReviseWindow form .content li {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+html body .filter .jumpWindow.ReviseWindow form .content li:last-child {
+  margin: 0;
+}
+html body .filter .jumpWindow.ReviseWindow form .content li button {
+  border: solid 1px #cca172;
+  color: #cca172;
+  background: none;
+  text-decoration: none;
+  text-align: center;
+  padding: 4px 13px;
+  border-radius: 3px;
+  position: absolute;
+  margin: 8px 0px 0px -100px;
+}
+html body .filter .jumpWindow.ReviseWindow form .content input {
+  width: 100%;
+  height: 42px;
+  border: solid 1px #dedede;
+  background: transparent;
+  text-align: left;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 15px;
+}
+html body .filter .jumpWindow.ReviseWindow form .btnBox {
+  padding-bottom: 15px;
+  text-align: center;
+}
+html body .filter .jumpWindow.ReviseWindow form .btnBox button {
+  width: 322px;
+  height: 42px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(#f1d7b7, #cca172 50%, #f1c999);
+  border: 1px solid #d2a269;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 16px;
+}
+html body .filter .jumpWindow.ReviseWindow form .btnBox button:hover, html body .filter .jumpWindow.ReviseWindow form .btnBox button:active, html body .filter .jumpWindow.ReviseWindow form .btnBox button.active {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
+  background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
+}
+html body .filter .jumpWindow.ReviseWindow form span {
+  color: #e11515;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 105px;
+}
 html body .filter .jumpWindow.walletRecord {
   width: 976px;
   display: none;
@@ -2197,6 +2270,82 @@ html body .filter .jumpWindow.betWindow .enterGame button {
 html body .filter .jumpWindow.betWindow .enterGame button:hover, html body .filter .jumpWindow.betWindow .enterGame button:active, html body .filter .jumpWindow.betWindow .enterGame button.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f1d7b7), color-stop(50%, #cca172), to(#f1c999));
   background: linear-gradient(to top, #f1d7b7 0, #cca172 50%, #f1c999);
+}
+html body .filter .jumpWindow.onemember {
+  width: 495px;
+  display: none;
+}
+html body .filter .jumpWindow.onemember.display {
+  display: block;
+}
+html body .filter .jumpWindow.onemember .title {
+  height: 50px;
+  background: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 30px;
+  background: linear-gradient(135deg, #7c4dff, #887aff);
+}
+html body .filter .jumpWindow.onemember .title p {
+  font-size: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+html body .filter .jumpWindow.onemember .title i {
+  width: 20px;
+  height: 20px;
+}
+html body .filter .jumpWindow.onemember .content {
+  height: auto;
+  padding: 0 30px 23px;
+}
+html body .filter .jumpWindow.onemember .content .num {
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #333333;
+  padding-top: 10px;
+}
+html body .filter .jumpWindow.onemember .content table {
+  width: 100%;
+  margin-top: 18px;
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+html body .filter .jumpWindow.onemember .content table tr th {
+  width: 25%;
+  vertical-align: middle;
+  height: 35px;
+  border-bottom: solid 2px #3d4cce;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+}
+html body .filter .jumpWindow.onemember .content table tr td {
+  padding: 10px 5px;
+  font-size: 14px;
+  border-bottom: 1px solid #e6e6e6;
+}
+html body .filter .jumpWindow.onemember .content table tr td.numTd {
+  text-align: center;
+}
+html body .filter .jumpWindow.onemember .content table tr td.nameTd {
+  text-align: center;
+}
+html body .filter .jumpWindow.onemember .content .noData {
+  height: 80px;
+  padding: 0 30px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #e11515;
 }
 html body .filter .jumpWindow .title {
   width: 100%;
@@ -3412,7 +3561,7 @@ html body .innerPage .center .memberWrap .bottom .platformWrap h1 {
   padding: 20px 24px;
   font-size: 17px;
   letter-spacing: 2px;
-  color: #4a59ed;
+  color: #333333;
   font-weight: bold;
 }
 html body .innerPage .center .memberWrap .bottom .platformWrap table {
